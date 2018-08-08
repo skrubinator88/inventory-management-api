@@ -9,19 +9,14 @@ const passport = require('passport');
 const propertyOwners = require('./api/propertyOwners/routes/index');
 const properties = require('./api/properties/routes/index');
 const propertyOwnersAuth = require('./api/propertyOwners/auth-routes/index');
-const users = require('./users/routes/index');
+const users = require('./api/users/auth-routes/index');
 const seeder = require('./seeder/index');
 
 //import db
 const dbmain = require("./config/DB/DBmain");
 dbmain.setup(__dirname + '/DBModels');
-const db = require('./config/DB/config_db');
 
 const app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
 
 app.use(logger('combined'));
 app.use(bodyParser.json());
@@ -64,6 +59,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   console.log(err);
   res.render('error');
+  next();
 });
 
 module.exports = app;
