@@ -21,7 +21,14 @@ let config = {
         }
     },
     production: {
-
+        database: {
+            host: "127.0.0.1",
+            port: 5432,
+            db_name: "tenaciti",
+            username: "ivbazetech",
+            password: "Oseriemen20",
+            dialect: "postgresql"
+        },
     }
 };
 module.exports = config;
