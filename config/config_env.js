@@ -21,6 +21,7 @@ let config = {
         }
     },
     production: {
+        jwt_secret: 'random_secret',
         database: {
             host: "127.0.0.1",
             port: 5432,
@@ -29,6 +30,10 @@ let config = {
             password: "Oseriemen20",
             dialect: "postgresql"
         },
+        server: {
+            host: "127.0.0.1",
+            port: 3001
+        }
     }
 };
 module.exports = config;
