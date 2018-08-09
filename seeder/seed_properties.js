@@ -17,7 +17,7 @@ module.exports = function(req, res) {
         .wait(3000)
         .then( async function() {
             let urls = [];
-            for (let i = 1; i <= 1; i++) {
+            for (let i = 1; i <= 28; i++) {
                 let url = 'https://www.apartments.com/' + i + '/?bb=4oyh04ijgIg4qk5mP';
                 urls.push(url);
             }
