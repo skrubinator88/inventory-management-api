@@ -17,6 +17,7 @@ const dbmain = require("./config/DB/DBmain");
 dbmain.setup(__dirname + '/DBModels');
 
 const app = express();
+app.set('view engine', 'ejs');
 
 app.use(logger('combined'));
 app.use(bodyParser.json());
