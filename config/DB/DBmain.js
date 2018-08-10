@@ -26,7 +26,6 @@ const singleton = function Singleton(){
             const modelName = name.replace(/\.js$/i, "");
             models[modelName] = sequelize.define(modelName, object.model, options);
         });
-        console.log(models);
 
         let Property = sequelize.model("Property");
         let PropertyOwner = sequelize.model("PropertyOwner");

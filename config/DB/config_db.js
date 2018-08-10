@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 const config = require('../config_env')[env];
 
 //Initializes db and uses config variables to populate verification fields

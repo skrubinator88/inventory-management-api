@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production nodemon ./bin/www"
+    "start": "NODE_ENV=production node ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^2.0.1",

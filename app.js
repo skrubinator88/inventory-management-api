@@ -17,7 +17,7 @@ const dbmain = require("./config/DB/DBmain");
 dbmain.setup(__dirname + '/DBModels');
 
 const app = express();
-app.set('view engine', 'ejs');
+app.set('view engine', 'hbs');
 
 app.use(logger('combined'));
 app.use(bodyParser.json());
@@ -51,7 +51,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function(err, req, res) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -60,7 +60,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   console.log(err);
   res.render('error');
-  next();
 });
 
 module.exports = app;
