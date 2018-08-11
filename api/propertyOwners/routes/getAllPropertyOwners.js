@@ -7,8 +7,8 @@ module.exports = async function (req, res) {
         });
         return;
     }
-    let pageLimit = parseInt(req.query.pageLimit);
-    let pageNumber = (parseInt(req.query.pageNo) - 1) * pageLimit;
+    let pageLimit = parseInt(req.query.pageLimit, 10);
+    let pageNumber = (parseInt(req.query.pageNo, 10) - 1) * pageLimit;
     if (Number.isNaN(pageNumber) || Number.isNaN(pageLimit)) {
         res.status(400).send({
             error: 'pageNumber and pageLimit must both be numbers'
