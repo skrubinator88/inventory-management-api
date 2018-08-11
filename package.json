@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node ./bin/www"
+    "start": "DEBUG=nightmare xvfb-run --server-args=\"-screen 0 1024x768x24\" node ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^2.0.1",
