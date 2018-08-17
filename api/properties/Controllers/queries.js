@@ -29,6 +29,7 @@ module.exports = {
                 for ( let i = 0; i < propertyImages.length; i++) {
                     images.push(propertyImages[i].ImgUrl);
                 }
+                obj.id = properties[i].id;
                 obj.images = images;
                 obj.name = properties[i].name;
                 obj.email = properties[i].email;
