@@ -3,13 +3,14 @@ const dbmain = require('../config/DB/DBmain');
 const Sequelize = dbmain.Seq();
 const bcrypt = require('bcrypt');
 const saltRounds = 5;
+const uuidv4 = require('uuid/v4');
 
 module.exports = {
     model: {
         id: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.UUID,
             primaryKey: true,
-            autoIncrement: true
+            default: uuidv4()
         },
         username: {
             type: Sequelize.STRING,

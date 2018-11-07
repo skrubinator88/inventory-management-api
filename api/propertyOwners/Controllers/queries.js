@@ -16,7 +16,7 @@ module.exports = {
             for( let i = 0; i < propertyOwners.length; i++) {
                 let obj = {};
                 obj.id = propertyOwners[i].id;
-                obj.name = propertyOwners[i].name;
+                obj.name = propertyOwners[i].propertyOwnerName;
                 response.push(obj);
             }
             cb(null, response);
@@ -32,7 +32,7 @@ module.exports = {
             let propertyOwnerAdmin = await PropertyOwnerAdmin.findById(id);
             let propertyOwner = await PropertyOwner.findOne({ where: {id: propertyOwnerAdmin.PropertyOwnerId}});
             cb( null, {
-                account: propertyOwner.name,
+                propertyOwnerAccount: propertyOwner.propertyOwnerName,
                 id: propertyOwnerAdmin.id,
                 email: propertyOwnerAdmin.email,
                 phoneNumber: propertyOwnerAdmin.phoneNumber,
@@ -95,9 +95,9 @@ module.exports = {
                 }
                 obj.images = propertyImages;
                 obj.id = properties[i].id;
-                obj.name = properties[i].name;
-                obj.email = properties[i].email;
-                obj.number = properties[i].phoneNumber;
+                obj.name = properties[i].propertyName;
+                obj.email = properties[i].propertyEmail;
+                obj.number = properties[i].propertyPhoneNumber;
                 response.push(obj);
             }
             cb(null, response);

@@ -30,26 +30,26 @@ module.exports = function (req, res, next) {
             });
             break;
         default:
-            res.status(400).end();
+            return next(error);
         }
     } else {
-        authService.registerPropertyAdmin(req.body, function (err, user, info) {
+        authService.registerPropertyAdmin(req.body, function (err, propertyOwner, info) {
             if (err) {
                 return next(err);
             }
-            if (!user) {
+            if (!propertyOwner) {
                 console.log(info.message);
                 res.status(401).send({
                     error: info.message
                 });
             } else {
-                const token = jwt.sign(user.get(), config.jwt_secret, {expiresIn: '12h'});
+                const token = jwt.sign(propertyOwner.get(), config.jwt_secret, {expiresIn: '12h'});
                 res.json({
-                    id: user.id,
-                    accountId: user.PropertyOwnerId,
-                    email: user.email,
-                    number: user.phoneNumber,
-                    payInfo: user.paymentInfo,
+                    id: propertyOwner.id,
+                    accountId: propertyOwner.PropertyOwnerId,
+                    email: propertyOwner.email,
+                    number: propertyOwner.phoneNumber,
+                    payInfo: propertyOwner.paymentInfo,
                     token
                 });
             }

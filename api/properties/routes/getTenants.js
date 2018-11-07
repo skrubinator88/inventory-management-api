@@ -1,13 +1,7 @@
 'use strict';
 const queryController = require('../Controllers/queries');
 module.exports = async function (req, res, next) {
-    let propertyId = parseInt(req.params.propertyId);
-    if (Number.isNaN(propertyId)) {
-        res.status(400).send({
-            error: 'property id must be a number'
-        });
-        return;
-    }
+    let propertyId = req.params.propertyId;
     if (!(req.query.pageNo || req.query.pageLimit)) {
         res.status(400).send({
             error: 'pageNo or pageLimit not specified'
@@ -24,12 +18,33 @@ module.exports = async function (req, res, next) {
     }
     let infoObject = {
         page: pageNumber,
-        pageSize: pageLimit
+        pageSize: pageLimit,
+        query: {
+            PropertyId: propertyId
+        }
     };
-    let query = {
-        PropertyId: propertyId
-    };
-    await queryController.getTenants(propertyId, infoObject.page, infoObject.pageSize, query, (err, tenants) => {
+    if (req.query.queryType) {
+        if (req.query.queryType === 'Email') {
+                infoObject.query.email = {
+                    ["$like"]: req.query.search
+                }
+        } else {
+            infoObject.query['$or'] = {
+                firstName : {
+                    ["$like"]: req.query.search
+                },
+                lastName : {
+                    ["$like"]: req.query.search
+                }
+            }
+
+        }
+    }
+    console.log(infoObject);
+    // let query = {
+    //     PropertyId: propertyId
+    // };
+    await queryController.getTenants(infoObject, (err, tenants) => {
         if (err) {
             console.log(err);
             return next(err);

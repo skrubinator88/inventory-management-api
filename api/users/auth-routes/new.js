@@ -1,5 +1,5 @@
 "use strict";
-const passport = require('../Services/profileAuthService');
+const authService = require('../Services/profileAuthService');
 const Joi = require('joi');
 const jwt = require('jsonwebtoken');
 const env = process.env.NODE_ENV || 'development';
@@ -12,7 +12,9 @@ module.exports = function (req, res, next) {
             //password must contain letters or numbers
             //and be a minumum of 6 characters, maximum 30
             new RegExp('^[a-zA-Z0-9]{6,30}$')
-        )
+        ),
+        firstName: Joi.string(),
+        lastName: Joi.string()
     });
     const {error, value} = Joi.validate(req.body, schema);
     if (error) {
@@ -28,10 +30,10 @@ module.exports = function (req, res, next) {
             });
             break;
         default:
-            res.status(400).end();
+            return next(error);
         }
     } else {
-        passport.authenticate('user-signup', function (err, user, info) {
+        authService.registerUser(req.body, function (err, user, info) {
             if (err) {
                 return next(err);
             }
@@ -40,13 +42,20 @@ module.exports = function (req, res, next) {
                     error: info.message
                 });
             } else {
-                const token = jwt.sign(user.get(), config.jwt_secret, {expiresIn: '12h'});
-                res.json({
-                    email: user.email,
-                    payInfo: user.paymentInfo,
-                    token
-                });
+                try {
+                    const token = jwt.sign(user.get(), config.jwt_secret, {expiresIn: '12h'});
+                    res.json({
+                        userId: user.id,
+                        firstName: user.firstName,
+                        lastName: user.lastName,
+                        email: user.email,
+                        payInfo: user.paymentInfo,
+                        token
+                    });
+                } catch(err) {
+                    return next(err);
+                }
             }
-        })(req, res, next);
+        });
     }
 };

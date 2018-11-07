@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/:city', require('./seed_properties'));
+router.get('/seedOwnersAndNeighborhoods', require('./seedOwnersAndNeighborhoods'));
+router.get('/seedProperties', require('./seedProperties'));
 
 module.exports = router;

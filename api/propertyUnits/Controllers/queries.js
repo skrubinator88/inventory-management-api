@@ -21,6 +21,7 @@ module.exports = {
                 for ( let i = 0; i < propertyImages.length; i++) {
                     images.push(propertyImages[i]);
                 }
+                obj.id = propertyUnit.id;
                 obj.images = images;
                 obj.name = propertyUnit.name;
                 obj.bedrooms = propertyUnit.bedroomAmount;

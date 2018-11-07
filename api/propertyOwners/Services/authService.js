@@ -12,21 +12,6 @@ const JWTStrategy = passportJWT.Strategy;
 opts.jwtFromRequest = ExtractJWT.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = config.jwt_secret;
 
-passport.use('propertyOwner_jwt', new JWTStrategy(opts, function(jwtPayload, cb) {
-    let property_owner = dbmain.model("PropertyOwnerAdmin");
-    return property_owner.findById(jwtPayload.id)
-        .then(propertyOwnerAdmin => {
-            let owner = {
-                email: propertyOwnerAdmin.email,
-                account: propertyOwnerAdmin.account,
-                phoneNumber: propertyOwnerAdmin.phoneNumber
-            };
-            cb(null, owner)
-        }).catch(err => {
-            cb(err)
-        })
-}));
-
 module.exports = {
     passport,
     async registerPropertyAdmin (info, cb) {

@@ -1,9 +1,9 @@
 "use strict";
-const passport = require('../Services/profileAuthService');
 const Joi = require('joi');
 const jwt = require('jsonwebtoken');
 const env = process.env.NODE_ENV || 'development';
 const config = require('../../../config/config_env')[env];
+const authService = require('../Services/profileAuthService');
 
 //route used for logging a user in
 module.exports = function (req, res, next) {
@@ -32,22 +32,31 @@ module.exports = function (req, res, next) {
                 res.status(400).end();
         }
     } else {
-        passport.authenticate('user-signin', function (err, user, info) {
+        authService.signInUser(req.body, function (err, user, info) {
             if (err) {
                 return next(err);
             }
             if (!user) {
+                console.log(info.message);
                 res.status(401).send({
                     error: info.message
                 });
             } else {
-                const token = jwt.sign(user.get(), config.jwt_secret, {expiresIn: '12h'});
-                res.json({
-                    email: user.email,
-                    payInfo: user.paymentInfo,
-                    token
-                });
+                try {
+                    const token = jwt.sign(user.get(), config.jwt_secret, {expiresIn: '12h'});
+                    console.log(token);
+                    res.json({
+                        userId: user.id,
+                        firstName: user.firstName,
+                        lastName: user.lastName,
+                        email: user.email,
+                        payInfo: user.paymentInfo,
+                        token
+                    });
+                } catch (error) {
+                    return next(err);
+                }
             }
-        })(req, res, next);
+        });
     }
 };

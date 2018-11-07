@@ -1,13 +1,7 @@
 'use strict';
 const queryController = require('../Controllers/queries');
 module.exports = async function (req, res, next) {
-    let propertyId = parseInt(req.params.propertyId);
-    if (Number.isNaN(propertyId)) {
-        res.status(400).send({
-            error: 'barbershop id must be a number'
-        });
-        return;
-    }
+    let propertyId = req.params.propertyId;
     if (!(req.query.pageNo || req.query.pageLimit)) {
         res.status(400).send({
             error: 'pageNumber or pageLimit not specified'

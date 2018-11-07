@@ -15,6 +15,7 @@ module.exports = async function (req, res, next) {
         });
         return;
     }
+
     let infoObject = {
         page: pageNumber,
         pageSize: pageLimit
