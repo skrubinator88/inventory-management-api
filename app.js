@@ -1,6 +1,5 @@
 const createError = require('http-errors');
 const express = require('express');
-const session = require('express-session');
 const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
@@ -25,13 +24,6 @@ dbmain.setup(__dirname + '/DBModels');
 
 const app = express();
 app.set('view engine', 'hbs');
-
-app.use(session({
-    secret: 'this-is-a-secret-token',
-    cookie: { maxAge: 60000 },
-    resave: false,
-    saveUninitialized: false
-}));
 
 app.use(logger('combined'));
 app.use(bodyParser.json());
