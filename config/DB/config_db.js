@@ -23,8 +23,8 @@ const db = new Sequelize(config.database.db_name, config.database.username, conf
 });
 
 //Connects db, forces all models to sync to test databases
-db.sync({force: true, match: /_test$/})
-// db.sync({force: false})
+// db.sync({force: true, match: /_test$/})
+db.sync({force: true})
     .then(() => {
         console.log("Database is successfuly connected");
     })
