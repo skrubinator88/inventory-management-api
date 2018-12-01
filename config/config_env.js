@@ -63,6 +63,8 @@ let config = {
     production: {
         url:'tenacitiportal.com',
         jwt_secret: 'random_secret',
+        jwt_confirm_email:'confirm_email',
+        jwt_password_reset:'reset_your_password',
         transporter: {
             host: 'smtp.zoho.com',
             port: '465',

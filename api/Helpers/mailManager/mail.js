@@ -6,7 +6,6 @@ const nodeMailer = require('nodemailer');
 const EmailTemplate = require('email-templates').EmailTemplate;
 const transporter = nodeMailer.createTransport(config.transporter);
 const Promise = require('bluebird');
-const jwt = require('jsonwebtoken');
 
 async function sendEmail (obj) {
     return await transporter.sendMail(obj)
