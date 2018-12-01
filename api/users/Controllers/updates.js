@@ -4,34 +4,31 @@ const bcrypt = require('bcrypt');
 const saltRounds = 5;
 
 module.exports = {
-    async updateUserById (id, attributes) {
-        return new Promise(async (resolve, reject) => {
-            let User = dbmain.model('User');
-            try {
-                if(attributes.password) {
-                    let user = await User.findById(id);
-                    if (user.password === attributes.password) {
-                        return resolve(false)
-                    } else {
-                        bcrypt.genSalt(saltRounds, async (err, salt) => { //generate salt using saltRounds provided
-                            if(err) return reject(err);
-                                bcrypt.hash(attributes.password, salt, async (err, hash) => {
-                                    if(err) return reject(err);
-                                    //generate hash using password and salt generated
-                                    attributes.password = hash;
-                                    await User.update( attributes, { where: { id: id } });
-                                    return resolve(true)
-                                });
-                        });
-                    }
+    async updateUserById (id, attributes, cb) {
+        let User = dbmain.model('User');
+        try {
+            if(attributes.password) {
+                let user = await User.findById(id);
+                if (user.password === attributes.password) {
+                    return cb(null, false)
                 } else {
-                    await User.update( attributes, { where: { id: id } });
-                    return resolve(true)
+                    bcrypt.genSalt(saltRounds, (err, salt) => { //generate salt using saltRounds provided
+                        if (err) return cb(err);
+                        bcrypt.hash(attributes.password, salt, async (err, hash) => { //generate hash using password and salt generated
+                            console.log("Getting password encrypted...");
+                            attributes.password = hash;
+                            await User.update( attributes, { where: { id: id } });
+                            return cb(null, true)
+                        });
+                    });
                 }
-            } catch (err) {
-                return reject(err)
+            } else {
+                await User.update( attributes, { where: { id: id } });
+                return cb(null, true)
             }
-        })
+        } catch (err) {
+            return cb(err)
+        }
     },
     async updateProfilePhoto (id, imgLocation) {
         let Image = dbmain.model('Image');
