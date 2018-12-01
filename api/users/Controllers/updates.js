@@ -11,17 +11,18 @@ module.exports = {
                 let user = await User.findById(id);
                 if (user.password === attributes.password) {
                     return cb(null, false)
+                } else {
+                    bcrypt.genSalt(saltRounds, (err, salt) => { //generate salt using saltRounds provided
+                        if (err) return cb(err);
+                        bcrypt.hash(attributes.password, salt, async (err, hash) => { //generate hash using password and salt generated
+                            console.log("Getting password encrypted...");
+                            attributes.password = hash;
+                        });
+                    });
                 }
             }
-            bcrypt.genSalt(saltRounds, (err, salt) => { //generate salt using saltRounds provided
-                if (err) return reject(err);
-                bcrypt.hash(attributes.password, salt, async (err, hash) => { //generate hash using password and salt generated
-                    console.log("Getting password encrypted...");
-                    attributes.password = hash;
-                    await User.update( attributes, { where: { id: id } });
-                    return cb(null, true)
-                });
-            });
+            await User.update( attributes, { where: { id: id } });
+            return cb(null, true)
         } catch (err) {
             return cb(err)
         }
