@@ -15,7 +15,7 @@ module.exports = function (req, res, next) {
         ),
         firstName: Joi.string(),
         lastName: Joi.string(),
-        deviceToken: Joi.string()
+        deviceToken: Joi.string().allow('')
     });
     const {error, value} = Joi.validate(req.body, schema);
     if (error) {

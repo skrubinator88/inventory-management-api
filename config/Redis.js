@@ -7,7 +7,7 @@ promise.promisifyAll(redis.RedisClient.prototype);
 let client = null;
 module.exports = {
     initRedisClient() {
-        client = redis.createClient(config.redisStore.port,config.redisStore.host);
+        client = redis.createClient(config.redisStore);
         console.debug("Initalizing Redis Client");
         client.on('ready',function() {
             console.debug(" subs Redis is ready");
