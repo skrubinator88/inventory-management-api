@@ -39,7 +39,7 @@ module.exports = function (req, res, next) {
                 return next(err);
             }
             if (!user) {
-                res.status(401).send({
+                res.status(400).send({
                     error: info.message
                 });
             } else {
