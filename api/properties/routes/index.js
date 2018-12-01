@@ -12,5 +12,8 @@ router.get('/:propertyId/units', authMiddleware, require('./getUnits'));
 router.get('/:propertyId/invoices', authMiddleware, require('./getInvoices'));
 router.get('/:propertyId/inquiryLogs', authMiddleware, require('./getInquiryLogs'));
 router.get('/:propertyId/tenants', require('./getTenants'));
+router.get('/:propertyId/applications', require('./getApplications'));
+
+router.post('/:propertyId/applicationRequest', authMiddleware, require('./applicationRequest'));
 
 module.exports = router;

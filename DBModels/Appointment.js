@@ -17,7 +17,8 @@ module.exports = {
         status: {
             type: Sequelize.STRING,
             defaultValue: "PENDING"
-        }
+        },
+        description: Sequelize.TEXT
     },
     options: {
         freezeTableName: true,

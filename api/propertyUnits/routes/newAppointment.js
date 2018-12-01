@@ -12,8 +12,8 @@ module.exports = async function (req, res, next) {
             return next(err);
         }
         if(!appointment) {
-            res.status(401).send({
-                error: 'There was an error while trying to delete appointment'
+            res.status(500).send({
+                error: 'There was an error while trying to create appointment'
             })
         } else {
             console.log(appointment);

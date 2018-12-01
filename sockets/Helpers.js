@@ -1,6 +1,6 @@
 const { createMessage, createEntity } = require('./Factories');
 const { MESSAGE_DELIVERED } = require('./chatEvents');
-const { getChats, setChats } = require('./repository');
+const client = require('../config/Redis');
 
 function isUser(token) {
     jwt.verify(token, config.jwt_secret, function(err, decoded) {
@@ -18,7 +18,10 @@ function isUser(token) {
 function addConnection(socket, list, entity) {
     let newList = Object.assign({}, list);
     if(!newList[entity.id]) {
-        newList[entity.id] = createEntity({name: entity.name, id: entity.id, socketId: socket.id, email: entity.email});
+        if(socket)
+            newList[entity.id] = createEntity({name: entity.name, id: entity.id, socketId: socket.id, email: entity.email});
+        else
+            newList[entity.id] = createEntity({name: entity.name, id: entity.id, socketId: null, email: entity.email});
     } else {
         newList[entity.id].socketId = socket.id
     }
@@ -32,12 +35,19 @@ function removeConnection(list, id) {
 }
 
 function sendMessageToChat(sender, io) {
-    return(chatId, message, opened, id)=>{
-        let chats = getChats();
-        let newMessage = createMessage({message, sender, opened, id, chatId});
-        chats[chatId].messages.push(newMessage);
-        setChats(chats);
-        io.emit(MESSAGE_DELIVERED, newMessage);
+    return async (chatId, message, opened, id)=>{
+        client.getKeyValue('chats').then(chats => {
+            let newMessage = createMessage({message, sender, opened, id, chatId});
+            newMessage.propertyName = chats[chatId].users[1];
+            chats[chatId].messages.push(newMessage);
+            client.setKeyValue('chats', chats).then(()=> {
+                io.emit(MESSAGE_DELIVERED, newMessage);
+            }, function (err) {
+                console.log(err);
+            });
+        }, function (err) {
+            console.log(err);
+        });
     }
 }
 

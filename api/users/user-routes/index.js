@@ -1,5 +1,5 @@
 //index manifest file for all profile routes
-import express from "express";
+const express = require('express');
 
 const router = express.Router();
 
@@ -8,5 +8,8 @@ router.get('/:userId', require('./getUser'));
 router.patch('/:userId', require('./updateUser'));
 router.patch('/:userId', require('./uploadProfilePhoto'));
 
-router.get('/:userId/haircuts', require('./getHaircuts'));
+router.get('/:userId/appointments', require('./getAppointments'));
+router.get('/:userId/applications', require('./getApplicationRequests'));
+router.post('/:userId/sendSupport', require('./sendSupport'));
+
 module.exports = router;

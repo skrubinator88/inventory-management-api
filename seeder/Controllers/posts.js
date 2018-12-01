@@ -1,39 +1,12 @@
+const client = require("../../config/Redis");
+
 const fs = require('fs');
 const dbmain = require("../../config/DB/DBmain");
 const db = require('../../config/DB/config_db');
 const uuidv4 = require('uuid/v4');
+const { addConnection } = require('../../sockets/Helpers');
 module.exports = {
-    async seedPropertyOwnersAndNeighborhoods(file, cb) {
-        let PropertyOwner = dbmain.model("PropertyOwner");
-        let PropertyNeighborhood = dbmain.model("PropertyNeighborhood");
-        try {
-            fs.readFile(file + __dirname + '/apartments.com_scrape_data_10.6.2018.json', 'utf8', async function (err, data) {
-                if (err) {
-                    return cb(err, false);
-                }
-                let obj = JSON.parse(data);
-                let properties = obj["properties"];
-                await db.transaction(async t => {
-                    let promises = [];
-                    for(let i = 0; i < properties.length; i++) {
-                        let newOwner = await PropertyOwner.findOrCreate({ where:
-                                { 'propertyOwnerName' : properties[i].propertyOwnerName }});
-                        let newNeighborhood = await PropertyNeighborhood.findOrCreate({ where:
-                                { 'propertyNeighborhoodName' : properties[i].propertyNeighborhood }});
-                        promises.push(newOwner);
-                        promises.push(newNeighborhood);
-                    }
-                    return Promise.all(promises);
-                }).then(() => {
-                    console.log("Database successfully seeded");
-                    return cb(null, true);
-                })
-            });
-        } catch(error) {
-            return cb(error, false);
-        }
-    },
-    async seedProperties(file, cb) {
+    async seedProperties(page, cb) {
         let Property = dbmain.model("Property");
         let PropertyOwner = dbmain.model("PropertyOwner");
         let PropertyNeighborhood = dbmain.model("PropertyNeighborhood");
@@ -42,11 +15,10 @@ module.exports = {
         let Image = dbmain.model("Image");
         let Amenity = dbmain.model("Amenity");
         let AmenityFeature = dbmain.model("AmenityFeature");
-
+        let propertiesConnected = {};
         try {
-            let obj = require(__dirname + '/apartments.com_scrape_data_10.6.2018.json');
-
-                let resultArr = obj["properties"];
+            let obj = require(__dirname + `/seed_data${page}.json`);
+                let resultArr = obj["selection1"][1]["properties"];
                 let properties = [];
                 let names = [];
                 let neighborhoods = [];
@@ -118,13 +90,41 @@ module.exports = {
                                         properties[i][j].neighborId = neighborhoods[x].id
                                     }
                                 }
+                                if(properties[i][j].rentRanges) {
+                                    let ranges = properties[i][j].rentRanges;
+                                    rentMin = 0;
+                                    rentMax = 0;
+                                    for(let x = 0; x < ranges.length; x++) {
+                                        let rentRange = ranges[x].range;
+                                        let rentMinString = rentRange.match(/\$[0-9],?[0-9]{0,3}/g);
+                                        let rentMaxString = rentRange.match(/ +[0-9],?[0-9]{1,3}/g);
+                                        if(rentMinString) {
+                                            let minRes = rentMinString[0].match(/[0-9]{1,3}/g);
+                                            let res1 = parseInt(minRes[0] + minRes[1]);
+                                            if(rentMin === 0) { rentMin = res1 }
+                                            if(res1 <= rentMin) { rentMin = res1 }
+                                        }
+                                        if(rentMaxString) {
+                                            let maxRes = rentMaxString[0].match(/[0-9]{1,3}/g);
+                                            let res2 = parseInt(maxRes[0] + maxRes[1]);
+                                            if(res2 > rentMax) { rentMax = res2 }
+                                        }
+                                    }
+                                }
+                                let propertyId = uuidv4();
+                                propertiesConnected = addConnection(null, propertiesConnected, {
+                                    name: properties[i][j].propertyName,
+                                    id: propertyId
+                                });
                                 propertyPromises.push(await owners[i].createProperty({
-                                    'id': uuidv4(),
+                                    'id': propertyId,
                                     'propertyName': properties[i][j].propertyName,
                                     'propertyPhoneNumber': properties[i][j].propertyPhoneNumber,
                                     'propertyWebsite': properties[i][j].propertyWebsite_url,
                                     'PropertyOwnerId': owners[i].id,
-                                    'PropertyNeighborhoodId': properties[i][j].neighborId
+                                    'PropertyNeighborhoodId': properties[i][j].neighborId,
+                                    'rentMin': rentMin,
+                                    'rentMax': rentMax
                                 }, {transaction: t}))
                             }
                         }
@@ -134,7 +134,29 @@ module.exports = {
                             let amenityPromises = [];
                             for (let m = 0; m < props.length; m++) {
                                 if(s_properties[m].properyUnit){
+                                    let propertyRentMin = props[m].rentMin;
+                                    let rentMin = 0;
+                                    let propertyRentMax = props[m].rentMax;
+                                    let rentMax = 0;
                                     for (let j = 0; j < s_properties[m].properyUnit.length; j++) {
+                                        if(s_properties[m].properyUnit[j].rent) {
+                                            let range = s_properties[m].properyUnit[j].rent;
+                                            let rentMinString = range.match(/\$[0-9],?[0-9]{0,3}/g);
+                                            let rentMaxString = range.match(/ +[0-9],?[0-9]{1,3}/g);
+                                            if(rentMinString) {
+                                                let minRes = rentMinString[0].match(/[0-9]{1,3}/g);
+                                                let res1 = parseInt(minRes[0] + minRes[1]);
+                                                if(rentMin === 0) { rentMin = res1 }
+                                                if(res1 <= rentMin) { rentMin = res1 }
+                                                if(res1 <= propertyRentMin) { propertyRentMin = res1 }
+                                            }
+                                            if(rentMaxString) {
+                                                let maxRes = rentMaxString[0].match(/[0-9]{1,3}/g);
+                                                let res2 = parseInt(maxRes[0] + maxRes[1]);
+                                                if(res2 > rentMax) { rentMax = res2 }
+                                                if(res2 > propertyRentMax) { propertyRentMax = res2 }
+                                            }
+                                        }
                                         unitPromises.push(await props[m].createPropertyUnit({
                                             'id':uuidv4(),
                                             'name': s_properties[m].properyUnit[j].propertyUnitName,
@@ -143,18 +165,32 @@ module.exports = {
                                             'rentPrice': s_properties[m].properyUnit[j].rent,
                                             'squareFeet': s_properties[m].properyUnit[j].squareFeet,
                                             'availability': s_properties[m].properyUnit[j].availability,
-                                            'PropertyId': props[m].id
+                                            'PropertyId': props[m].id,
+                                            'rentMin': rentMin,
+                                            'rentMax': rentMax
                                         }, {transaction: t}))
                                     }
+                                    props[m].rentMin = propertyRentMin;
+                                    props[m].rentMax = propertyRentMax;
                                 }
                                 if(s_properties[m].images) {
                                     for (let j = 0; j < s_properties[m].images.length; j++) {
-                                        console.log(s_properties[m].images.length);
                                         imgPromises.push(await props[m].createImage({
                                             'id':uuidv4(),
                                             'ImgUrl': s_properties[m].images[j].url.match(/https.*\.jpg/)[0],
                                             'PropertyId': props[m].id
                                         }, {transaction: t}))
+                                    }
+                                }
+                                if(s_properties[m].images1) {
+                                    for (let j = 0; j < s_properties[m].images1.length; j++) {
+                                        if(s_properties[m].images1[j].url.match(/https.*\.jpg/)) {
+                                            imgPromises.push(await props[m].createImage({
+                                                'id':uuidv4(),
+                                                'ImgUrl': s_properties[m].images1[j].url.match(/https.*\.jpg/)[0],
+                                                'PropertyId': props[m].id
+                                            }, {transaction: t}))
+                                        }
                                     }
                                 }
                                 unitPromises.push( await props[m].createLocation({
@@ -188,6 +224,11 @@ module.exports = {
                     })
                 }).then(() => {
                     console.log("Database successfully seeded");
+                    client.setKeyValue('properties', propertiesConnected).then(()=>{
+                        console.log("Properties added to redis connection");
+                    }, function (err) {
+                        console.log(err);
+                    });
                     return cb(null, true)
                 }).catch(err => {
                     console.log("An error occurred trying to seed the database" + err);

@@ -66,13 +66,16 @@ module.exports = {
                 obj.name = properties[i].propertyName;
                 obj.email = properties[i].propertyEmail;
                 obj.number = properties[i].propertyPhoneNumber;
+                obj.rentMin = properties[i].rentMin;
+                obj.rentMax = properties[i].rentMax;
+                obj.applicationFee = properties[i].applicationFee;
                 // obj.address = properties[i].location;
                 response.push(obj);
             }
            cb(null, response);
         } catch(err) {
             console.error(err);
-            cb(err)
+            return cb(err)
         }
     },
     async getPropertyById (id, cb) {
@@ -159,14 +162,25 @@ module.exports = {
             cb(err, null);
         }
     },
-    async getPropertyUnits (id, page, limit, cb) {
-        let options = {
-            where: { PropertyId: id },
-            limit: limit,
-            offset: page
-        };
+    async getPropertyUnits (query, includeApp, page, limit, cb) {
         let PropertyUnit = dbmain.model('PropertyUnit');
         let Image = dbmain.model('Image');
+        let Appointment = dbmain.model('Appointment');
+        let User = dbmain.model('User');
+        let include = [];
+        if(includeApp === true) {
+            let obj = {
+                model: Appointment,
+                required: true
+            };
+            include.push(obj);
+        }
+        let options = {
+            where: query,
+            limit: limit,
+            offset: page,
+            include: include
+        };
         try {
             let response = [];
             let propertyUnits = await PropertyUnit.findAll(options);
@@ -177,12 +191,34 @@ module.exports = {
                 for( let i = 0; i < images.length; i++) {
                     propertyImages.push(images[i].ImgUrl)
                 }
+                if(includeApp === true) {
+                    let appointments = [];
+                    for(let x = 0; x < propertyUnits[i].Appointments.length; x++) {
+                        let appointment = propertyUnits[i].Appointments[x];
+                        let user = await User.findById(appointment.UserId)
+                        let obj = {
+                            userName: user.firstName + " " + user.lastName,
+                            email: user.email,
+                            date: appointment.date,
+                            status: appointment.status,
+                            id: appointment.id,
+                            info: appointment.description
+                        };
+                        appointments.push(obj);
+                    }
+                    obj.appointments = appointments;
+                }
                 obj.id = propertyUnits[i].id;
                 obj.images = propertyImages;
                 obj.name = propertyUnits[i].name;
                 obj.bedrooms = propertyUnits[i].bedroomAmount;
                 obj.bathrooms = propertyUnits[i].bathroomAmount;
-                obj.rent = propertyUnits[i].rentPrice;
+                if(propertyUnits[i].rentMin !== 0) {
+                    obj.rent = `$${propertyUnits[i].rentMin}`
+                }
+                if(propertyUnits[i].rentMax !== 0) {
+                    obj.rent = `${obj.rent} - $${propertyUnits[i].rentMax}`
+                }
                 obj.squareFeet = propertyUnits[i].squareFeet;
                 obj.deposit = propertyUnits[i].depositAmount;
                 obj.availability = propertyUnits[i].availability;
@@ -213,6 +249,36 @@ module.exports = {
             cb(null, response);
         } catch (err) {
             cb(err);
+        }
+    }, async getApplications(query, limit, page, cb) {
+        let User = dbmain.model('User');
+        let ApplicationRequest = dbmain.model('ApplicationRequest');
+        try {
+            let options = {
+                where: query,
+                limit: limit,
+                offset: page
+            };
+
+            let applicationRequests = await ApplicationRequest.findAll(options);
+            let response = await Promise.all(applicationRequests.map(async application => {
+                let user = await User.findById(application.UserId);
+                return {
+                    id: application.id,
+                    firstName: user.firstName,
+                    lastName: user.lastName,
+                    email: user.email,
+                    creditScore: application.creditScore,
+                    budget: application.budget,
+                    location: application.location,
+                    status: application.status,
+                    date: application.createdAt
+                }
+            }));
+            console.log(response);
+            return cb(null, response)
+        } catch (err) {
+            return cb(err)
         }
     }
 };

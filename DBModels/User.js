@@ -37,6 +37,14 @@ module.exports = {
         },
         lastName: {
             type: Sequelize.STRING
+        },
+        deviceToken: {
+            type: Sequelize.STRING,
+            allowNull: true
+        },
+        isVerified: {
+            type: Sequelize.BOOLEAN,
+            defaultValue: false
         }
     },
     options: {
@@ -53,7 +61,6 @@ module.exports = {
                         });
                     });
                 });
-
             }
         }
     }

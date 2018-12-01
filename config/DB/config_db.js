@@ -15,6 +15,7 @@ const db = new Sequelize(config.database.db_name, config.database.username, conf
         $or: Op.or,
         $eq: Op.eq,
         $gt: Op.gt,
+        $gte: Op.gte,
         $lt: Op.lt,
         $lte: Op.lte,
         $like: Op.like,

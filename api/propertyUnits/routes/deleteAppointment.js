@@ -10,7 +10,7 @@ module.exports = async function (req, res, next) {
             return next(err);
         }
         if(complete) {
-            res.status(204).send('appointment successfully deleted.')
+            res.status(200).send('appointment successfully deleted.')
         }
     })
 };

@@ -6,12 +6,17 @@ module.exports = {
     async addPropertyUnitAppointment (opts, cb) {
         let Appointment = dbmain.model('Appointment');
         try {
+
             let infoObject = {
                     id: uuidv4(),
                     date: opts.date,
                     PropertyUnitId: opts.PropertyUnitId,
                     UserId: opts.UserId
             };
+            let appointments = await Appointment.findAll({ where: { UserId: opts.UserId } });
+            for(let i = 0; i < appointments.length; i++) {
+
+            }
             console.log(infoObject);
             let appointment = await Appointment.create(infoObject);
             let response = {

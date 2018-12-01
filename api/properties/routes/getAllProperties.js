@@ -1,5 +1,5 @@
 'use strict';
-const queryController = require('../Controllers/queries');
+const { getAllProperties } = require('../Controllers/queries');
 module.exports = async function (req, res, next) {
     if (!(req.query.pageNo || req.query.pageLimit)) {
         res.status(400).send({
@@ -20,7 +20,25 @@ module.exports = async function (req, res, next) {
         page: pageNumber,
         pageSize: pageLimit
     };
-    queryController.getAllProperties(infoObject.page, infoObject.pageSize, {}, (err, properties) => {
+    let query = {};
+    // if(req.query.rentMin) {
+    //     if(parseInt(req.query.rentMin) !== 0) {
+    //         query.rentMin = {
+    //             ["$or"]: {
+    //                 ["$gte"]: parseInt(req.query.rentMin),
+    //                 ["$eq"]: 0
+    //             }
+    //         }
+    //     }
+    // }
+    if(req.query.rentMax) {
+        if(parseInt(req.query.rentMax) !== 0) {
+            query.rentMin = {
+                ["$lte"]: parseInt(req.query.rentMax),
+            }
+        }
+    }
+    getAllProperties(infoObject.page, infoObject.pageSize, query, (err, properties) => {
         if(err) {
             return next(err)
         }

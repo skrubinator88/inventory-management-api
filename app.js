@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
 const passport = require('passport');
+const apn = require('apn');
+const helmet = require('helmet');
 
 const propertyOwners = require('./api/propertyOwners/routes/index');
 const properties = require('./api/properties/routes/index');
@@ -11,10 +13,14 @@ const inquiryLogs = require('./api/inquiries/routes/index');
 const propertyAdminsAuth = require('./api/properties/auth-routes/index');
 
 const propertyUnits = require('./api/propertyUnits/routes/index');
+const appointments = require('./api/appointments/routes/index');
 const propertyOwnerAdminsAuth = require('./api/propertyOwners/auth-routes/index');
-const propertyAdminPayment = require('./api/properties/payment-routes/index')
+const propertyAdminPayment = require('./api/properties/payment-routes/index');
+const propertyCustomerPayment = require('./api/properties/customer-payment-routes/index');
+const userPayment = require('./api/users/payment-routes/index');
+
 const usersAuth = require('./api/users/auth-routes/index');
-const users = require('./api/users/auth-routes/index');
+const users = require('./api/users/user-routes/index');
 const seeder = require('./seeder/index');
 const propertyNeighborhoods = require('./api/propertyNeighborhoods/routes/index');
 
@@ -23,6 +29,8 @@ const dbmain = require("./config/DB/DBmain");
 dbmain.setup(__dirname + '/DBModels');
 
 const app = express();
+
+app.use(helmet());
 app.set('view engine', 'hbs');
 
 app.use(logger('combined'));
@@ -45,10 +53,13 @@ app.use(function (req, res, next) {
 app.use(passport.initialize());
 
 app.use('/propertyOwners', propertyOwners);
+app.use('/appointments', appointments);
 app.use('/propertyNeighborhoods', propertyNeighborhoods);
 app.use('/auth/propertyOwnerAdmins', propertyOwnerAdminsAuth);
 app.use('/auth/propertyAdmins', propertyAdminsAuth);
 app.use('/payment/propertyAdmins', propertyAdminPayment);
+app.use('/payment/properties', propertyCustomerPayment);
+app.use('/payment/users', userPayment);
 app.use('/properties', properties);
 app.use('/propertyUnits', propertyUnits);
 app.use('/inquiryLogs', inquiryLogs);

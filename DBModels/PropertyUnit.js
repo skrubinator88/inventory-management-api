@@ -10,27 +10,14 @@ module.exports = {
             primaryKey: true,
             default: uuidv4()
         },
-        propertyUnitName: {
-            type: Sequelize.STRING
-        },
-        bedroomAmount: {
-            type: Sequelize.STRING
-        },
-        bathroomAmount: {
-            type: Sequelize.STRING
-        },
-        rentPrice: {
-            type: Sequelize.STRING
-        },
-        squareFeet: {
-            type: Sequelize.STRING
-        },
-        depositAmount: {
-            type: Sequelize.STRING
-        },
-        availability: {
-            type: Sequelize.STRING
-        }
+        propertyUnitName: Sequelize.STRING,
+        bedroomAmount: Sequelize.STRING,
+        bathroomAmount: Sequelize.STRING,
+        rentMin: Sequelize.INTEGER,
+        rentMax: Sequelize.INTEGER,
+        squareFeet: Sequelize.STRING,
+        depositAmount: Sequelize.STRING,
+        availability: Sequelize.STRING
     },
     options: {
         freezeTableName: true,

@@ -13,5 +13,6 @@ router.get('/:propertyUnitId/tenants', authMiddleware, require('./getTenants'));
 
 router.post('/:propertyUnitId/appointments/new', authMiddleware, require('./newAppointment'));
 router.delete('/:propertyUnitId/appointments/:appointmentId', authMiddleware, require('./deleteAppointment'));
+router.patch('/:propertyUnitId/appointments/:appointmentId', authMiddleware, require('./updateAppointment'));
 
 module.exports = router;

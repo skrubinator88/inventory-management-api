@@ -12,21 +12,13 @@ module.exports = {
             primaryKey: true,
             default: uuidv4()
         },
-        propertyName: {
-            type: Sequelize.STRING
-        },
-        propertyPhoneNumber: {
-            type: Sequelize.STRING
-        },
-        propertyEmail: {
-            type: Sequelize.STRING
-        },
-        propertyWebsite: {
-            type: Sequelize.STRING
-        },
-        applicationFee: {
-            type: Sequelize.DOUBLE
-        }
+        propertyName: Sequelize.STRING,
+        propertyPhoneNumber: Sequelize.STRING,
+        propertyEmail: Sequelize.STRING,
+        propertyWebsite: Sequelize.STRING,
+        applicationFee: Sequelize.DOUBLE,
+        rentMin: Sequelize.INTEGER,
+        rentMax: Sequelize.INTEGER
     },
     options: {
         freezeTableName: true,

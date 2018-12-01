@@ -44,6 +44,7 @@ const singleton = function Singleton(){
         let AmenityFeature = sequelize.model("AmenityFeature");
         let Appointment = sequelize.model("Appointment");
         let MaintenanceItem = sequelize.model("MaintenanceItem");
+        let ApplicationRequest = sequelize.model("ApplicationRequest");
 
         PropertyOwner.hasMany(PropertyOwnerAdmin);
         PropertyOwner.hasMany(Property);
@@ -58,6 +59,7 @@ const singleton = function Singleton(){
         Property.hasMany(Image);
         Property.hasMany(Amenity);
         Property.hasMany(Invoice);
+        Property.hasMany(ApplicationRequest);
         Property.hasMany(InquiryLog);
         Property.hasMany(User);
         Property.hasMany(MaintenanceItem);
@@ -73,11 +75,14 @@ const singleton = function Singleton(){
         User.hasMany(InquiryLog);
         User.hasMany(Appointment);
         User.hasMany(MaintenanceItem);
+        User.hasMany(Image);
+        User.hasMany(ApplicationRequest);
         User.hasOne(Location);
 
         Image.belongsTo(Property);
         Image.belongsTo(PropertyOwner);
         Image.belongsTo(PropertyUnit);
+        Image.belongsTo(User);
 
         Invoice.belongsTo(PropertyOwner);
         Invoice.belongsTo(User);
@@ -106,8 +111,8 @@ const singleton = function Singleton(){
 
         Inquiry.belongsTo(InquiryLog);
 
-
-
+        ApplicationRequest.belongsTo(User);
+        ApplicationRequest.belongsTo(Property)
     }
 };
 

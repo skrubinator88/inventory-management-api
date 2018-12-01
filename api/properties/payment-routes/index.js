@@ -5,8 +5,9 @@ const authMiddleware = require('../../Helpers/authMiddleware');
 
 
 router.get("/authorize", authMiddleware, require('./authorize'));
-router.get('/token', authMiddleware, require('./token'));
+router.get('/token', require('./token'));
 router.get('/transfers', authMiddleware, require('./transfers'));
 router.post('/payout', authMiddleware, require('./payout'));
+router.get('/:propertyId/chargeCustomer', authMiddleware, require('./chargeCustomer'));
 
 module.exports = router;

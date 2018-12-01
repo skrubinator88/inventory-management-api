@@ -14,7 +14,8 @@ module.exports = function (req, res, next) {
             new RegExp('^[a-zA-Z0-9]{6,30}$')
         ),
         firstName: Joi.string(),
-        lastName: Joi.string()
+        lastName: Joi.string(),
+        deviceToken: Joi.string()
     });
     const {error, value} = Joi.validate(req.body, schema);
     if (error) {

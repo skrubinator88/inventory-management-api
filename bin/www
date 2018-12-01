@@ -5,7 +5,8 @@
 const env = process.env.NODE_ENV || 'development';
 const config = require('../config/config_env')[env];
 const dbmain = require('../config/DB/DBmain');
-
+const client = require('../config/Redis');
+client.initRedisClient();
 let app = require('../app');
 const debug = require('debug')('tenaciti-api:server');
 const http = require('http');
@@ -23,7 +24,6 @@ app.set('port', port);
 
 const server = http.createServer(app);
 const io = require('socket.io')(server);
-const client = require('redis');
 
 require('../sockets/my-socket')(io.sockets, client);
 /**

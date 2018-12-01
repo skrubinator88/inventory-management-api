@@ -2,7 +2,9 @@
 const { updatePropertyById } = require('../Controllers/updates');
 module.exports = async function (req, res, next) {
     let propertyId = req.params.propertyId;
+    console.log(req.body);
     let updatedInfo = {};
+    console.log(updatedInfo);
     if (req.body.name) { updatedInfo.name = req.body.name; }
     if (req.body.applicationFee) { updatedInfo.applicationFee = parseFloat(req.body.applicationFee); }
     try {
