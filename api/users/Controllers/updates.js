@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 5;
 
 module.exports = {
-    async updateUserById (id, attributes, cb) {
+    async updateUserById (id, attributes) {
         return new Promise(async (resolve, reject) => {
             let User = dbmain.model('User');
             try {
@@ -13,17 +13,21 @@ module.exports = {
                     if (user.password === attributes.password) {
                         return resolve(false)
                     } else {
-                        bcrypt.genSalt(saltRounds, (err, salt) => { //generate salt using saltRounds provided
+                        bcrypt.genSalt(saltRounds, async (err, salt) => { //generate salt using saltRounds provided
                             if(err) return reject(err);
-                                bcrypt.hash(attributes.password, salt, async (err, hash) => { //generate hash using password and salt generated
-                                    console.log("Getting password encrypted...");
+                                bcrypt.hash(attributes.password, salt, async (err, hash) => {
+                                    if(err) return reject(err);
+                                    //generate hash using password and salt generated
                                     attributes.password = hash;
+                                    await User.update( attributes, { where: { id: id } });
+                                    return resolve(true)
                                 });
                         });
                     }
+                } else {
+                    await User.update( attributes, { where: { id: id } });
+                    return resolve(true)
                 }
-                await User.update( attributes, { where: { id: id } });
-                return resolve(true)
             } catch (err) {
                 return reject(err)
             }
