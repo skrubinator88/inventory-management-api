@@ -275,7 +275,6 @@ module.exports = {
                     date: application.createdAt
                 }
             }));
-            console.log(response);
             return cb(null, response)
         } catch (err) {
             return cb(err)

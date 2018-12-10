@@ -16,14 +16,19 @@ module.exports = (io, client) => {
         require('./properties/propertyEvents')(socket, io, client);
 
         socket.on(MESSAGE_PROPERTY, ({receiver, sender})=>{
+            console.log(receiver);
             client.getKeyValue('properties').then(function(connectedProperties) {
                 client.getKeyValue('users').then(function(connectedUsers) {
+                    console.log(connectedProperties);
                     if(receiver in connectedProperties) {
                         console.log(receiver);
                         let property = connectedProperties[receiver];
                         let user = connectedUsers[sender];
                         const newChat = createChat({ name: `${property.name}: ${user.name} - ${user.email}`, users: [user.name, property.name]});
+                        console.log(newChat);
                         client.getKeyValue('chats').then(function(chats) {
+                            console.log(chats);
+                            console.log("We made it here");
                             chats[newChat.id] = newChat;
                             property.chats.push(newChat.id);
                             user.chats.push(newChat.id);

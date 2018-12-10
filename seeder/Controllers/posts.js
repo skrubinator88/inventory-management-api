@@ -18,7 +18,12 @@ module.exports = {
         let propertiesConnected = {};
         try {
             let obj = require(__dirname + `/seed_data${page}.json`);
-                let resultArr = obj["properties"];
+            let resultArr;
+            if(page === 1) {
+                resultArr = obj["selection1"][1]["properties"];
+            } else {
+                resultArr = obj["properties"];
+            }
                 let properties = [];
                 let names = [];
                 let neighborhoods = [];
