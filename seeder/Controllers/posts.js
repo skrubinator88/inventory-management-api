@@ -19,7 +19,7 @@ module.exports = {
         try {
             let obj = require(__dirname + `/seed_data${page}.json`);
             let resultArr;
-            if(page === 1) {
+            if(page === '1') {
                 resultArr = obj["selection1"][1]["properties"];
             } else {
                 resultArr = obj["properties"];
