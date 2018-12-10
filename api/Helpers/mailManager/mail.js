@@ -52,7 +52,7 @@ module.exports = {
         console.log(receiver);
         try {
             let templates = await loadTemplate('resetPassword', users);
-            let sentEmails = Promise.all(templates.map(async template => {
+            Promise.all(templates.map(async template => {
                 await sendEmail({
                     to: template.context.email,
                     from: `Tenaciti< ${config.transporter.auth.user} >`,
@@ -66,4 +66,4 @@ module.exports = {
         }
 
     }
-}
+};

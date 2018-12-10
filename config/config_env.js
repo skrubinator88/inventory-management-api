@@ -61,7 +61,7 @@ let config = {
         }
     },
     production: {
-        url:'tenacitiportal.com',
+        url:'https://tenacitiportal.com',
         jwt_secret: 'random_secret',
         jwt_confirm_email:'confirm_email',
         jwt_password_reset:'reset_your_password',

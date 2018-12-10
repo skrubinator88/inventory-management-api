@@ -64,7 +64,6 @@ module.exports = (socket, io, client) => {
                             }
                         }
                     }
-                    console.log(response);
                     socket.emit('CHATS_DELIVERED',response);
                 }, function (err) {
                     console.log(err);
