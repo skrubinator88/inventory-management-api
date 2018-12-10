@@ -229,9 +229,14 @@ module.exports = {
                     })
                 }).then(() => {
                     console.log("Database successfully seeded");
-                    client.setKeyValue('properties', propertiesConnected).then(()=>{
-                        console.log("Properties added to redis connection");
-                    }, function (err) {
+                    client.getKeyValue('properties').then(properties => {
+                        let propertiesConnect = Object.assign(properties,propertiesConnected);
+                        client.setKeyValue('properties', propertiesConnect).then(()=>{
+                            console.log("Properties added to redis connection");
+                        }, function (err) {
+                            console.log(err);
+                        });
+                    }, function(err) {
                         console.log(err);
                     });
                     return cb(null, true)
