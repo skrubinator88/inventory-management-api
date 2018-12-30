@@ -31,19 +31,24 @@ module.exports = async function (req, res, next) {
             query.location = true;
             query.query = req.query.search;
         }
-    }
-    if(req.query.rentMax && req.query.search) {
-        query["$and"] = {
-            propertyName: {
-                ["$iLike"]: `%${req.query.search}%`
-            },
-            rentMax: {
+    } else {
+        if(req.query.rentMax && req.query.search) {
+            query["$and"] = {
+                propertyName: {
+                    ["$iLike"]: `%${req.query.search}%`
+                },
+                rentMax: {
+                    ["$lte"]: parseInt(req.query.rentMax)
+                }
+            };
+        } else if (req.query.rentMax){
+            query.rentMax = {
                 ["$lte"]: parseInt(req.query.rentMax)
             }
-        };
-    } else if (req.query.rentMax){
-        query.rentMax = {
-            ["$lte"]: parseInt(req.query.rentMax)
+        } else if(req.query.search) {
+            query.propertyName = {
+                ["$iLike"]: `%${req.query.search}%`
+            }
         }
     }
     getAllProperties(infoObject.page, infoObject.pageSize, query, (err, properties) => {
