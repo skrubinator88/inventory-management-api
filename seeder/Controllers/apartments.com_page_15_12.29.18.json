@@ -1,0 +1,6361 @@
+{
+ "properties": [
+  {
+   "propertyName": "Riverside House Apartments",
+   "propertyOwnerName": "Quintus Corporation",
+   "propertyNeighborhood": "Cumberland",
+   "propertyZipCode": "30339",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "3013 Shadowood Pky",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$798 - 1,082",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "750 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,000 - 1,642",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,000 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$958 - 978",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "750 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,193 - 1,208",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,000 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/6ftov9yq1_rdvmPsOlbvdjKPu300gD6WDgqtQ2GUilw/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Ma9k0OiBDg_mmGGkxaVxmgB4FVRZKs0X0Me0vCn_8Z4/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Mlyj-5OIBCueGyikprF30Cl1clRpxDGqYCN5kws2u3Q/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/g5MKuM0jjE3yMBY_qUbK9rzJH8YrVnpoJ9n8AuAT-PY/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/44eBxpbF9HXNcJ_NVIR_urutBhfnwlqTZjAB2Na2FVA/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/iLhN8JqfdbMhA6MsO1bE2bxYc3RYMeuagIItZKs0beU/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/aIpdDmvXl0FSZIOJxLKDJEKzg5wp7cp7KGCRTzGWlOU/117/riverside-house-apartments-atlanta-ga-1br-1ba---750-sf.jpg\" alt=\"1BR, 1BA - 750 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/oHSJ7IasD1yzgf95shSAz30RwpyV6WKRLj8z3-aM2W4/117/riverside-house-apartments-atlanta-ga-2br-2ba---1000-sf.jpg\" alt=\"2BR, 2BA - 1,000 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/y3oXTvEG267eXBbtues2YxCj5e0kEP8C7l7elSb_T-8/117/riverside-house-apartments-atlanta-ga-2br-2ba---1000-sf.jpg\" alt=\"2BR, 2BA - 1,000 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/rk8Hw06OTGBhCzYQ5tuuTuWY553CzNQlhQpycOtuRSY/117/riverside-house-apartments-atlanta-ga-2br-2ba---1000-sf.jpg\" alt=\"2BR, 2BA - 1,000 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/SroFE8oG7UJzgkPbdGgD7aMKwel5Nnn6cPJFWmpgIFk/117/riverside-house-apartments-atlanta-ga-2br-2ba---1000-sf.jpg\" alt=\"2BR, 2BA - 1,000 SF - Riverside House Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Qn4ZV3DZaQPBb-GbQuZvtW-yejCvG8g5yTBrF0QsjLw/117/riverside-house-apartments-atlanta-ga-2br-2ba---1000-sf.jpg\" alt=\"2BR, 2BA - 1,000 SF - Riverside House Apartments\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Business center with equipment"
+      },
+      {
+       "name": "•Gas Utilities"
+      },
+      {
+       "name": "•Individual Patio/Balcony"
+      },
+      {
+       "name": "•Large Walk-In Closets"
+      },
+      {
+       "name": "•Media Center with a Resident Lounge"
+      },
+      {
+       "name": "•Nature Trail Along Creek"
+      },
+      {
+       "name": "•On-Call 24/7 Emergency Maintenance"
+      },
+      {
+       "name": "•Swimming Pool & Sun Deck"
+      },
+      {
+       "name": "•Two Lighted Tennis Courts"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1980"
+      },
+      {
+       "name": "•224 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "1 month,3 months,6 months,7 months,9 months,12 months,13 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Pet Care"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Business Center"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Tennis Court"
+      },
+      {
+       "name": "•Walking/Biking Trails"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Sunroom"
+      },
+      {
+       "name": "•Views"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-455-3618",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $798 – 1,082"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,000 – 1,642"
+    }
+   ]
+  },
+  {
+   "propertyName": "Mezzo Apartment Homes",
+   "propertyOwnerName": "AIMCO Properties, L.P.",
+   "propertyNeighborhood": "Brookwood",
+   "propertyZipCode": "30309",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "2171 Peachtree Rd NW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$2,599 - 5,706",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,306 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1605",
+     "rent": "$2,599 - 5,706",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,306 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1703",
+     "rent": "$2,599 - 5,706",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,306 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1205",
+     "rent": "$2,599 - 5,706",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,306 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$2,299 - 3,337",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,509 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "204",
+     "rent": "$2,299 - 3,337",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,509 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1103",
+     "rent": "$2,299 - 3,337",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,509 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "903",
+     "rent": "$2,299 - 3,337",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,509 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$3,185 - 3,364",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,708 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1504",
+     "rent": "$3,185 - 3,364",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,708 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1601",
+     "rent": "$3,185 - 3,364",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,708 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$3,729 - 4,216",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,897 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1506",
+     "rent": "$3,729 - 4,216",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,897 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1106",
+     "rent": "$3,729 - 4,216",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,897 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "1401",
+     "rent": "$3,185 - 3,364",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,708 Sq Ft",
+     "availability": "Jan 6"
+    },
+    {
+     "propertyUnitName": "402",
+     "rent": "$2,299 - 3,337",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,509 Sq Ft",
+     "availability": "Mar 3"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$4,619 - 8,821",
+     "bathrooms": "3 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "2,300 Sq Ft",
+     "availability": "Jun 23"
+    },
+    {
+     "propertyUnitName": "1705",
+     "rent": "$4,619 - 8,821",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "2,300 Sq Ft",
+     "availability": "Jun 23"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "Call for Rent",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,155 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "Call for Rent",
+     "bathrooms": "2½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "2,615 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "Call for Rent",
+     "bathrooms": "3½ Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "2,957 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "Call for Rent",
+     "bathrooms": "3½ Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "3,326 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/wO1xLiKxzkyLd5vTjJMYYQFuPXLaKaE13Z2rxTAgnPU/117/mezzo-apartment-homes-atlanta-ga-bbq-at-the-outdoor-patio.jpg\" alt=\"BBQ at the outdoor patio - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4PIMqh9iiTNtkbOzw6VMVXdbTMojZQh3hGarp7hUV0A/117/mezzo-apartment-homes-atlanta-ga-bedroom-with-private-bathroom-and-large-.jpg\" alt=\"Bedroom with private bathroom and large walk-in closet - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/e1GkFoG5begFPSLfUKb91JwOorN3kcBWbKdwgk2HBq8/117/mezzo-apartment-homes-atlanta-ga-master-bathrooms-feature-both-a-deep-soa.jpg\" alt=\"Master bathrooms feature both a deep soaking tub and walk-in shower - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Bjdd0AM2ymzOecADJM-8SgL3cpJrHdNwDovBWpoROMA/117/mezzo-apartment-homes-atlanta-ga-sleek-homes-have-contemporary-kitchens-a.jpg\" alt=\"Sleek homes have contemporary kitchens and hardwood floors - Mezzo Apartment Homes\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/24SZRKEOF-t1k63N7ue6FyT4FQBuY-tmkHKwtHs8fN0/117/mezzo-apartment-homes-atlanta-ga-open-layout-kitchen-with-a-breakfast-bar.jpg\" alt=\"Open layout kitchen with a breakfast bar and pendant lighting - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/t6IHjmewyjX04PG1EBRibpjr6e7twUddDRZL3mJN8H8/117/mezzo-apartment-homes-atlanta-ga-spacious-balconies-with-amazing-views.jpg\" alt=\"Spacious balconies with amazing views - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/tDRmTEQn7DDpD3cqg-jmQ0XOQ2z2H3IHGaitTTSDiac/117/mezzo-apartment-homes-atlanta-ga-do-laundry-in-the-comfort-of-your-own-ho.jpg\" alt=\"Do laundry in the comfort of your own home with front-loading washer and dryer - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/l3sVYFhj-rMTfOak0aNTQC-LUaRsRIcinXMaQw_7mrw/117/mezzo-apartment-homes-atlanta-ga-take-advantage-of-24-hour-concierge-serv.jpg\" alt=\"Take advantage of 24-hour concierge service - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/5VP5Grn9IFucW8yN_2bzFTn4sdhthjZBJWXGNahMn0s/117/mezzo-apartment-homes-atlanta-ga-lounge-by-the-pool-and-enjoy-skyline-vie.jpg\" alt=\"Lounge by the pool and enjoy skyline views - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/QZJBYw3cFGvXv3250UqPB2dpm1Va7GVgi5TqiITgEw8/117/mezzo-apartment-homes-atlanta-ga-club-room-with-billiards-and-stocked-lib.jpg\" alt=\"Club room with billiards and stocked library - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/_KtwAo47G2WSCx-Yl22YJHlKsfV-W3jdgARVXR-pOa8/117/mezzo-apartment-homes-atlanta-ga-work-out-in-the-modern-24-hour-fitness-c.jpg\" alt=\"Work out in the modern, 24-hour fitness center - Mezzo Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/iUKCuLLYNqek8WBWV-K3NjJwtW_Czpa8vit3j394oW0/117/mezzo-apartment-homes-atlanta-ga-conference-room-in-the-club-room-is-avai.jpg\" alt=\"Conference room in the club room is available for reservation - Mezzo Apartment Homes\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•24-hour Concierge"
+      },
+      {
+       "name": "•24-Hour Package Acceptance"
+      },
+      {
+       "name": "•5-burner Gas Stove"
+      },
+      {
+       "name": "•Billiards Table"
+      },
+      {
+       "name": "•Breakfast Nook"
+      },
+      {
+       "name": "•Built-in Pantry"
+      },
+      {
+       "name": "•Cat Friendly"
+      },
+      {
+       "name": "•Catering Kitchen"
+      },
+      {
+       "name": "•Chef's Kitchen"
+      },
+      {
+       "name": "•Corner Unit Available"
+      },
+      {
+       "name": "•Courtyard"
+      },
+      {
+       "name": "•Cultured-marble Vanity"
+      },
+      {
+       "name": "•Den or Office"
+      },
+      {
+       "name": "•Designer Cabinets"
+      },
+      {
+       "name": "•Dog Friendly"
+      },
+      {
+       "name": "•Dual Walk-in Closets"
+      },
+      {
+       "name": "•Floor-to-ceiling Windows"
+      },
+      {
+       "name": "•French Doors"
+      },
+      {
+       "name": "•Front-loading Dryer"
+      },
+      {
+       "name": "•Front-loading Washer"
+      },
+      {
+       "name": "•Gas Grills"
+      },
+      {
+       "name": "•Granite Countertops"
+      },
+      {
+       "name": "•Guarantors Welcome"
+      },
+      {
+       "name": "•High Rise"
+      },
+      {
+       "name": "•Outdoor Kitchen"
+      },
+      {
+       "name": "•Outdoor Pool Showers"
+      },
+      {
+       "name": "•Pendant Lighting"
+      },
+      {
+       "name": "•Penthouse"
+      },
+      {
+       "name": "•Pet Pit Stop Area"
+      },
+      {
+       "name": "•Self-serve Pet Wash"
+      },
+      {
+       "name": "•Smart Package 365"
+      },
+      {
+       "name": "•Smoke-Free"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Steam Room"
+      },
+      {
+       "name": "•Valet Parking"
+      },
+      {
+       "name": "•Walk Score - 91"
+      },
+      {
+       "name": "•Walk-in Shower"
+      },
+      {
+       "name": "•Whirlpool Tub"
+      },
+      {
+       "name": "•Wi-Fi in Common Areas"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2008"
+      },
+      {
+       "name": "•94 Units/20 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "We offer 7-18 month leases. Guarantors welcome."
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Concierge"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Elevator"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Storage Space"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Sauna"
+      },
+      {
+       "name": "•Pool"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Fireplace"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Views"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Concierge"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "404-865-1869",
+   "propertyWebsite_url": "http://www.mezzoapartmenthomes.com/?vrurl=apartments.com",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $2,599 – 5,706"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $2,299 – 4,216"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $4,619 – 8,821"
+    }
+   ]
+  },
+  {
+   "propertyName": "1045 on the Park Apartment Homes",
+   "propertyOwnerName": "AIMCO Properties, L.P.",
+   "propertyNeighborhood": "Piedmont Park",
+   "propertyZipCode": "30309",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1045 Piedmont Ave NE",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$2,074 - 4,878",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,060 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "607",
+     "rent": "$2,074 - 4,582",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,060 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "507",
+     "rent": "$2,094 - 4,619",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,060 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "609",
+     "rent": "$2,266 - 4,878",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,060 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$2,817 - 6,073",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,400 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "410",
+     "rent": "$2,817 - 6,073",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,400 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,929 - 4,483",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "750 Sq Ft",
+     "availability": "Jan 6"
+    },
+    {
+     "propertyUnitName": "606",
+     "rent": "$1,929 - 4,483",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "750 Sq Ft",
+     "availability": "Jan 6"
+    },
+    {
+     "propertyUnitName": "514",
+     "rent": "$2,236 - 4,849",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,060 Sq Ft",
+     "availability": "Jan 13"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/BRKDdlnPt9Q8Jl1jOYHoaPGA8CbzF9UpIVtVetyN6sI/117/1045-on-the-park-apartment-homes-atlanta-ga-apartment-homes-feature-oak-plank-wood-f.jpg\" alt=\"Apartment homes feature oak-plank wood flooring - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/nziM9jqZ4PoA7JwdjsMNTS6GqNdFfQ4SEyEl_P1-g_o/117/1045-on-the-park-apartment-homes-atlanta-ga-open-layout-with-upgraded-lighting-and-b.jpg\" alt=\"Open layout with upgraded lighting and breakfast bars - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/S47utjbUSgJPfvsNBZLMSxZV01VuhpGLjO6TS4jYTxk/117/1045-on-the-park-apartment-homes-atlanta-ga-bathroom-features-large-mirror-and-grani.jpg\" alt=\"Bathroom features large mirror and granite countertops - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ZaXN3O__qF5SPqwWpNmnfYHcsVEFEodJmCI_1m-5J_U/117/1045-on-the-park-apartment-homes-atlanta-ga-spacious-fitness-center-with-cardio-equi.jpg\" alt=\"Spacious fitness center with cardio equipment and free weights - 1045 on the Park Apartment Homes\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ijoWvQnYt3wC6kuIZHS-hbWTUowFV92ZoBl-QNKJ5VU/117/1045-on-the-park-apartment-homes-atlanta-ga-kitchenette-just-off-of-the-outdoor-bbq-.jpg\" alt=\"Kitchenette just off of the outdoor BBQ area - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/fB7lw0HuU48hWmYys3r0zLWpnOoDqOxFQ5KlxUM3wiM/117/1045-on-the-park-apartment-homes-atlanta-ga-on-site-off-leash-dog-park-for-your-furr.jpg\" alt=\"On-site, off-leash dog park for your furry friends - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/DJsxSNRdc5PwLnQa-0a8OtHxsdII2BoXO8WSExbFR5I/117/1045-on-the-park-apartment-homes-atlanta-ga-outdoor-community-patio-features-a-stain.jpg\" alt=\"Outdoor community patio features a stainless steel grill and open garden space - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/k6LEzerfHj82rrHDH649Bu9qMEoiR0NnJs9cYZeG2ws/117/1045-on-the-park-apartment-homes-atlanta-ga-eat-on-the-outdoor-patio-equipped-with-t.jpg\" alt=\"Eat on the outdoor patio equipped with tables and umbrellas - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Tux1lqcTVJwG7uwPrEE7IVHEwGyNd1EuYgrsT9xVbZY/117/1045-on-the-park-apartment-homes-atlanta-ga-controlled-access-underground-parking-ga.jpg\" alt=\"Controlled-access underground parking garage - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/T_P3syK-TB55ksPBOcu47GiBkzP9-eTgOw3x1wPdeqU/117/1045-on-the-park-apartment-homes-atlanta-ga-gorgeous-community-minutes-from-midtown-.jpg\" alt=\"Gorgeous community minutes from Midtown Mile - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/5MQPDWf_YPcrXBLktjWk1rvjBufyX_tNh3ZhM9AbhLA/117/1045-on-the-park-apartment-homes-atlanta-ga-piedmont-park-is-less-than-a-five-minute.jpg\" alt=\"Piedmont Park is less than a five minute walk away - 1045 on the Park Apartment Homes\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/YFSU_lgGWZxKmvsmZS4lFK2tjG2L5BAzDBwETXXL4SE/117/1045-on-the-park-apartment-homes-atlanta-ga-go-for-a-bike-ride-or-a-run-at-nearby-pi.jpg\" alt=\"Go for a bike ride or a run at nearby Piedmont Park - 1045 on the Park Apartment Homes\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•24-Hour Package Acceptance"
+      },
+      {
+       "name": "•Barbecue Area"
+      },
+      {
+       "name": "•Breakfast Bar"
+      },
+      {
+       "name": "•Cat Friendly"
+      },
+      {
+       "name": "•Close to the Midtown Mile"
+      },
+      {
+       "name": "•Controlled Access Building"
+      },
+      {
+       "name": "•Courtyard"
+      },
+      {
+       "name": "•Dark Mahogany Cabinets"
+      },
+      {
+       "name": "•Dog Friendly"
+      },
+      {
+       "name": "•Dog Park"
+      },
+      {
+       "name": "•Extra Living Space"
+      },
+      {
+       "name": "•Floor-to-ceiling Windows"
+      },
+      {
+       "name": "•Glass-walled Balcony"
+      },
+      {
+       "name": "•Granite Countertops"
+      },
+      {
+       "name": "•Guarantors Welcome"
+      },
+      {
+       "name": "•In the \"Heart of the Arts\""
+      },
+      {
+       "name": "•Modern Kitchen"
+      },
+      {
+       "name": "•Personal Training Available"
+      },
+      {
+       "name": "•Phone: XFINITY from Comcast"
+      },
+      {
+       "name": "•Porcelain Tile Shower"
+      },
+      {
+       "name": "•Rain Showerheads"
+      },
+      {
+       "name": "•Smart Package 365"
+      },
+      {
+       "name": "•Smoke-Free"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Steps from Piedmont Park"
+      },
+      {
+       "name": "•TV: XFINITY from Comcast"
+      },
+      {
+       "name": "•Walk-in Closet with Custom Built-in Organization"
+      },
+      {
+       "name": "•Wide-plank Oak Wood Flooring"
+      },
+      {
+       "name": "•Wi-Fi in Common Areas"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2012"
+      },
+      {
+       "name": "•30 Units/6 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "We offer 7-12 and 16-20 month leases. Guarantors welcome."
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-224-5964",
+   "propertyWebsite_url": "http://www.1045onthepark.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $1,929 – 4,483"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $2,074 – 6,073"
+    }
+   ]
+  },
+  {
+   "propertyName": "Arbors of East Atlanta",
+   "propertyOwnerName": "Braden Fellman Group",
+   "propertyNeighborhood": "Kirkwood",
+   "propertyZipCode": "30317",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1800 Memorial Dr SE",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,025",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "900 Sq Ft",
+     "availability": "Dec 31"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,035",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "750 - 900 Sq Ft",
+     "availability": "Dec 31"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$925",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "750 Sq Ft",
+     "availability": "Jan 31"
+    },
+    {
+     "propertyUnitName": "K2",
+     "rent": "$1,125",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,100 Sq Ft",
+     "availability": "Feb 7"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/tCCBAjezvbzfr3I0nLsqRaPUx8_uGSgc8w1NfOACCAU/117/arbors-of-east-atlanta-atlanta-ga-braden-fellmanarborsresidentiallow-resol.jpg\" alt=\"Braden-Fellman_Arbors_Residential_Low-Resolution-2017-793x529 - Arbors of East Atlanta\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/_V0YHDQyLcmQm3YoGgNDJFV91xj5GrZKvSviT5mdGr0/117/arbors-of-east-atlanta-atlanta-ga-braden-fellmanarborsresidentialhigh-res-.jpg\" alt=\"Braden-Fellman_Arbors_Residential_High-Res-5-394x263 - Arbors of East Atlanta\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/f0_2JvX12yxR9xhLu61Nr1MQogcbBvyR5KmK3Dv7nEM/111/arbors-of-east-atlanta-atlanta-ga-arbors-ad-pics.jpg\" alt=\"Arbors Ad Pics - Arbors of East Atlanta\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/m2/Du3tlI3xR2Ocg-LjwUxkAe5QiudivP7wTEvImeHZHjA/H240W360/arbors-of-east-atlanta-atlanta-ga-map-image-of-the-property.jpg\" alt=\"Map image of the Property - Arbors of East Atlanta\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/u_cXqPC0vJ1-f3rXx56JHllYfXwl4szGqS-jzR3KCCo/117/arbors-of-east-atlanta-atlanta-ga-braden-fellmanarborsresidentialhigh-res-.jpg\" alt=\"Braden-Fellman_Arbors_Residential_High-Res-11-394x263 - Arbors of East Atlanta\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/gHp3YUdWzbrfvWmgNZjKGS-Wg8WBjco75HTiQvwqnxY/117/arbors-of-east-atlanta-atlanta-ga-braden-fellmanarborsresidentialhigh-res-.jpg\" alt=\"Braden-Fellman_Arbors_Residential_High-Res-12-793x529 - Arbors of East Atlanta\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/_vTVBMY9M86z3MEFANMfCIO5Ul1laS9dgOUcPIyF6l8/117/arbors-of-east-atlanta-atlanta-ga-braden-fellmanarborsresidentialhigh-res-.jpg\" alt=\"Braden-Fellman_Arbors_Residential_High-Res-14 - Arbors of East Atlanta\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1962"
+      },
+      {
+       "name": "•124 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "+ $100 Per Month"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•24 Hour Availability"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Gated"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Ice Maker"
+      },
+      {
+       "name": "•Granite Countertops"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Tile Floors"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      },
+      {
+       "name": "•Yard"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Controlled Access"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-841-6319",
+   "propertyWebsite_url": "http://bradenfellman.com/apartments-lofts/east-atlanta/arbors-of-east-atlanta/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $925"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,025 – 1,035"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,125"
+    }
+   ]
+  },
+  {
+   "propertyName": "Oak Pointe",
+   "propertyOwnerName": "Braden Fellman Group",
+   "propertyNeighborhood": "Candler Park",
+   "propertyZipCode": "30307",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "485 Oakdale Rd NE",
+   "images": [
+    {
+     "url": "\n\n\t\t\t\t\t\t\t\t<img src=\"https://images1.apartments.com/i2/vfLSqzPOF_oZDISawMNiNQ8spfso03Dtw6tYxLbkgJQ/111/oak-pointe-atlanta-ga-primary-photo.jpg\" alt=\"Primary Photo - Oak Pointe\">\n\t\t\t"
+    },
+    {
+     "url": "\n\n\t\t\t\t\t\t\t\t<img src=\"https://images1.apartments.com/m2/GAnfVjgfIr3OxuY1fxFvzNOdP6Ir1UdLDMXuNn_CDvM/H240W360/oak-pointe-atlanta-ga-map-image-of-the-property.jpg\" alt=\"Map image of the Property - Oak Pointe\">\n\t\t\t"
+    }
+   ],
+   "images1": [
+    {
+     "url": "\n\n\t\t\t\t\t\t\t\t<img src=\"https://images1.apartments.com/i2/vfLSqzPOF_oZDISawMNiNQ8spfso03Dtw6tYxLbkgJQ/111/oak-pointe-atlanta-ga-primary-photo.jpg\" alt=\"Primary Photo - Oak Pointe\">\n\t\t\t"
+    },
+    {
+     "url": "\n\n\t\t\t\t\t\t\t\t<img src=\"https://images1.apartments.com/m2/GAnfVjgfIr3OxuY1fxFvzNOdP6Ir1UdLDMXuNn_CDvM/H240W360/oak-pointe-atlanta-ga-map-image-of-the-property.jpg\" alt=\"Map image of the Property - Oak Pointe\">\n\t\t\t"
+    },
+    {
+     "url": "\n\n\t\t\t\t\t\t\t\t<img src=\"https://images1.apartments.com/i2/yEiVY3xZOvKAklavnSBLGG0Zny4co1SD40NnbNrIR-k/117/oak-pointe-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Oak Pointe\">\n\t\t\t"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1960"
+      },
+      {
+       "name": "•Renovated in Jan 2000"
+      },
+      {
+       "name": "•114 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "1 year"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Framed Mirrors"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Ice Maker"
+      },
+      {
+       "name": "•Granite Countertops"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Carpet"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-488-9388",
+   "propertyWebsite_url": "http://bradenfellman.com/apartments-lofts/candler-park-inman-park/oak-pointe/",
+   "rentRanges": [
+    {
+     "range": "2 Bedrooms 2 Beds $1,275 – 1,425"
+    }
+   ]
+  },
+  {
+   "propertyName": "Sierra Hills",
+   "propertyOwnerName": "Strategic Holdings Real Estate",
+   "propertyNeighborhood": "Atlanta",
+   "propertyZipCode": "30341",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "3207 Henderson Mill Rd NE",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,300 - 1,395",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,359 - 1,583 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,375",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,583 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,895",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,566 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,470 - 1,520",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,700 - 1,785 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,500",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,785 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,675",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,200 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,765",
+     "bathrooms": "2 Baths",
+     "bedrooms": "4 BRs",
+     "squareFeet": "2,207 Sq Ft",
+     "availability": "Available Now"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TKG1P39zKJyyCbfHLreUGEHwOcOKvmpDIfXTBk75sNQ/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/KPC9Ko4d_1B6Wuwu-3fmgFx-EFYX9Qwmq_tsqQ24vYo/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Vj3ySnOb_cyXlMXS99Mc6dXHJ_E8VMCWipV5-BkqRzw/117/sierra-hills-atlanta-ga-kitchen.jpg\" alt=\"Kitchen - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/oh8uWTVw8KN4fGkEPtNi_smDXHTOuoDFQIR0T2qvfQE/117/sierra-hills-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Sierra Hills\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TocFbOzLRGjZ6NLWOUyEw9K1Z22BBoTyNT1PVwHdnAs/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/G761x7W_HkL6mFt9M5tiDjsXn4StlRmM-kNYs16Ry64/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/_5bsiVOjPDBmMZ9OrIbap9OkIBbc06PtPN_-1FCgxb4/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/pzNjEDvrCiOdoTFWWi-7SbjkOkx5P--Qi2NkA5-EZnk/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/qVfXNETVmaKalu3QVeeseVJ3cFMxjJCOv4xH5BATQWA/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/q_xKDRz1V3FKoaQoYHAyUjM0qwMhdAPLDGEzReqdHi4/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/vM5lqqtj5611D-AoMA2E4q9emQ6U4xuWan4YGrQw5zg/117/sierra-hills-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Sierra Hills\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/sRPnCItHDnwNu5wRkVVJ4vwhhtR-Jd4FhKg-Cv6ooRU/117/sierra-hills-atlanta-ga-bathroom.jpg\" alt=\"Bathroom - Sierra Hills\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Air Conditioner"
+      },
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Efficient Appliances"
+      },
+      {
+       "name": "•Extra Storage"
+      },
+      {
+       "name": "•Fireplace"
+      },
+      {
+       "name": "•Large Closets"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Off Street Parking"
+      },
+      {
+       "name": "•Package Receiving"
+      },
+      {
+       "name": "•Patio/Balcony"
+      },
+      {
+       "name": "•Recreation Room"
+      },
+      {
+       "name": "•Refrigerator"
+      },
+      {
+       "name": "•Sports Court"
+      },
+      {
+       "name": "•W/D Hookup"
+      },
+      {
+       "name": "•Wood-Style Floors"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1972"
+      },
+      {
+       "name": "•Renovated in Jan 2015"
+      },
+      {
+       "name": "•161 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•Bilingual"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      },
+      {
+       "name": "•Online Services"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Business Center"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Conference Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      },
+      {
+       "name": "•Gameroom"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      },
+      {
+       "name": "•Oversized Kitchens"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Vinyl Flooring"
+      },
+      {
+       "name": "•Dining Room"
+      },
+      {
+       "name": "•Den"
+      },
+      {
+       "name": "•Walk-In Closets"
+      },
+      {
+       "name": "•Window Coverings"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      },
+      {
+       "name": "•Patio"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Courtesy Patrol"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "678-392-4406",
+   "propertyWebsite_url": "http://www.sierrahillsapts.com/",
+   "rentRanges": [
+    {
+     "range": "2 Bedrooms 2 Beds $1,300 – 1,895"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,470 – 1,675"
+    },
+    {
+     "range": "4 Bedrooms 4 Beds $1,765"
+    }
+   ]
+  },
+  {
+   "propertyName": "Oglethorpe Place",
+   "propertyOwnerName": "Flournoy Companies",
+   "propertyNeighborhood": "West End",
+   "propertyZipCode": "30310",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "835 Oglethorpe Ave SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,109 - 1,654",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,083 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,183 - 1,888",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "903 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,150 - 1,265",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "670 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ZnZUnEVsxsVVkv8v6M1UOnU1gEVxpxr-Jsca-mHRmDA/117/oglethorpe-place-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/WFMx9l63O7Fxr37QZrw1sUrY3Tnd7Aj5PyQKxv-cyv4/117/oglethorpe-place-atlanta-ga-leasing-office.jpg\" alt=\"Leasing Office - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/EP5fzV5xUV3khkED0A5l9FZQBzo57EN9q1_KFomDCvk/117/oglethorpe-place-atlanta-ga-club-house.jpg\" alt=\"Club House - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/pIm1edjAIW25ke_HcN2onk_CXTtUJdMTv_zI_LF6WQU/117/oglethorpe-place-atlanta-ga-patio.jpg\" alt=\"Patio - Oglethorpe Place\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/jTveA7s12rdnn40b-DE-9WN5obmBedHL6-4YxZ-_RfA/117/oglethorpe-place-atlanta-ga-living-room.jpg\" alt=\"Living Room - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/jngbgXNtAdjgF5PnARH1n_BvIRmsQF9jdI8DZmKKStE/117/oglethorpe-place-atlanta-ga-kitchen.jpg\" alt=\"Kitchen - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/PeN8LskiY3C3ieQ5MKr9b7cvoaizvU0r6JJD-bJZSQA/117/oglethorpe-place-atlanta-ga-bathroom.jpg\" alt=\"Bathroom - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/8GN4SDWu75x4hvp9nY-1eQenLQaWl1pdmtDnPcBEnpg/117/oglethorpe-place-atlanta-ga-breakfast-bar.jpg\" alt=\"Breakfast Bar - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/yVcg7AwEX1ALARvETFgEM0M8UecV3piM1KfL3ig_Fts/117/oglethorpe-place-atlanta-ga-community.jpg\" alt=\"Community - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TGa9QVMYe0Qaz5eCkDoZqO-XClccpYh2v5hPxz9GP_Q/117/oglethorpe-place-atlanta-ga-fitness-center.jpg\" alt=\"Fitness Center - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/NKKxiRKRNQ4bVRtWFoxqU9DfXAtX2exrKXkc5gj7TCI/117/oglethorpe-place-atlanta-ga-laundry-center.jpg\" alt=\"Laundry Center - Oglethorpe Place\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4iZpmhabYE8ouayxShFAwbuyEqXN4Gz5pjtlmnS5aUU/117/oglethorpe-place-atlanta-ga-pool.jpg\" alt=\"Pool - Oglethorpe Place\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•1 & 2 Full Baths"
+      },
+      {
+       "name": "•24-Hour Emergency Maintenance"
+      },
+      {
+       "name": "•Ample Cabinet & Counter Space"
+      },
+      {
+       "name": "•Beautiful Landscaping"
+      },
+      {
+       "name": "•Controlled Access Gate"
+      },
+      {
+       "name": "•Convenience of Being Close to I-20, I-75/85, Shopp"
+      },
+      {
+       "name": "•Custom Accent Walls"
+      },
+      {
+       "name": "•Frost-Free Refrigerator w/ Icemaker"
+      },
+      {
+       "name": "•Furnished Apartments"
+      },
+      {
+       "name": "•Good \"Cents\" Energy Efficient Electric"
+      },
+      {
+       "name": "•Ice Maker"
+      },
+      {
+       "name": "•Mini-Blinds"
+      },
+      {
+       "name": "•Short Term Lease Available"
+      },
+      {
+       "name": "•WiFi Available"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1996"
+      },
+      {
+       "name": "•144 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "6 months, 12 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Maintenance on site"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Storage Space"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Storage Units"
+      },
+      {
+       "name": "•Handrails"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      },
+      {
+       "name": "•Patio"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "404-963-9543",
+   "propertyWebsite_url": "http://www.oglethorpeplace.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $1,150 – 1,265"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,109 – 1,888"
+    }
+   ]
+  },
+  {
+   "propertyName": "Kingsboro",
+   "propertyOwnerName": "The Finger Companies",
+   "propertyNeighborhood": "Buckhead Heights",
+   "propertyZipCode": "30326",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "3443 Kingsboro Rd NE",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,613",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "924 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,844",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "811 - 850 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,851 - 2,007",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,095 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,979",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,146 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$2,126",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "1,317 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,995",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,171 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$2,109",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,321 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,785 - 1,889",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "931 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/FDGF_PvMKI9eyKjx14cNpndULQ0AyMzoj2PxFsvr9K8/117/kingsboro-atlanta-ga-stunning-resort-style-pool.jpg\" alt=\"Stunning resort style pool - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/vIsBBnpKHR9ykQOAdjtiIR9baPu9CoQ7TymR-31hseU/117/kingsboro-atlanta-ga-outdoor-grilling-areas.jpg\" alt=\"Outdoor grilling areas - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/5eVplcomUDrjKGfGvuA0iMaDwbQG-t67jKkdgsaxV54/117/kingsboro-atlanta-ga-kitchens-with-granite-and-stainless-appl.jpg\" alt=\"Kitchens with granite and stainless appliances - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Rax6y-6wgjulkhLkhxYueR045RNDc8a_ii9RiT8oVr8/117/kingsboro-atlanta-ga-spacious-floor-plans.jpg\" alt=\"Spacious floor plans - Kingsboro\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/gvx36mlsYd8bv_sGPAjc_tY0XTs7dEkQ2aYgofHaVUw/117/kingsboro-atlanta-ga-built-in-desk-areas-and-shelving.jpg\" alt=\"Built-in desk areas and shelving - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/hh6LihagX-grJpTcfm7AJnQUiN8kq8z1_QR70Q742Oc/117/kingsboro-atlanta-ga-spacious-living-areas.jpg\" alt=\"Spacious living areas - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/QFmUVGFyJLD4QjZhoPwEjPGXknOc9BVni59QtrXlTlU/117/kingsboro-atlanta-ga-spacious-living-areas.jpg\" alt=\"Spacious living areas - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/G2oSkE1sq1slxjDq6uw1_-HlD-7zha9ufMiI4GLdFvc/117/kingsboro-atlanta-ga-spacious-living-areas.jpg\" alt=\"Spacious living areas - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/y6MUoEMbDwwAcl0l9qcmHjmC6Pj6cHfh4mS1CFBHBwk/117/kingsboro-atlanta-ga-spacious-dining-areas.jpg\" alt=\"Spacious dining areas - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ZRYPMNXVpm6W4Z63kbIOxC3TgWplBcp9ryJPvHN1Ti8/117/kingsboro-atlanta-ga-spacious-bedrooms-fit-king-size-beds.jpg\" alt=\"Spacious bedrooms, fit king size beds - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/b7JD5hueAVZmizE1RmuhYaH4xwOJpG8KYlwYSVhzVSs/117/kingsboro-atlanta-ga-spacious-bedrooms-fit-king-size-beds.jpg\" alt=\"Spacious bedrooms, fit king size beds - Kingsboro\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/8-uLhyjbubixS2W1FNouRX_6PdXFK-p_Q06WsBM-cxk/117/kingsboro-atlanta-ga-spacious-bathrooms-with-dual-sinks.jpg\" alt=\"Spacious bathrooms with dual sinks - Kingsboro\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2007"
+      },
+      {
+       "name": "•152 Units/5 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "12-15 month leases"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Wi-Fi at Pool and Clubhouse"
+      },
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•24 Hour Availability"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Elevator"
+      },
+      {
+       "name": "•Business Center"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Breakfast/Coffee Concierge"
+      },
+      {
+       "name": "•Conference Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Gated"
+      },
+      {
+       "name": "•Courtyard"
+      },
+      {
+       "name": "•Grill"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Granite Countertops"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Island Kitchen"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Dining Room"
+      },
+      {
+       "name": "•Built-In Bookshelves"
+      },
+      {
+       "name": "•Crown Molding"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-205-0544",
+   "propertyWebsite_url": "http://www.kingsboro-apartments.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $1,613 – 2,126"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,995 – 2,109"
+    }
+   ]
+  },
+  {
+   "propertyName": "Alberta Terrace",
+   "propertyOwnerName": "Draper Waldo",
+   "propertyNeighborhood": "Buckhead",
+   "propertyZipCode": "30305",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "340 Alberta Ter",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$2,500",
+     "bathrooms": "2½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,900 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,500",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,400 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,500",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,400 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/SY6esiKkcqpqeR6vEs5fBvIzYvHjoMYBgA_bDcRSob8/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/l1ThJJuCTkZ__KOB3JMaeTbLufXD_Z58THTzYfQFgxg/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/EQpUAafBEmX6aJ9QGMWuBH71UkQVSBHROxpAXZH5cxs/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/E-J2onQvBEYvHhqV-g9Thrgp89H2vU9btoOQS4w4XQY/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/DXIc1E1XTY9Ygo97TjlabU9ubhubp4ytG1P15Sb6_lQ/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/7YHrCw7TAp4nq0HM6yZUXG0SrMRNkuVkydmLBHRdods/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/K0dGp-XYCH9F2ANKsuzFTFjN_xtC1U3libeORX-9Ruc/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4ixdYcjUU4G5Q6Y96FtQ7Qo7cjeu5w9oEtF8ByyjrvE/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/weUlXl_cRJZIqBTpQ4c4z9AHwMPcjji1-yp7tKlGd6w/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/kTqolbyARUydxf_StuweDaeDaVfPSqV8ShYeMp5yAHQ/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/gLKmnDmC9uVu0g2OkDPjXZ7ZkNoVVdEVVOIV6HCDDdQ/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/X8BJz2OQqg5LQ9Fh4aA8JJJ0jKfkjkPb_YfTEohXojs/117/alberta-terrace-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Alberta Terrace\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•6 Units"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "12"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Linen Closet"
+      },
+      {
+       "name": "•Window Coverings"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Yard"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-487-2521",
+   "rentRanges": [
+    {
+     "range": "2 Bedrooms 2 Beds $1,500 – 2,500"
+    }
+   ]
+  },
+  {
+   "propertyName": "Columbia Park Citi",
+   "propertyOwnerName": "Columbia Residential, LLC",
+   "propertyNeighborhood": "Westside Park",
+   "propertyZipCode": "30318",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "921 Westmoreland Cir NW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,099",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,069 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,149",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,308 Sq Ft",
+     "availability": "Available Now"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/auQOfk4F5oVexuUjuX60pXxplsMfraZSxHlxAHCiYSE/117/columbia-park-citi-atlanta-ga-park-citi-3a.jpg\" alt=\"Park Citi 3A - Columbia Park Citi\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/l74uPjku3t0WMl2ci1KskJ2tfEE8IDLYsJoYdBMcsr4/117/columbia-park-citi-atlanta-ga-3br2ba.jpg\" alt=\"3BR/2BA - Columbia Park Citi\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/J6mF4bfVbdR_F2GwTqeUKZXvwmrqXEepBEfEMwtC150/111/columbia-park-citi-atlanta-ga-primary-photo.jpg\" alt=\"Primary Photo - Columbia Park Citi\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/m2/_AF4Rs5P5hAdsHxyZWROL0sjowxNGlAqSEaJwZEX-lk/H240W360/columbia-park-citi-atlanta-ga-map-image-of-the-property.jpg\" alt=\"Map image of the Property - Columbia Park Citi\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/i5rEfsnVcgK_YqSA4Rp1RaMYRt6JjY61UisXpNMaj9Y/117/columbia-park-citi-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Park Citi\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/071k4uLWR6Kwa4TD8_g3D_knSMywUWKhcebQeTJRVAk/117/columbia-park-citi-atlanta-ga-signage.jpg\" alt=\"Signage - Columbia Park Citi\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/DVVPbu0Obnv7xKjFxYzI268OTR3PGARiNVGruA9Kolw/117/columbia-park-citi-atlanta-ga-park-citi-2a.jpg\" alt=\"Park Citi 2A - Columbia Park Citi\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2005"
+      },
+      {
+       "name": "•154 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      },
+      {
+       "name": "•24 Hour Availability"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Business Center"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Multi Use Room"
+      },
+      {
+       "name": "•Conference Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Cabana"
+      },
+      {
+       "name": "•Grill"
+      },
+      {
+       "name": "•Picnic Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      },
+      {
+       "name": "•Gameroom"
+      },
+      {
+       "name": "•Media Center/Movie Theatre"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Fireplace"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Range"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Dining Room"
+      },
+      {
+       "name": "•Crown Molding"
+      },
+      {
+       "name": "•Accent Walls"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-892-0801",
+   "rentRanges": [
+    {
+     "range": "2 Bedrooms 2 Beds $1,099"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,149"
+    }
+   ]
+  },
+  {
+   "propertyName": "Huntington Station",
+   "propertyOwnerName": "AVPM",
+   "propertyNeighborhood": "Chamblee",
+   "propertyZipCode": "30345",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "2560 New Haven Dr NE",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$980 - 1,055",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "790 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,620",
+     "bathrooms": "2½ Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,436 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,420",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,102 Sq Ft",
+     "availability": "Jan 5"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,400",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,020 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,375 - 1,590",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,320 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,895",
+     "bathrooms": "2 Baths",
+     "bedrooms": "4 BRs",
+     "squareFeet": "1,690 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/cYoaBof5Fs28nStroBqP6Y88HOLzPNI4T_GdcrIqK5w/117/huntington-station-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/T2k6GxBWYsCetGXWs0RDKBPhXOv3uAoyh5_zWHb46IQ/117/huntington-station-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/IplpNf4pxcYRBWQ6kHSv7eFJpd6lKoNfo8YJMUpuFqc/117/huntington-station-atlanta-ga-sports-court.jpg\" alt=\"Sports Court - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/dq2itaRyu2wo2kEQF2OpTfaI3o4W4aCccJ_LyqDSfJg/117/huntington-station-atlanta-ga-tot-lot.jpg\" alt=\"Tot Lot - Huntington Station\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/hWXucJd6EjjzosZ4XXYRcJVbX3NEpDIwhF_5wu_p2QE/117/huntington-station-atlanta-ga-childrens-activity-area.jpg\" alt=\"Children's Activity Area - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/yxx9QHXbD6tPqTwhnD0QyuaWSL-LMheoNBhVuWozfdM/117/huntington-station-atlanta-ga-childrens-activity-area.jpg\" alt=\"Children's Activity Area - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/0hTeuhiQ33mSS-emJlt6T-WW5ryc-HeCUUNROBqr47U/117/huntington-station-atlanta-ga-bedroom.jpg\" alt=\"Bedroom - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/riDFZh79cDs8cVPHdGqhmvZnvJJDskMUbTKVkKmWHVc/117/huntington-station-atlanta-ga-bedroom.jpg\" alt=\"Bedroom - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/f9pif55IkgPBVdH98alqJ_eCcjnuKArKKGWK8hRPSds/117/huntington-station-atlanta-ga-bathroom.jpg\" alt=\"Bathroom - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/iNb_2mbj33xieKqOGZERA3t2CkJnIUU5Vg217ymMhFQ/117/huntington-station-atlanta-ga-dining-room.jpg\" alt=\"Dining Room - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/6zRZKH84OmE2FxJUqCqZ7ZOxOCz8YJ9dT802JSnkdAM/117/huntington-station-atlanta-ga-dining-room.jpg\" alt=\"Dining Room - Huntington Station\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/R8VXFP6G3YlhaykMsr4yyAWJBA9vp8e7pqhaehlmx20/117/huntington-station-atlanta-ga-bedroom.jpg\" alt=\"Bedroom - Huntington Station\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Multi-sport court"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1972"
+      },
+      {
+       "name": "•330 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "7 & 13 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Package Service"
+      },
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Bilingual"
+      },
+      {
+       "name": "•Renters Insurance Program"
+      },
+      {
+       "name": "•Laundry Service"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Clubhouse"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Sundeck"
+      },
+      {
+       "name": "•Picnic Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Tub/Shower"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Pantry"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      },
+      {
+       "name": "•Freezer"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Vinyl Flooring"
+      },
+      {
+       "name": "•Dining Room"
+      },
+      {
+       "name": "•Den"
+      },
+      {
+       "name": "•Walk-In Closets"
+      },
+      {
+       "name": "•Window Coverings"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Patio"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Package Service"
+      },
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "404-975-4093",
+   "propertyWebsite_url": "http://avpmcorp.com/listing/huntington-station/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $980 – 1,055"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,400 – 1,420"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,375 – 1,620"
+    },
+    {
+     "range": "4 Bedrooms 4 Beds $1,895"
+    }
+   ]
+  },
+  {
+   "propertyName": "Glenrose Gardens",
+   "propertyOwnerName": "Saleem & Company",
+   "propertyNeighborhood": "Southeast Atlanta",
+   "propertyZipCode": "30354",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "85 Mount Zion Rd",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$850",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "728 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$925",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "945 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$955",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "965 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$995",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "965 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,060",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,075 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/b8pRbLuMNJJyfcKOmXzwpbDiByRwsR9xRtYL7zNZNOY/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/qBCVUDNW4hh3J7olQskLBb-hs2GTdMd72drBfh9toWE/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/R65u8lQYhXvGj4Bh3OypkaDsjzgYaJYAjmllIgVt9pw/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/xMI5-n2em2W-KgQNuctOh0Rp942abYlCNI_PCXFdlDE/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/2QK7wWdZVEIabqkojakDvEh0Hq4M-TB_eMElIproou0/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Fw6rSqtAOySvSSEM3lyg6pd0wBhQyEFE0X6lSJ9WlPk/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/eK77l1aHDv2AAshXjW-GPrusKxDJH4ZiyCszG09ghhw/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/23tQYqXunlbj3kNapxMy9I9QkrIo3wU4ThAbAi_2rFo/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/2bcVjKDiFmGNtF8R7ToPsl0K9h4a3UW4cwlSIocuxN0/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/bLKJinLdyNQ26S2mgo2521G5Laz-OXrOzGyDGanninU/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/2OaRQuEJeSJ4vrkF8tW5l7O63HQbnA2Y3jv6zI6jP0E/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/14urzl1lPZshOC_LGI8spgSs6DQUHVibTESwXpZCnV4/117/glenrose-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Glenrose Gardens\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Unfinished Basement"
+      },
+      {
+       "name": "•Unfinished Basement (Oak Units Only)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1972"
+      },
+      {
+       "name": "•230 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "12 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Bilingual"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      },
+      {
+       "name": "•Planned Social Activities"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Business Center"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Multi Use Room"
+      },
+      {
+       "name": "•Library"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Gated"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Tub/Shower"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Pantry"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Refrigerator"
+      },
+      {
+       "name": "•Freezer"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Vinyl Flooring"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Patio"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "404-476-2712",
+   "propertyWebsite_url": "http://www.glenrosegardens.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $850"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $925 – 995"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,060"
+    }
+   ]
+  },
+  {
+   "propertyName": "Harmony Plaza I Apartments",
+   "propertyOwnerName": "R. James Properties, Inc.",
+   "propertyNeighborhood": "Campbellton Road",
+   "propertyZipCode": "30311",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1871 Plaza Ln SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$589",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "750 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$669",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "950 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$689",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "900 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$725",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,104 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/39yP8rxxgbTtiTt4VlshzPQy45OJrVcp-N7N-NKeCmA/117/harmony-plaza-i-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Harmony Plaza I Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/stCavKECNEoYDRKSL4ypupvka_raPFuKephPFeQbCOA/117/harmony-plaza-i-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Harmony Plaza I Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/doFFyOV46Lz-CqzopOZplxJw-eykOUMFtX7vnPMA82k/117/harmony-plaza-i-apartments-atlanta-ga-2br2ba.jpg\" alt=\"2BR/2BA - Harmony Plaza I Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/c2Ktq8juhrBjpcLHMscJSEQHVKk5YW8ijwHRjWdeHxM/117/harmony-plaza-i-apartments-atlanta-ga-floorplan.jpg\" alt=\"Floorplan - Harmony Plaza I Apartments\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/6Zm7oNCCpNR0IL6QL08oKaYY99j-I11GwCKJXjS0dVI/117/harmony-plaza-i-apartments-atlanta-ga-floorplan.jpg\" alt=\"Floorplan - Harmony Plaza I Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/gmV3TFhsMFh8ZhGga3ZcLgpIxDtM5pkWOks6S7adfiQ/117/harmony-plaza-i-apartments-atlanta-ga-floorplan.jpg\" alt=\"Floorplan - Harmony Plaza I Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/IBQxUmNOB7ySV8-jmHvXETOul1u1_B8pSg6rpaneNXQ/117/harmony-plaza-i-apartments-atlanta-ga-floorplan.jpg\" alt=\"Floorplan - Harmony Plaza I Apartments\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1963"
+      },
+      {
+       "name": "•81 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Gated"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Fireplace"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Dining Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      },
+      {
+       "name": "•Patio"
+      },
+      {
+       "name": "•Porch"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-893-6610",
+   "propertyWebsite_url": "http://rjamesproperties.com/properties/plaza1/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $589"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $669 – 689"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $725"
+    }
+   ]
+  },
+  {
+   "propertyName": "Mattress Factory Lofts",
+   "propertyOwnerName": "Braden Fellman Group",
+   "propertyNeighborhood": "Oakland",
+   "propertyZipCode": "30312",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "300 SE Martin Luther King Jr Dr",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,275 - 1,420",
+     "bathrooms": "1 Bath",
+     "bedrooms": "Studio",
+     "squareFeet": "782 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,795",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,215 Sq Ft",
+     "availability": "Available Now"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/y10d70inEMtM6jR3jPvjIFs6MEr_A4gL8aBSJ0TnWro/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-18 - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/_uDmqKHn1bIvXmG4TDSoFgbSYOkL1O3Ixmm-26kcK0k/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-1 - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/mfBo2z50iGe_JxD595M1PM0nQ2vHRiDjL1XMyGR5jKE/117/mattress-factory-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/mU2srU-yWtFEc9Hrc57QNkr163oPemBYZ61O4_ElHVs/117/mattress-factory-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Mattress Factory Lofts\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/s-paHF2npBOgHu9ueWCMoiQ1hiAyFFyW3wa4g52C_6o/117/mattress-factory-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/BCBB8_B7iJ6XgnM6AvbShG_Ucy4UvdTRLURGYLo9Bjg/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-17 - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/HWh23-7eapXjqvjnHCgSF-RFDkP39fRec5LVLm4px6w/117/mattress-factory-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/7BFo3PmYV8eeo-lpMA2mc25ck8O_Au0RrCq8ifQhOMc/117/mattress-factory-lofts-atlanta-ga-studio-700-sf.jpg\" alt=\"Studio 700 SF - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/BF21PciQzV1OHIPIXpDS5nWfugHnNFgW4IT87pftHwI/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-5 - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/eWXH9-FeRpIU3co2pkNEtpybvs0PhEbei6JUZ5kAk_Q/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-3 - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Po4zGKeu-WoyHkZgFShfwQ36hRUg9Z90-_1S5eN2-0E/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-12 - Mattress Factory Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/AsmxGvjVMqtWnqTaMFhuT_pL1OW_UxdTz5w-CALImMA/117/mattress-factory-lofts-atlanta-ga-braden-fellmanmattress-factory-loftsresi.jpg\" alt=\"Braden Fellman_Mattress Factory Lofts_Residential_Low Res-24 - Mattress Factory Lofts\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1930"
+      },
+      {
+       "name": "•Renovated in Jan 1999"
+      },
+      {
+       "name": "•218 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Ice Maker"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Vaulted Ceiling"
+      },
+      {
+       "name": "•Views"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-274-6176",
+   "propertyWebsite_url": "http://bradenfellman.com/apartments-lofts/downtown/mattress-factory-lofts/",
+   "rentRanges": [
+    {
+     "range": "Studio Studio $1,275 – 1,420"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,795"
+    }
+   ]
+  },
+  {
+   "propertyName": "Columbia Crest",
+   "propertyOwnerName": "Columbia Residential, LLC",
+   "propertyNeighborhood": "Westside Park",
+   "propertyZipCode": "30318",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1903 NW Drew Dr",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$989",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "770 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,179",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,066 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,319",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,318 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,345",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,500 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/nvD2x2wBNHd0Ic1QhRLmtMCR-zgobrg69Ld73Jj2TCA/117/columbia-crest-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Crest\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/FvfoPCuErno6_kxotiQJ3pWhY0OxQEmd4YB5pYsDohE/117/columbia-crest-atlanta-ga-1br1ba.jpg\" alt=\"1BR/1BA - Columbia Crest\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/NZ1vQWx5dfHVcO331r9-bDQtaM2GKlQUgW_SLAK2jdc/117/columbia-crest-atlanta-ga-3br2ba.jpg\" alt=\"3BR/2BA - Columbia Crest\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/9NnoFa0yskUi06fczRr01kcOLWSu-qEO4BI5MEKEiPU/111/columbia-crest-atlanta-ga-primary-photo.jpg\" alt=\"Primary Photo - Columbia Crest\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/m2/l7JBSVv22DmDeUJtn5Nl1tdZIe11TVj4mdZ6wDPv6V0/H240W360/columbia-crest-atlanta-ga-map-image-of-the-property.jpg\" alt=\"Map image of the Property - Columbia Crest\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TWtDjHQPlzRkwYQ1HEDupl_uE7cCRdKaN_5dYxWxvSw/117/columbia-crest-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Crest\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/r5rtB_PA9_UDIYHdQyw-ezAuzpLg57mHvpjeUiGaZdY/117/columbia-crest-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Crest\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/0e6g4Lb0VYdZ1WzP9D9M-9znHmRBG1QErWkJPuZlLwQ/117/columbia-crest-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Crest\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2005"
+      },
+      {
+       "name": "•152 Units/4 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "12 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      },
+      {
+       "name": "•Video Patrol"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Business Center"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Grill"
+      },
+      {
+       "name": "•Picnic Area"
+      },
+      {
+       "name": "•Waterfront"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Fireplace"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Kitchen"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Crown Molding"
+      },
+      {
+       "name": "•Vaulted Ceiling"
+      },
+      {
+       "name": "•Views"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Barbecue/Grill"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      },
+      {
+       "name": "•Video Patrol"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-657-7627",
+   "propertyWebsite_url": "https://www.columbiares.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $989"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,179"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,319 – 1,345"
+    }
+   ]
+  },
+  {
+   "propertyName": "Donnelly Gardens",
+   "propertyOwnerName": "R. James Properties, Inc.",
+   "propertyNeighborhood": "West End",
+   "propertyZipCode": "30310",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1295 Donnelly Ave SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$559",
+     "bathrooms": "1 Bath",
+     "bedrooms": "Studio",
+     "squareFeet": "580 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$569",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "675 - 740 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$669",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "875 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$679",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "940 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/uKExEETrZUawJ3UhYDmewLpXTQl7EHgc26OCvKoxHHs/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/6yb_L-h2Ktlaruf-c7vNBJw1MFKO418jvOyTfhxSAik/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/BlV9j95a228_soXkwHsGNebkNYPb4LgqmN20EFY8DFA/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/3quFKfdAjYrEA4Ymij_Yas2UDiqzWZTAwoY7WfBS_90/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/M9fa37G5yWBfGyT6QMvw1FBTAFVONHuJUNfmfffLZFk/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/nO90J3NMpVWLahLeD-K5MKKLEvZeV4kx_Fu7KiwB3Jw/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/pRUXsNJy2J7rjgMZTP7LY5hR9_ANu4OssgfAvg9YQcs/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/wCUHcqkki4b60x8gl2RDXwkyHzohoaG30FHXmy7AZdI/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/nF_Gt802muHPQqkSLk1is1QJsmwuBpcinwhN6GjaiE0/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/p9lXLmh1YlVeq-Qr-1gcwgBHucZZVoX2Qzjakh_t4EM/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/13INKOwr23kB7TkXrjgPtrCK6v0YbEaqI3Vsid5jR9U/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TZevkc5VvJjfeXgrz6OoWKyMUgOkBEFLhBExq6_h62c/117/donnelly-gardens-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Donnelly Gardens\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Fully Equipped Kitchens With Stove"
+      },
+      {
+       "name": "•Minutes From Downtown & Underground Atlanta"
+      },
+      {
+       "name": "•Near Hartsfield Airport & Centennial Park"
+      },
+      {
+       "name": "•Screen Doors"
+      },
+      {
+       "name": "•Separate Dining Rooms"
+      },
+      {
+       "name": "•Separate Utilities"
+      },
+      {
+       "name": "•Spacious Walk-in Closets"
+      },
+      {
+       "name": "•Vaulted Ceilings"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1965"
+      },
+      {
+       "name": "•Renovated in Jan 1973"
+      },
+      {
+       "name": "•250 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Public Transportation"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Courtyard"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Cable Ready"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Dining Room"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "678-701-7221",
+   "propertyWebsite_url": "http://www.rjamesproperties.com/properties/donnellygardens/?pid=359",
+   "rentRanges": [
+    {
+     "range": "Studio Studio $559"
+    },
+    {
+     "range": "1 Bedroom 1 Bed $569"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $669 – 679"
+    }
+   ]
+  },
+  {
+   "propertyName": "WestMar Student Lofts",
+   "propertyOwnerName": "Cardinal Group Investments, LLC",
+   "propertyNeighborhood": "Upper West Side",
+   "propertyZipCode": "30318",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "800 W Marietta St",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$818 / Person",
+     "bathrooms": "4 Baths",
+     "bedrooms": "4 BRs",
+     "squareFeet": "1,460 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$888 / Person",
+     "bathrooms": "4 Baths",
+     "bedrooms": "4 BRs",
+     "squareFeet": "1,460 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$785 / Person",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "850 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$879 / Person",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "850 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$929 / Person",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "850 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$889 / Person",
+     "bathrooms": "3 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,191 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$739 / Person",
+     "bathrooms": "4 Baths",
+     "bedrooms": "4 BRs",
+     "squareFeet": "1,460 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/jb6cmYfBzHpuRIdIUVJ_Sc1BqEgq9V_QkRbn6gtN3xs/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/d6cWPLNEt3ECrvNI18pPfXjwuqKB5G3-tAiTQEB1Jbw/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/etWpECFY4cm2bCoZhamK6ysJ2eGv_TnbkA9mQE6Hc1k/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/1Np1vgLMulVoOhY3IWLaR1ZQtkUnsHhorGVSrLBQ_Lw/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/0fq6GOQPvKFzdl24pqHMQbrZdwhPwKWYMXLJWcQ-BU8/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/FDPJ5hMamSCQKkc8Mg44a4c8xGQ92XaBtTPDvC-f9i0/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/I1GJpmr8ADKDf3djHKKlspu0CaG60A9mmPKSZTekOCk/117/westmar-student-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/NG0lWkE88QQAKQ01aZOdgZAcgWRIRwuTp_uq-MWSPc8/117/westmar-student-lofts-atlanta-ga-2-bed-2-bath-standard.jpg\" alt=\"2 Bed 2 Bath Standard - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/QH-LVxKHEie7EknFJWR1Pvl9XzX2qRP7M-eLt8NST_o/117/westmar-student-lofts-atlanta-ga-2-bed-2-bath-luxury.jpg\" alt=\"2 Bed 2 Bath Luxury - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Fpx52unkpiL_zGryemlgNqXlvo9Wo3hdjChioJNBzM0/117/westmar-student-lofts-atlanta-ga-3-bed-3-bath-standard.jpg\" alt=\"3 Bed 3 Bath Standard - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/RYQIMz7LYp1flaUctlwU6XS2USK8FBAglK72i0DSiVI/117/westmar-student-lofts-atlanta-ga-4-bed-4-bath-luxury.jpg\" alt=\"4 Bed 4 Bath Luxury - WestMar Student Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/nNR3LsVDuRgly0PSBsjeS13byevlBxSRxRbOR_z0WLM/117/westmar-student-lofts-atlanta-ga-4-bed-4-bath-standard.jpg\" alt=\"4 Bed 4 Bath Standard - WestMar Student Lofts\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•24-hour Access to Computer Lab and Study Rooms"
+      },
+      {
+       "name": "•Basketball and Beach Volleyball Court"
+      },
+      {
+       "name": "•Complimentary Private Shuttles"
+      },
+      {
+       "name": "•Easy Access to GA Tech, GA State Many More"
+      },
+      {
+       "name": "•Electric Key Entry"
+      },
+      {
+       "name": "•Free Expanded Basic Cable & Hi Speed Internet"
+      },
+      {
+       "name": "•Full Size Washer/Dryers"
+      },
+      {
+       "name": "•Furnished Lofts Rented by the Room"
+      },
+      {
+       "name": "•Game Room and Club Room"
+      },
+      {
+       "name": "•Large Fitness Center with Circuit Training"
+      },
+      {
+       "name": "•Private Bedrooms and Private Baths"
+      },
+      {
+       "name": "•Supersized Pool with Large Sundeck"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2005"
+      },
+      {
+       "name": "•1218 Units/8 Stories"
+      },
+      {
+       "name": "•Furnished"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "2 months, 5 months, 7 months, 10 months, 12 months, 14 months, 15 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      },
+      {
+       "name": "•Furnished Units Available"
+      },
+      {
+       "name": "•Planned Social Activities"
+      },
+      {
+       "name": "•Public Transportation"
+      },
+      {
+       "name": "•Freeway Access"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Elevator"
+      },
+      {
+       "name": "•Business Center"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Breakfast/Coffee Concierge"
+      },
+      {
+       "name": "•Tanning Salon"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Gated"
+      },
+      {
+       "name": "•Grill"
+      },
+      {
+       "name": "•Picnic Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Basketball Court"
+      },
+      {
+       "name": "•Tennis Court"
+      },
+      {
+       "name": "•Volleyball Court"
+      },
+      {
+       "name": "•Gameroom"
+      }
+     ]
+    },
+    {
+     "amenityName": "Student Features",
+     "feature": [
+      {
+       "name": "•Private Bathroom"
+      },
+      {
+       "name": "•Roommate Matching"
+      },
+      {
+       "name": "•Shuttle To Campus"
+      },
+      {
+       "name": "•Study Lounge"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Wi-Fi"
+      },
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Ice Maker"
+      },
+      {
+       "name": "•Microwave"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Views"
+      },
+      {
+       "name": "•Walk-In Closets"
+      },
+      {
+       "name": "•Window Coverings"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "866-974-1287",
+   "propertyWebsite_url": "http://www.westmarlofts.com/",
+   "rentRanges": [
+    {
+     "range": "2 Beds $785 – 929 / Person"
+    },
+    {
+     "range": "3 Beds $889 / Person"
+    },
+    {
+     "range": "4 Beds $739 – 888 / Person"
+    }
+   ]
+  },
+  {
+   "propertyName": "Columbia Estates",
+   "propertyOwnerName": "Columbia Residential, LLC",
+   "propertyNeighborhood": "Westside Park",
+   "propertyZipCode": "30318",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1710 Noel St NW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "Call for Rent",
+     "bathrooms": "2½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,274 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,600",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,444 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/WBXZ-3SiEqxwxcRKaJ5lqFn8siQmpEWlP4hUlxrW6hk/117/columbia-estates-atlanta-ga-estates-townhouse.jpg\" alt=\"Estates Townhouse - Columbia Estates\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4Mmfn2NR8QxzJxhLA25uy86Jl2F1R9jNSzdTQ54KiVU/111/columbia-estates-atlanta-ga-primary-photo.jpg\" alt=\"Primary Photo - Columbia Estates\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/m2/MXaJojhm_1Tp1PRHgfNGCp8Rwmlb8bw-seMHMY0ERz0/H240W360/columbia-estates-atlanta-ga-map-image-of-the-property.jpg\" alt=\"Map image of the Property - Columbia Estates\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/UYt5A5jHAlP8xPWpjns1y43WC1sCYmmnjdGhVkgXEhs/117/columbia-estates-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Estates\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/kEhlBiNHVtJUpnzcS9pjF_PIpzx2LFvBoFJo6_8OFCc/117/columbia-estates-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Columbia Estates\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/xuVKFNMXl-ccf68HrC3qS5XBwIVBgG08gF5KgaAi6q0/117/columbia-estates-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Columbia Estates\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2001"
+      },
+      {
+       "name": "•124 Units/3 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      },
+      {
+       "name": "•24 Hour Availability"
+      },
+      {
+       "name": "•Laundry Service"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Business Center"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Breakfast/Coffee Concierge"
+      },
+      {
+       "name": "•Conference Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Grill"
+      },
+      {
+       "name": "•Picnic Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Fireplace"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Range"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Tile Floors"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-368-5409",
+   "rentRanges": [
+    {
+     "range": "2 Bedrooms 2 Beds Call for Rent"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $1,600"
+    }
+   ]
+  },
+  {
+   "propertyName": "Synergy Apartments",
+   "propertyOwnerName": "Synergy Multifamily",
+   "propertyNeighborhood": "Bankhead-Bolton",
+   "propertyZipCode": "30331",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "3787-3815 Martin Luther King Jr Dr SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$750 - 775",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "670 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$800 - 825",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "700 Sq Ft",
+     "availability": "Available Now"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/kplicmY1-jgTmkT8O-3WFXsFX64ZYHP1wqpUOmaOEZc/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/wWwd6591UCNJqTJnRQGtxkSvumMbpMH6_aQgZcdMtEo/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TaeWvS7QV2HbsnrSo_Q0DoLy0cKxYxm2yovltyu0LbY/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/DclKaUwSNVqd06V1FuCvDPhCzj4UQ6J-DVrJq5V6lSA/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4l6mRyg4RMTR0SSHcTcUAr3YyK8oUgBV2CbxFLs1Wo4/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/fDh1niZD0UtrbvelbXnG3NV1lPv1g7LP8VCDXElw0yo/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/EOe_1xLbgpTerbqW5HL6XBvy4J5bdehhzJOvdMwY8pw/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TDtXU08VYg_RK515Srup6eW-vWv19-pOCOJNH1rPVvU/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/WX7L937aK344Kit1DKYUmd3alx1jqDk9A4BtiKkhpck/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/1EAQx0Szl6SfNQNDarq92cS4jmg0cY4SfEs_DVmO6ks/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/KUYrTdUzgO82zwjyrjbB3iWae6QBryb8y6ml50hn6ZE/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/LtW66DrKkESPIyU3snS1tU4N4cxpx59hqBZxUsbRu60/117/synergy-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Synergy Apartments\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•10 Minutes To Camp Creek Market"
+      },
+      {
+       "name": "•15 Minutes To Hartsfield-Jackson"
+      },
+      {
+       "name": "•24 HRS SURVEILLANCE CAMERAS"
+      },
+      {
+       "name": "•After School Kids Activities"
+      },
+      {
+       "name": "•Laundry Facilities On-Site"
+      },
+      {
+       "name": "•Minutes To The Mall & Great Shopping"
+      },
+      {
+       "name": "•POLICE OFFICER LIVE ON SITE"
+      },
+      {
+       "name": "•Solid Brick Construction"
+      },
+      {
+       "name": "•SUPERFAST Access Downtown"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1970"
+      },
+      {
+       "name": "•Renovated in Dec 2018"
+      },
+      {
+       "name": "•136 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "1 Year"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Stainless Steel Appliances"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      },
+      {
+       "name": "•Barbecue Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-473-7984",
+   "propertyWebsite_url": "https://www.synergymultifamilylp.com/",
+   "rentRanges": [
+    {
+     "range": "2 Bedrooms 2 Beds $750 – 825"
+    }
+   ]
+  },
+  {
+   "propertyName": "Centra Villa Apartments",
+   "propertyOwnerName": "R. James Properties, Inc.",
+   "propertyNeighborhood": "Adams Park",
+   "propertyZipCode": "30311",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1717 Centra Villa Dr SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$659 - 699",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "887 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$759 - 799",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,006 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$859 - 899",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,347 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/uM2gyQwcqlmwgGEegAWgNWzqbRKRYLwo9BdCd8Ym-ck/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/uqsZcBj8qtLTy7CnCc4L_MXWcPpuODSRXqVtiGL9Jdw/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/XZ0TowkoHCUb2zNoQnPeFisxl1GLO71e9i-lYZP__YM/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/A8K7tg3Mg56xB5hSy69bDmJD654c-QZfrMwKzYVdlrw/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/MXTOsBNV0ntbbQz8PWzODmyh0SlesJcFK0aw-JxqRqg/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Ef69yUNDbGrPiiqDLRkIsL9pa4xHYdDdRqOLFD8TKfc/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/5KCwKfNUppQmKxVcE65KbtQsuSjKN5RC63uqaZdkGe8/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/RA6osS3QwEJ1Pr9jqbVhHE2cPrPiQ9264wsvRHEdS1s/117/centra-villa-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/6ZcpnKcr5e-Irxgf1nl3vWnV4dr9gZqjF2wiQsLjZp8/117/centra-villa-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/5p9j4jpMDph-ZEMceGdfdfznE-12_XMutqTn28HKoEc/117/centra-villa-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/7o7WG-6aBvyOAa8w0lADLPsMPzk-ctZm24wTE9Xgw5k/117/centra-villa-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Centra Villa Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/sJHOVz7Vu-hlW8eQ9yFokmfMDgHljyDB0WZYemqAhmE/117/centra-villa-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Centra Villa Apartments\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1971"
+      },
+      {
+       "name": "•132 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      },
+      {
+       "name": "•Online Services"
+      },
+      {
+       "name": "•Pet Play Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Dining Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Patio"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Security System"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-254-3891",
+   "propertyWebsite_url": "http://rjamesproperties.com/properties/centra-villa-apartments/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $659 – 699"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $759 – 799"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $859 – 899"
+    }
+   ]
+  },
+  {
+   "propertyName": "The Park at Greenbriar",
+   "propertyOwnerName": "Meridian Management Group",
+   "propertyNeighborhood": "Greenbriar",
+   "propertyZipCode": "30331",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "3000 Continental Colony Pky",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$870",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,150 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$970",
+     "bathrooms": "2½ Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,560 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$685",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "700 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$710",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "1 Bed",
+     "squareFeet": "800 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$785",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "940 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$795",
+     "bathrooms": "1½ Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,150 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$830",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,060 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/f-3T9NVroekuSDA-Aaobh3H7RvPLX-uAPEzbbp7vvOM/117/the-park-at-greenbriar-atlanta-ga-patio.jpg\" alt=\"Patio - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/yn61umTqyf0QsfhjLJrJdJiXUaNNZskeWu3eUwGtsJg/117/the-park-at-greenbriar-atlanta-ga-welcome-home.jpg\" alt=\"Welcome Home! - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/zQe84I4IIyvixxwhjWE6MZH9GiRWUHBAzmMaHsICvjA/117/the-park-at-greenbriar-atlanta-ga-fitness-center.jpg\" alt=\"Fitness Center - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/_MIwVvDu-Jwx4HobXnz5UX4Oq_BpNz-dxoEF6ikAF0U/117/the-park-at-greenbriar-atlanta-ga-dining-area.jpg\" alt=\"Dining Area - The Park at Greenbriar\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/wKQ3hrUJzN5TFkAlUHxyQLT3zxqyjtUzouYMf0JSPNw/117/the-park-at-greenbriar-atlanta-ga-kitchen.jpg\" alt=\"Kitchen - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ViwLN-2gae4KPqF0u5xmn2pHdhaiQJZanoIoMU-7Ogg/117/the-park-at-greenbriar-atlanta-ga-kitchen.jpg\" alt=\"Kitchen - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ofl7r_nvoIBsFM_UUUeF9ZROUKfF4duQTPfRqWSyA9s/117/the-park-at-greenbriar-atlanta-ga-bathroom.jpg\" alt=\"Bathroom - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/GdpQwe9WyRylXIvMtsBMd7jtQTU0Q6NS8DiKutXIWNE/117/the-park-at-greenbriar-atlanta-ga-bedroom.jpg\" alt=\"Bedroom - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/wJB5bRarRxpLLJB4e_mx48fCYH0o_u4594yOvm9OjV4/117/the-park-at-greenbriar-atlanta-ga-bedroom.jpg\" alt=\"Bedroom - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Pezx0b0xEKgJZusCWDbhx0hthCI6qrXDPhLYm3cpuBo/117/the-park-at-greenbriar-atlanta-ga-bedroom.jpg\" alt=\"Bedroom - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/dqkSOWt_HLkvCD94hp04NNmQbjLnI1d1mvkcTcsqup0/117/the-park-at-greenbriar-atlanta-ga-community.jpg\" alt=\"Community - The Park at Greenbriar\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/njfxjzTYOyUFObpEtoVLr5KgvF2y96B8hD_W0hFFt6k/117/the-park-at-greenbriar-atlanta-ga-community.jpg\" alt=\"Community - The Park at Greenbriar\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Completely renovated community"
+      },
+      {
+       "name": "•Freeway Access"
+      },
+      {
+       "name": "•New park with play area"
+      },
+      {
+       "name": "•Quiet Setting"
+      },
+      {
+       "name": "•Townhomes Available"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1969"
+      },
+      {
+       "name": "•209 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Maintenance on site"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Car Wash Area"
+      },
+      {
+       "name": "•Public Transportation"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Storage Space"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Sundeck"
+      },
+      {
+       "name": "•Grill"
+      },
+      {
+       "name": "•Picnic Area"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      },
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Alarm"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Fireplace"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Disposal"
+      },
+      {
+       "name": "•Eat-in Kitchen"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Range"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Vinyl Flooring"
+      },
+      {
+       "name": "•Dining Room"
+      },
+      {
+       "name": "•Walk-In Closets"
+      },
+      {
+       "name": "•Window Coverings"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Patio"
+      },
+      {
+       "name": "•Yard"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Alarm"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "404-585-4153",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $685 – 710"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $785 – 830"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $870 – 970"
+    }
+   ]
+  },
+  {
+   "propertyName": "Aspen Courts Apartments",
+   "propertyOwnerName": "R. James Properties, Inc.",
+   "propertyNeighborhood": "Campbellton Road",
+   "propertyZipCode": "30311",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "1631 Stanton Rd SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$600 - 635",
+     "bathrooms": "1 Bath",
+     "bedrooms": "Studio",
+     "squareFeet": "364 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$725 - 749",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "850 Sq Ft",
+     "availability": "Available Now"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Jd1xJQ5sXJtDLMre5Iafgr8vV4BH_LOc4g7yuOnuOkE/117/aspen-courts-apartments-atlanta-ga-aspen-courts.jpg\" alt=\"Aspen Courts - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/cRMTk23VnUOpf7AgFF7-TMslEkCRU2hFpPbsm8wVl_I/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/me-3jINN6bbYaVJikJXGkjeWPyOrg5ZIGELpBh-6x8s/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/1ysc9krP-ti7zf3qvlkpbr6AucjsU3eDNI9YsVL-MU4/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/f9mlvhqGnVei6Rj2qeZY4N-HIkC5yJtVXG-LMZ0ZNhE/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/DvkhjG1xGbvfukJA2nlJovkbqUNC6FT8eugGKC35_Y0/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/NydNwcosgK26HgxNVIkASc5CDykEPoxYfE3AqoczSAM/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/SgsRmNVU468ELQsjv5-RoD3VzRhocR1tRv3QGLkHXy8/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/IPiEu6O6Aq-kWCSZzLXNFQDEyB6vFQwQ6uzlLa8cQp4/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4vdB_kFF8J7ouzleK8pj0VwGXxJ-fuhL4GxpjjgRPb8/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/tdM7tADuT-lJMOdnS23evIVDP5U8SA6plxnJwpaoMTQ/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/r0jaKmhNl-JCh1KIzKTCIt1Qngjl50qSK1_Lj_RBQ7Q/117/aspen-courts-apartments-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Aspen Courts Apartments\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Security Officer Onsite"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1979"
+      },
+      {
+       "name": "•157 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "12 months"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      },
+      {
+       "name": "•24 Hour Availability"
+      },
+      {
+       "name": "•Laundry Service"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Ceiling Fans"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Hardwood Floors"
+      },
+      {
+       "name": "•Carpet"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Courtesy Patrol"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-348-3559",
+   "rentRanges": [
+    {
+     "range": "Studio Studio $600 – 635"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $725 – 749"
+    }
+   ]
+  },
+  {
+   "propertyName": "City Plaza",
+   "propertyOwnerName": "JMG Realty, Inc.",
+   "propertyNeighborhood": "South Downtown Atlanta",
+   "propertyZipCode": "30303",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "133 Trinity Ave SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$1,320",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "967 Sq Ft",
+     "availability": "Jan 8"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,060",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "715 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,060",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "707 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,060",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "698 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,110",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "777 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,350 - 1,399",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,167 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,350 - 1,399",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,167 Sq Ft",
+     "availability": "Not Available"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,675",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "1,200 Sq Ft",
+     "availability": "Not Available"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/loR8hxdKYrDpKiPI0OnUakPetzbOuo3cg_6NdGeQr5k/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/8PynAXe5NSBGDjsgxMeTjd_-QwRmd6gJzIe0V2YZFAc/117/city-plaza-atlanta-ga-bathroom.jpg\" alt=\"Bathroom - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/bEdwFrRk5y1MXvrp-J-5rxgdlJZeXk1C0vC7h6ibY-g/117/city-plaza-atlanta-ga-kitchen.jpg\" alt=\"Kitchen - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/UHwQqKG-lXrtbNJfwB5wlgsV8L7XT_37m267GztsU6g/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/BaRZ4cRAMkd35ddEHfUELcS2z_oyUrXmmjDncTMuc-k/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/x0cqus-8eZMO9h3QIHiHico9xeIbt5nQh6uNBe7c63E/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/HJjKurnwKavnZc9OLp3JhLjDeCJr_qutmOE9eQ1KRtc/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/V96EcnhDX1MdzAGedoWBx61jIAbsfCtAFMkDUw26tqk/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/cfiOAzF-W-Vgid6faX-j9ktmbaXi_5qcjx2kcXb_Ilc/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/RFvpjQqCt7b0jLIWlouSLCehsWyEvbUvhhTAjFjv8Ag/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/r5zzQwr2wSc1YU19lguS7-S6aKGNjh9d8zMhWJAk28o/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/FewGGYQ3lIHYVBpWWDTAlfMqpUb1-ru3tdk_8k_SxZE/117/city-plaza-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - City Plaza\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Unique Features",
+     "feature": [
+      {
+       "name": "•Dual Elevators in Each Building"
+      },
+      {
+       "name": "•Mini Blinds"
+      },
+      {
+       "name": "•On-Site Management & Maintenance"
+      },
+      {
+       "name": "•Private Balconies"
+      },
+      {
+       "name": "•Private Clubhouse & Exercise Facility"
+      }
+     ]
+    },
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1996"
+      },
+      {
+       "name": "•Renovated in Jan 2014"
+      },
+      {
+       "name": "•164 Units/5 Stories"
+      },
+      {
+       "name": "•Furnished"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      },
+      {
+       "name": "•Furnished Units Available"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Elevator"
+      },
+      {
+       "name": "•Clubhouse"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Gated"
+      },
+      {
+       "name": "•Courtyard"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Wheelchair Accessible (Rooms)"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Microwave"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Views"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-698-0170",
+   "propertyWebsite_url": "http://www.cityplazajmg.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $1,060 – 1,110"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $1,320 – 1,675"
+    }
+   ]
+  },
+  {
+   "propertyName": "Fulton Supply Lofts",
+   "propertyOwnerName": "Provence Real Estate",
+   "propertyNeighborhood": "Castleberry Hill",
+   "propertyZipCode": "30313",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "342 Nelson St SW",
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/MkjQeEKsdSV-Yi6ZjzPc2VIvRTaTmj9yT0Zrtk32oeY/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/msHSUowpGmW-O6Yx4ifz76jtMEEc2hqvjzl_jPsPKB0/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/binGkKw3bYhZGIxDSW9kukKNESn8kOoH1fpICNT82Ak/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/iAQnxMGf7Zlg0sueMuhkEAKGmvtIdJoOiNC1mmTGG_o/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/M26uz20plILfAhavZSTbBYt8jQg7Kjv0Zmbw8n2JN8Q/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Ush7jE3NSgdLfPNao6PbUMhoY94bCfUlt67RNaw_wLU/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/3JTJjQ7_OwXIlWmHMev8PjllnjEwCBLp3zpng7kzVxc/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/CuOlVyTYCX0G08b7emkWRYXnEpju0WnewmDcMAt6V8E/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/28OhHZGqukyDU9hbqZm56QxkbU0DjdG9UQwWNL56sjA/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/rruEhXiS0hF2C38P3xjUJZoPtGurEB39L0cPg7L8FpM/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/gEcOqIt4rcGwVyDA809Nj9ma-v-5Gv_gE-0ZndnR52s/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Z_KA-Z6vf-_goJdo-BylBG3MKeinXzY1ed8F1W3ozxs/117/fulton-supply-lofts-atlanta-ga-building-photo.jpg\" alt=\"Building Photo - Fulton Supply Lofts\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 2016"
+      },
+      {
+       "name": "•74 Units/5 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Lease Length",
+     "feature": [
+      {
+       "name": "14 - 24 Month Leases"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Controlled Access"
+      },
+      {
+       "name": "•Car Charging Station"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Elevator"
+      },
+      {
+       "name": "•Clubhouse"
+      },
+      {
+       "name": "•Multi Use Room"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Fitness Center"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Heating"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Storage Units"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Ice Maker"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Controlled Access"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-661-6872",
+   "propertyWebsite_url": "http://www.fultonsupplylofts.com/",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $1,750"
+    }
+   ]
+  },
+  {
+   "propertyName": "Royal Oaks Apartments",
+   "propertyOwnerName": "Strategic Properties",
+   "propertyNeighborhood": "Sandtown",
+   "propertyZipCode": "30331",
+   "propertyState": "GA",
+   "propertyCity": "Atlanta",
+   "propertyAddress": "3540 N Camp Creek Pky SW",
+   "properyUnit": [
+    {
+     "propertyUnitName": "",
+     "rent": "$675",
+     "bathrooms": "1 Bath",
+     "bedrooms": "2 BRs",
+     "squareFeet": "900 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$715",
+     "bathrooms": "2 Baths",
+     "bedrooms": "2 BRs",
+     "squareFeet": "990 Sq Ft",
+     "availability": "Available Now"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$815 - 955",
+     "bathrooms": "2 Baths",
+     "bedrooms": "3 BRs",
+     "squareFeet": "1,354 Sq Ft",
+     "availability": "Jan 2"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$600",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "600 - 690 Sq Ft",
+     "availability": "Jan 5"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$565",
+     "bathrooms": "1 Bath",
+     "bedrooms": "1 Bed",
+     "squareFeet": "754 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$955",
+     "bathrooms": "2 Baths",
+     "bedrooms": "4 BRs",
+     "squareFeet": "1,400 Sq Ft",
+     "availability": "Available Soon"
+    },
+    {
+     "propertyUnitName": "",
+     "rent": "$1,055",
+     "bathrooms": "2 Baths",
+     "bedrooms": "5 BRs",
+     "squareFeet": "1,550 Sq Ft",
+     "availability": "Available Soon"
+    }
+   ],
+   "images": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/FqA1j0KW3JRRGpzzfqr7hqVoxDOoj375DRCMXfXQ0ec/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/rzdXz9FaatjL4ixcBYujAwHXQfi7jjSb2H2W7kQ2jIw/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/rTx9iHrM4DKvvMXzkCU7t-KuneF_fRKSV-gTkV1uY6U/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/xQERrsuXZuJxbDVfcroc7OZdn6ES9_r_Q5MLWzpsE84/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    }
+   ],
+   "images1": [
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/X6UN0TnGAnQ7olxPZJYFTtlBcJl5xHn7oRNTnNYp9q4/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/4LmwMX3Pl67WjMmC5uNWZeY5V2Dy5ZEBHlTCSGUK_V4/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/L21KVCzXdL0gSRbXOiSJujkeUWDgEymJDCdYZuzwoXc/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/Pwf5q8vTXBZ5vWI-PkAzuOiJZEs_O5NQFXgkAyx9c-Q/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/n2mUQcWMtm51gMPyVwpVAV7YzKbXItd2Qlgq0K3-K3Y/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/jeXGzVXMqvle6i_Q3HcKAx5ug7m-Q9NEvZ4--5COm1U/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/TM0YBiSmtW43NGc7ARd8xsQYI8c8KSA99glu__kc4Ak/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    },
+    {
+     "url": "<img src=\"https://images1.apartments.com/i2/ZlBnFiO58ylbvmzvIgnJ7GS7ON0BBZNdk2sEn-HqOm4/117/royal-oaks-apartments-atlanta-ga-interior-photo.jpg\" alt=\"Interior Photo - Royal Oaks Apartments\">"
+    }
+   ],
+   "Amenities": [
+    {
+     "amenityName": "Pet Policy"
+    },
+    {
+     "amenityName": "Parking"
+    },
+    {
+     "amenityName": "Property Information",
+     "feature": [
+      {
+       "name": "•Built in 1972"
+      },
+      {
+       "name": "•238 Units/2 Stories"
+      }
+     ]
+    },
+    {
+     "amenityName": "Services",
+     "feature": [
+      {
+       "name": "•Laundry Facilities"
+      },
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    },
+    {
+     "amenityName": "Interior",
+     "feature": [
+      {
+       "name": "•Clubhouse"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Courtyard"
+      }
+     ]
+    },
+    {
+     "amenityName": "Fitness & Recreation",
+     "feature": [
+      {
+       "name": "•Pool"
+      },
+      {
+       "name": "•Playground"
+      },
+      {
+       "name": "•Basketball Court"
+      },
+      {
+       "name": "•Tennis Court"
+      }
+     ]
+    },
+    {
+     "amenityName": "Features",
+     "feature": [
+      {
+       "name": "•High Speed Internet Access"
+      },
+      {
+       "name": "•Washer/Dryer Hookup"
+      },
+      {
+       "name": "•Air Conditioning"
+      },
+      {
+       "name": "•Smoke Free"
+      },
+      {
+       "name": "•Cable Ready"
+      },
+      {
+       "name": "•Tub/Shower"
+      },
+      {
+       "name": "•Handrails"
+      }
+     ]
+    },
+    {
+     "amenityName": "Kitchen",
+     "feature": [
+      {
+       "name": "•Dishwasher"
+      },
+      {
+       "name": "•Kitchen"
+      },
+      {
+       "name": "•Oven"
+      },
+      {
+       "name": "•Range"
+      },
+      {
+       "name": "•Refrigerator"
+      }
+     ]
+    },
+    {
+     "amenityName": "Living Space",
+     "feature": [
+      {
+       "name": "•Carpet"
+      },
+      {
+       "name": "•Vinyl Flooring"
+      },
+      {
+       "name": "•Recreation Room"
+      },
+      {
+       "name": "•Walk-In Closets"
+      }
+     ]
+    },
+    {
+     "amenityName": "Outdoor Space",
+     "feature": [
+      {
+       "name": "•Balcony"
+      },
+      {
+       "name": "•Patio"
+      },
+      {
+       "name": "•Deck"
+      }
+     ]
+    },
+    {
+     "amenityName": "Security",
+     "feature": [
+      {
+       "name": "•Property Manager on Site"
+      }
+     ]
+    }
+   ],
+   "propertyPhoneNumber": "844-226-0074",
+   "rentRanges": [
+    {
+     "range": "1 Bedroom 1 Bed $565 – 600"
+    },
+    {
+     "range": "2 Bedrooms 2 Beds $675 – 715"
+    },
+    {
+     "range": "3 Bedrooms 3 Beds $815 – 955"
+    },
+    {
+     "range": "4+ Bedrooms 4+ Beds $955 – 1,055"
+    }
+   ]
+  }
+ ]
+}

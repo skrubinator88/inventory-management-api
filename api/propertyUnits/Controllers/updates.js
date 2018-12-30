@@ -19,5 +19,20 @@ module.exports = {
             console.error(err);
             cb(err);
         }
+    },
+    async deletePropertyUnit (id, cb) {
+        let PropertyUnit = dbmain.model('PropertyUnit');
+        try {
+            console.log(infoObject);
+            await PropertyUnit.destroy({
+                where: {
+                    id: id
+                }
+            });
+            cb(null, true);
+        } catch (err) {
+            console.error(err);
+            cb(err);
+        }
     }
 };

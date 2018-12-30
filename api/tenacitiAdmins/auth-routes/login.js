@@ -1,5 +1,5 @@
 "use strict";
-const passport = require('../Services/profileAuthService');
+const { signInAdmin } = require('../Services/profileAuthService');
 const Joi = require('joi');
 const jwt = require('jsonwebtoken');
 const env = process.env.NODE_ENV || 'development';
@@ -8,7 +8,7 @@ const config = require('../../../config/config_env')[env];
 //route used for logging a user in
 module.exports = function (req, res, next) {
     const schema = Joi.object().keys({
-        email: Joi.string().email(),
+        username: Joi.string().email(),
         password: Joi.string().regex(
             //password must contain letters or numbers
             //and be a minumum of 6 characters, maximum 30
@@ -18,7 +18,7 @@ module.exports = function (req, res, next) {
     const {error, value} = Joi.validate(req.body, schema);
     if (error) {
         switch (error.details[0].context.key) {
-            case 'email':
+            case 'username':
                 res.status(400).send({
                     error: 'please provide valid email address'
                 });
@@ -32,22 +32,28 @@ module.exports = function (req, res, next) {
                 res.status(400).end();
         }
     } else {
-        passport.authenticate('user-signin', function (err, user, info) {
+        signInAdmin(req.body, function (err, admin, info) {
             if (err) {
                 return next(err);
             }
-            if (!user) {
-                res.status(401).send({
+            if (!admin) {
+                console.log(info.message);
+                res.status(400).send({
                     error: info.message
                 });
             } else {
-                const token = jwt.sign(user.get(), config.jwt_secret, {expiresIn: '12h'});
-                res.json({
-                    email: user.email,
-                    payInfo: user.paymentInfo,
-                    token
-                });
+                try {
+                    const token = jwt.sign(admin.get(), config.jwt_secret, {expiresIn: '1h'});
+                    console.log(token);
+                    res.json({
+                        adminId: admin.id,
+                        email: admin.email,
+                        token
+                    });
+                } catch (error) {
+                    return next(err);
+                }
             }
-        })(req, res, next);
+        });
     }
 };

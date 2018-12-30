@@ -1,15 +1,15 @@
 //index manifest file for all profile routes
 const express = require('express');
-
+const authMiddleware = require('../../Helpers/authMiddleware');
 const router = express.Router();
 
-router.get('/', require('./getAllUsers'));
-router.get('/:userId', require('./getUser'));
-router.patch('/:userId', require('./updateUser'));
-router.patch('/:userId', require('./uploadProfilePhoto'));
+router.get('/', authMiddleware, require('./getAllUsers'));
+router.get('/:userId', authMiddleware, require('./getUser'));
+router.patch('/:userId', authMiddleware, require('./updateUser'));
+router.patch('/:userId', authMiddleware, require('./uploadProfilePhoto'));
 
-router.get('/:userId/appointments', require('./getAppointments'));
-router.get('/:userId/applications', require('./getApplicationRequests'));
-router.post('/:userId/sendSupport', require('./sendSupport'));
+router.get('/:userId/appointments', authMiddleware, require('./getAppointments'));
+router.get('/:userId/applications', authMiddleware, require('./getApplicationRequests'));
+router.post('/:userId/sendSupport', authMiddleware, require('./sendSupport'));
 
 module.exports = router;

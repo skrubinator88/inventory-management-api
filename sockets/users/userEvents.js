@@ -1,8 +1,8 @@
 'use strict';
 const { USER_CONNECTED, USER_LOGOUT,
-    USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED } = require('../chatEvents');
-const { createMessage, createChat } = require('../Factories');
+    USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED, CONNECT } = require('../chatEvents');
 const { addConnection, removeConnection, sendMessageToChat } = require('../Helpers');
+const { USER } = require('../chatEntities')
 // const { setUsersConnected, getUsersConnected, getChats } = require('../../config/repository');
 
 module.exports = (socket, io, client) => {
@@ -10,7 +10,7 @@ module.exports = (socket, io, client) => {
     let sendMessageToChatFromUser;
 
     socket.on(USER_CONNECTED, (user)=>{
-        user.socketId = socket.id;
+        user.sockets = [];
         client.getKeyValue('users').then(connectedUsers => {
             let chats = [];
             let newConnectedUsers = addConnection(socket, connectedUsers, user, chats);
@@ -30,7 +30,7 @@ module.exports = (socket, io, client) => {
         if("user" in socket) {
             client.getKeyValue('users').then(connectedUsers => {
                 console.log(connectedUsers);
-                let newConnectedUsers = removeConnection(connectedUsers, socket.user.id);
+                let newConnectedUsers = removeConnection(connectedUsers, socket.user.id, socket.id);
                 client.setKeyValue('users', newConnectedUsers).then(()=>{
                     io.emit(USER_DISCONNECTED, newConnectedUsers);
                     console.log("Disconnect User", newConnectedUsers);
@@ -78,7 +78,7 @@ module.exports = (socket, io, client) => {
         if("user" in socket ) {
             client.getKeyValue('users').then(connectedUsers => {
                 console.log("User disconnected");
-                let newConnectedUsers = removeConnection(connectedUsers, socket.user.id);
+                let newConnectedUsers = removeConnection(connectedUsers, socket.user.id, socket.id);
                 client.setKeyValue('users', newConnectedUsers).then(()=> {
                     io.emit(USER_DISCONNECTED, newConnectedUsers);
                 }, function (err) {

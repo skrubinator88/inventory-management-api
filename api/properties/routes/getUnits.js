@@ -50,7 +50,9 @@ module.exports = async function (req, res, next) {
     getPropertyUnits(query, include, infoObject.page, infoObject.pageSize, (err, units) => {
         if(err) {
             console.log(err);
-            return next(err);
+            return res.status(500).send({
+                error: 'An error occurred on the server while trying to fetch units'
+            });
         }
         res.status(200).send(units);
     })

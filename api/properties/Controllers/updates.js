@@ -71,5 +71,24 @@ module.exports = {
         } catch (err) {
             return cb(err)
         }
+    },
+    async deleteProperty (opts, cb) {
+        let Property = dbmain.model('Property');
+        try {
+            let infoObject = {
+                id: opts.id
+            };
+            console.log(infoObject);
+            Property.update({ status: 'DELETED' }, {returning: true, where: {id: opts.id}})
+                .then(function ([rowsUpdated, [propertyUpdated]]) {
+                    if (!propertyUpdated)
+                        return cb(null, false);
+                    return cb(null, true);
+                }).catch(err => { return cb(err) })
+            cb(null, true);
+        } catch (err) {
+            console.error(err);
+            cb(err);
+        }
     }
 };

@@ -1,5 +1,5 @@
 const client = require("../../config/Redis");
-
+const { filterDuplicates } = require('../Helpers/Factories');
 const fs = require('fs');
 const dbmain = require("../../config/DB/DBmain");
 const db = require('../../config/DB/config_db');
@@ -17,13 +17,13 @@ module.exports = {
         let AmenityFeature = dbmain.model("AmenityFeature");
         let propertiesConnected = {};
         try {
-            let obj = require(__dirname + `/seed_data${page}.json`);
+            // let obj = require(__dirname + `/apartments.com_page_${page}_12.29.18.json`);
             let resultArr;
-            if(page === '1') {
-                resultArr = obj["selection1"][1]["properties"];
-            } else {
-                resultArr = obj["properties"];
-            }
+            // if(page === '1') {
+            //     resultArr = obj["selection1"][1]["properties"];
+            // } else {
+            resultArr = filterDuplicates(page);
+            // }
                 let properties = [];
                 let names = [];
                 let neighborhoods = [];
@@ -103,16 +103,20 @@ module.exports = {
                                         let rentRange = ranges[x].range;
                                         let rentMinString = rentRange.match(/\$[0-9],?[0-9]{0,3}/g);
                                         let rentMaxString = rentRange.match(/ +[0-9],?[0-9]{1,3}/g);
+                                        let res1;
+                                        let res2;
                                         if(rentMinString) {
                                             let minRes = rentMinString[0].match(/[0-9]{1,3}/g);
-                                            let res1 = parseInt(minRes[0] + minRes[1]);
+                                            res1 = parseInt(minRes[0] + minRes[1]);
                                             if(rentMin === 0) { rentMin = res1 }
                                             if(res1 <= rentMin) { rentMin = res1 }
                                         }
                                         if(rentMaxString) {
                                             let maxRes = rentMaxString[0].match(/[0-9]{1,3}/g);
-                                            let res2 = parseInt(maxRes[0] + maxRes[1]);
+                                            res2 = parseInt(maxRes[0] + maxRes[1]);
                                             if(res2 > rentMax) { rentMax = res2 }
+                                        } else {
+                                            rentMax = res1
                                         }
                                     }
                                 }
@@ -148,18 +152,21 @@ module.exports = {
                                             let range = s_properties[m].properyUnit[j].rent;
                                             let rentMinString = range.match(/\$[0-9],?[0-9]{0,3}/g);
                                             let rentMaxString = range.match(/ +[0-9],?[0-9]{1,3}/g);
+                                            let res1, res2;
                                             if(rentMinString) {
                                                 let minRes = rentMinString[0].match(/[0-9]{1,3}/g);
-                                                let res1 = parseInt(minRes[0] + minRes[1]);
+                                                res1 = parseInt(minRes[0] + minRes[1]);
                                                 if(rentMin === 0) { rentMin = res1 }
                                                 if(res1 <= rentMin) { rentMin = res1 }
                                                 if(res1 <= propertyRentMin) { propertyRentMin = res1 }
                                             }
                                             if(rentMaxString) {
                                                 let maxRes = rentMaxString[0].match(/[0-9]{1,3}/g);
-                                                let res2 = parseInt(maxRes[0] + maxRes[1]);
+                                                res2 = parseInt(maxRes[0] + maxRes[1]);
                                                 if(res2 > rentMax) { rentMax = res2 }
                                                 if(res2 > propertyRentMax) { propertyRentMax = res2 }
+                                            } else {
+                                                rentMaxString = rentMinString
                                             }
                                         }
                                         unitPromises.push(await props[m].createPropertyUnit({
@@ -180,11 +187,13 @@ module.exports = {
                                 }
                                 if(s_properties[m].images) {
                                     for (let j = 0; j < s_properties[m].images.length; j++) {
-                                        imgPromises.push(await props[m].createImage({
-                                            'id':uuidv4(),
-                                            'ImgUrl': s_properties[m].images[j].url.match(/https.*\.jpg/)[0],
-                                            'PropertyId': props[m].id
-                                        }, {transaction: t}))
+                                        if(s_properties[m].images[j].url.match(/https.*\.jpg/)) {
+                                            imgPromises.push(await props[m].createImage({
+                                                'id': uuidv4(),
+                                                'ImgUrl': s_properties[m].images[j].url.match(/https.*\.jpg/)[0],
+                                                'PropertyId': props[m].id
+                                            }, {transaction: t}))
+                                        }
                                     }
                                 }
                                 if(s_properties[m].images1) {

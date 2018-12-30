@@ -1,5 +1,5 @@
 'use strict';
-const queryController = require('../Controllers/queries');
+const { getAllPropertyUnits } = require('../Controllers/queries');
 module.exports = async function (req, res) {
     if (!(req.query.pageNo || req.query.pageLimit)) {
         res.status(400).send({
@@ -19,14 +19,14 @@ module.exports = async function (req, res) {
         page: pageNumber,
         pageSize: pageLimit
     };
-    await queryController.getAllPropertyOwners(infoObject.page, infoObject.pageSize, {}, function(err, propertyOwners) {
+    await getAllPropertyUnits(infoObject.page, infoObject.pageSize, {}, function(err, propertyUnits) {
         if(err) {
             res.status(500).send({
                 error: 'There was an error retrieving Property Owners'
             })
         }
-        if (propertyOwners.length > 0) {
-            res.status(200).send(propertyOwners);
+        if (propertyUnits.length > 0) {
+            res.status(200).send(propertyUnits);
         } else {
             console.log('no response for some reason');
             res.status(500).send({

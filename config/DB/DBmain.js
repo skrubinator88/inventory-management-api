@@ -45,6 +45,7 @@ const singleton = function Singleton(){
         let Appointment = sequelize.model("Appointment");
         let MaintenanceItem = sequelize.model("MaintenanceItem");
         let ApplicationRequest = sequelize.model("ApplicationRequest");
+        let TenacitiAdmin = sequelize.model("TenacitiAdmin");
 
         PropertyOwner.hasMany(PropertyOwnerAdmin);
         PropertyOwner.hasMany(Property);

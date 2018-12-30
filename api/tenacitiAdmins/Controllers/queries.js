@@ -2,25 +2,17 @@
 const dbmain = require('../../../config/DB/DBmain');
 
 module.exports = {
-    async getInvoices (id, page, limit) {
-        let options = {
-            where: { TenacitiAdminId: id },
-            limit: limit,
-            offset: page
-        };
-        let Invoice = dbmain.model('Invoice');
+    async getAdmin (id, cb) {
+        let TenacitiAdmin = dbmain.model('TenacitiAdmin');
         try {
-            let response = [];
-            let invoices = await Invoice.findAll(options);
-            invoices.map(async invoice => {
-                let obj = {};
-                obj.id = invoice.id;
-                obj.file = invoice.filePath;
-                response.push(obj);
+            let admin = await TenacitiAdmin.findById(id);
+            cb(null, {
+                adminId: admin.id,
+                adminUsername: admin.username
             });
-            return response;
         } catch (err) {
             console.error(err);
+            return cb(err);
         }
     }
 };

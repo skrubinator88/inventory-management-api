@@ -1,5 +1,5 @@
 'use strict';
-const queryController = require('../Controllers/queries');
+const { getProperties } = require('../Controllers/queries');
 module.exports = async function (req, res, next) {
     let propertyOwnerId = parseInt(req.params.propertyOwnerId);
     if (Number.isNaN(propertyOwnerId)) {
@@ -29,7 +29,7 @@ module.exports = async function (req, res, next) {
         page: pageNumber,
         pageSize: pageLimit
     };
-    queryController.getProperties(propertyOwnerId, infoObject.page, infoObject.pageSize, (err, properties) => {
+    getProperties(propertyOwnerId, infoObject.page, infoObject.pageSize, (err, properties) => {
         if(err) {
             console.error(err);
             return next(err)

@@ -1,7 +1,7 @@
 const { createMessage, createEntity } = require('./Factories');
 const { MESSAGE_DELIVERED } = require('./chatEvents');
 const client = require('../config/Redis');
-
+const { PROPERTY, USER } = require('./chatEntities');
 function isUser(token) {
     jwt.verify(token, config.jwt_secret, function(err, decoded) {
         if(err) {
@@ -18,20 +18,51 @@ function isUser(token) {
 function addConnection(socket, list, entity) {
     let newList = Object.assign({}, list);
     if(!newList[entity.id]) {
-        if(socket)
-            newList[entity.id] = createEntity({name: entity.name, id: entity.id, socketId: socket.id, email: entity.email});
-        else
-            newList[entity.id] = createEntity({name: entity.name, id: entity.id, socketId: null, email: entity.email});
+
+        newList[entity.id] = createEntity({name: entity.name, id: entity.id, sockets: [], email: entity.email});
+        if(socket) {
+            console.log(newList[entity.id]);
+            if(!newList[entity.id].sockets.includes(socket.id)) {
+                newList[entity.id].sockets.push(socket.id)
+            }
+        }
+
     } else {
-        newList[entity.id].socketId = socket.id
+        if(!newList[entity.id].sockets.includes(socket.id)) {
+            newList[entity.id].sockets.push(socket.id)
+        }
     }
     return newList;
 }
 
-function removeConnection(list, id) {
+function removeConnection(list, id, socketId) {
     let newList = Object.assign({}, list);
-    newList[id].socketId = null;
+    if(newList[id].sockets.includes(socketId)) {
+        for( let i = 0; i < newList[id].sockets.length; i++){
+            if ( newList[id].sockets[i] === socketId) {
+                newList[id].sockets.splice(i, 1);
+            }
+        }
+    }
+    // newList[id].socketId = null;
     return newList;
+}
+
+function deleteChat(chatId) {
+    client.getKeyValue('chats').then(chats => {
+        console.log(chats);
+        if(chats.hasOwnProperty(chatId)) {
+            delete chats[chatId];
+            console.log(chats);
+            client.setKeyValue('chats', chats).then(()=> {
+                console.log('chat deleted')
+            }, function (err) {
+                console.log(err);
+            });
+        }
+    }, function(err) {
+        console.log(err);
+    })
 }
 
 function sendMessageToChat(sender, io) {
@@ -55,5 +86,6 @@ module.exports = {
     isUser,
     addConnection,
     removeConnection,
-    sendMessageToChat
+    sendMessageToChat,
+    deleteChat
 };

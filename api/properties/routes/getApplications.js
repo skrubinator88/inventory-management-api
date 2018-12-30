@@ -29,7 +29,9 @@ module.exports = async function (req, res, next) {
     let query = { PropertyId: req.params.propertyId };
     getApplications(query, infoObject.pageSize, infoObject.page, (err, properties) => {
         if(err) {
-            return next(err)
+            return res.status(500).send({
+                error: 'An error occurred on the server while trying to fetch applications'
+            });
         }
         res.status(200).send(properties);
     });

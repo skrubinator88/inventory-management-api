@@ -4,11 +4,11 @@ const bcrypt = require('bcrypt');
 
 
 module.exports = {
-    async validatePassword(user, password, cb) {
+    async validateHash(currentHash, providedHash, cb) {
         let match;
         try {
             console.log("Validating password...");
-            match = await bcrypt.compare(password, user.password);
+            match = await bcrypt.compare(providedHash, currentHash);
             cb(null, match)
         } catch(err) {
             console.error(err);

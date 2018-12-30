@@ -4,6 +4,7 @@ let config = {
         ios_settings: {
             bundleId: "com.tenaciti-Inc.tenaciti"
         },
+        super_user_access_key:'$2a$10$odpNZ6rf5t3wlKiADf8RAuPngWase8iJ1zGm9eMS1IE6afnvoe1J6',
         transporter: {
             host: 'smtp.zoho.com',
             port: '465',
@@ -51,7 +52,6 @@ let config = {
         },
         redisStore: {
             "user": "",
-            "password": "",
             "host": "127.0.0.1",
             "port": 6379
         },

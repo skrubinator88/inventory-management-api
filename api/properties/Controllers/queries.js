@@ -1,6 +1,8 @@
 'use strict';
 
 const dbmain = require('../../../config/DB/DBmain');
+const Sequelize = require('sequelize');
+const client = require('../../../bin/www');
 
 module.exports = {
     async getAllProperties (page, limit, query, cb) {
@@ -8,21 +10,46 @@ module.exports = {
         let Image = dbmain.model('Image');
         let Amenity = dbmain.model('Amenity');
         let Location = dbmain.model('Location');
-        let options = {
-            where: query || {},
-            limit: limit,
-            offset: page
-        };
+        let options;
+        if(query.location === true) {
+            options = {
+                where: {
+                    ['$iLike']: {
+                        ['$or']: [
+                            Sequelize.literal(`\"Location\".\"state\" ILIKE '%${ query.query }%'`),
+                            Sequelize.literal(`\"Location\".\"city\" ILIKE '%${ query.query }%'`),
+                            Sequelize.literal(`\"Location\".\"streetAddress\" ILIKE '%${ query.query }%'`),
+                        ],
+                    },
+                },
+                limit: limit,
+                offset: page,
+                include: [
+                    {
+                        model: Location,
+                        as: 'Location',
+                        // attributes: ['city', 'state', 'streetAddress'],
+                        required: true,
+                    }
+                ]
+            };
+        } else {
+            options = {
+                where: query || {},
+                limit: limit,
+                offset: page,
+                order: [ [ Sequelize.fn('RANDOM') ] ]
+            };
+        }
         try {
-            let response = [];
             let properties = await Property.findAll(options);
-            for(let i = 0; i < properties.length; i++){
+            let response = await Promise.all( properties.map(async property => {
                 let obj = {};
                 let images = [];
                 let propertyImages = [];
                 let amenities = [];
                 let location;
-                await Image.findAll({ where: { PropertyId: properties[i].id } })
+                await Image.findAll({ where: { PropertyId: property.id } })
                     .then(images => {
                         propertyImages = images
                     })
@@ -33,7 +60,7 @@ module.exports = {
                 for ( let i = 0; i < propertyImages.length; i++) {
                     images.push(propertyImages[i].ImgUrl);
                 }
-                await Amenity.findAll({ where: { PropertyId: properties[i].id } })
+                await Amenity.findAll({ where: { PropertyId: property.id } })
                     .then(newAmenities => {
                         let AmenityFeature = dbmain.model('AmenityFeature');
                         newAmenities.map(async newAmenity => {
@@ -44,34 +71,36 @@ module.exports = {
                         console.error(err);
                         cb(err)
                     });
-                await Location.findAll({ where: { PropertyId: properties[i].id } })
-                    .then(newLocation => {
-                        let tempLocation = newLocation[0].get()
-                        location = {
-                           address: tempLocation.streetAddress,
-                            city: tempLocation.city,
-                            state: tempLocation.state,
-                            zipCode: tempLocation.zipCode
-                        }
-                    })
-                    .catch(err => {
-                        console.error(err);
-                        cb(err)
-                    });
-                obj.id = properties[i].id;
+                if(!query.location) {
+                    await Location.findAll({ where: { PropertyId: property.id } })
+                        .then(newLocation => {
+                            let tempLocation = newLocation[0].get()
+                            location = {
+                                address: tempLocation.streetAddress,
+                                city: tempLocation.city,
+                                state: tempLocation.state,
+                                zipCode: tempLocation.zipCode
+                            }
+                        })
+                        .catch(err => {
+                            console.error(err);
+                            cb(err)
+                        });
+                }
+                obj.id = property.id;
                 obj.images = images;
                 obj.amenities = amenities;
-                obj.location = location;
-                obj.website = properties[i].propertyWebsite;
-                obj.name = properties[i].propertyName;
-                obj.email = properties[i].propertyEmail;
-                obj.number = properties[i].propertyPhoneNumber;
-                obj.rentMin = properties[i].rentMin;
-                obj.rentMax = properties[i].rentMax;
-                obj.applicationFee = properties[i].applicationFee;
+                obj.location = location || property.Location;
+                obj.website = property.propertyWebsite;
+                obj.name = property.propertyName;
+                obj.email = property.propertyEmail;
+                obj.number = property.propertyPhoneNumber;
+                obj.rentMin = property.rentMin;
+                obj.rentMax = property.rentMax;
+                obj.applicationFee = property.applicationFee;
                 // obj.address = properties[i].location;
-                response.push(obj);
-            }
+                return obj;
+            }));
            cb(null, response);
         } catch(err) {
             console.error(err);
@@ -100,7 +129,8 @@ module.exports = {
                 images: images,
                 name: property.propertyName,
                 email: property.propertyEmail,
-                number: property.propertyPhoneNumber
+                number: property.propertyPhoneNumber,
+                website: property.propertyWebsite
             });
         } catch(err) {
             console.error(err);
@@ -183,6 +213,8 @@ module.exports = {
         };
         try {
             let response = [];
+            let count = await PropertyUnit.count({ where: query });
+            console.log(count / limit);
             let propertyUnits = await PropertyUnit.findAll(options);
             for(let i = 0; i < propertyUnits.length; i++) {
                 let obj = {};
@@ -222,6 +254,19 @@ module.exports = {
                 obj.squareFeet = propertyUnits[i].squareFeet;
                 obj.deposit = propertyUnits[i].depositAmount;
                 obj.availability = propertyUnits[i].availability;
+                let newCount = count / limit;
+                if ((newCount % 2) !== 0) {
+                    let n = newCount % 2
+                    let countNum = 0
+                    while (n > 1) {
+                        n /= 10
+                        countNum++
+                    }
+                    obj.count = newCount + countNum
+                } else {
+                    obj.count = newCount
+                }
+                obj.count = newCount;
                 response.push(obj);
             }
             cb(null, response)

@@ -2,32 +2,33 @@
 const dbmain = require('../../../config/DB/DBmain');
 
 module.exports = {
-    async getAllUsers (page, limit, query) {
+    async getAllUsers (opts, cb) {
         let User = dbmain.model('User');
         let Image = dbmain.model('Image');
         let options = {
-            where: query || {},
-            limit: limit,
-            offset: page
+            where: opts.query || {},
+            limit: opts.pageSize,
+            offset: opts.page
         };
         try{
-            let response = [];
-            let users;
-            users = await User.findAll(options);
-           users.map(async user => {
+            let users = await User.findAll(options);
+           let response = await Promise.all(await users.map(async user => {
             let obj = {};
-            obj.profilePhoto = (await Image.findAll({ where: { UserId: id } }))[0].ImgUrl;
+            let images = (await Image.findAll({ where: { UserId: user.id } }));
+            if(images[0])
+                obj.profilePhoto = images[0].ImgUrl;
             obj.firstName = user.firstName;
             obj.lastName = user.lastName;
             obj.emailAddress = user.email;
             obj.phone = user.phoneNumber;
             obj.payment = user.paymentInfo;
             obj.status = user.status;
-            response.push(obj);
-           });
-           return response;
+            return obj;
+           }));
+           return cb(null,response);
         } catch(err) {
             console.error(err);
+            return cb(err);
         }
     },
     async getUserById (id, cb) {
@@ -46,7 +47,7 @@ module.exports = {
                     // photo: userPhoto[0].ImgUrl
                 });
             } else {
-                return cb(null, false)
+                return cb(null, null)
             }
         } catch(err) {
             console.error(err);

@@ -1,5 +1,5 @@
 "use strict";
-const authService = require('../Services/profileAuthService');
+const { registerUser } = require('../Services/profileAuthService');
 const Joi = require('joi');
 const jwt = require('jsonwebtoken');
 const env = process.env.NODE_ENV || 'development';
@@ -34,7 +34,7 @@ module.exports = function (req, res, next) {
             return next(error);
         }
     } else {
-        authService.registerUser(req.body, function (err, user, info) {
+        registerUser(req.body, function (err, user, info) {
             if (err) {
                 return next(err);
             }

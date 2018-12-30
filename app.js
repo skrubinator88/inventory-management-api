@@ -8,17 +8,21 @@ const apn = require('apn');
 const helmet = require('helmet');
 
 const propertyOwners = require('./api/propertyOwners/routes/index');
+const admins = require('./api/tenacitiAdmins/routes/index');
 const properties = require('./api/properties/routes/index');
 const inquiryLogs = require('./api/inquiries/routes/index');
 const propertyAdminsAuth = require('./api/properties/auth-routes/index');
 
 const propertyUnits = require('./api/propertyUnits/routes/index');
 const appointments = require('./api/appointments/routes/index');
+const applications = require('./api/applications/routes/index');
+const images = require('./api/images/routes/index');
 const propertyOwnerAdminsAuth = require('./api/propertyOwners/auth-routes/index');
 const propertyAdminPayment = require('./api/properties/payment-routes/index');
 const propertyCustomerPayment = require('./api/properties/customer-payment-routes/index');
 const userPayment = require('./api/users/payment-routes/index');
 
+const adminAuth = require('./api/tenacitiAdmins/auth-routes/index');
 const usersAuth = require('./api/users/auth-routes/index');
 const users = require('./api/users/user-routes/index');
 const seeder = require('./seeder/index');
@@ -53,10 +57,16 @@ app.use(function (req, res, next) {
 app.use(passport.initialize());
 
 app.use('/propertyOwners', propertyOwners);
+app.use('/admins', admins);
+
 app.use('/appointments', appointments);
+app.use('/applications', applications);
+app.use('/images', images);
+
 app.use('/propertyNeighborhoods', propertyNeighborhoods);
 app.use('/auth/propertyOwnerAdmins', propertyOwnerAdminsAuth);
 app.use('/auth/propertyAdmins', propertyAdminsAuth);
+app.use('/auth/admins',adminAuth);
 app.use('/payment/propertyAdmins', propertyAdminPayment);
 app.use('/payment/properties', propertyCustomerPayment);
 app.use('/payment/users', userPayment);

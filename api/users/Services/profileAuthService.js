@@ -1,6 +1,6 @@
 'use strict';
 const dbmain = require('../../../config/DB/DBmain');
-const validateController = require('../Controllers/validations');
+const { validateHash } = require('../../Helpers/validations');
 const uuidv4 = require('uuid/v4');
 const env = process.env.NODE_ENV || 'development';
 const config = require('../../../config/config_env')[env];
@@ -75,7 +75,7 @@ module.exports = {
                     return cb(null, false, {message: 'Invalid username or password'})
                 }
                 //validate password
-                validateController.validatePassword(user, info.password, (err, match) => {
+                validateHash(user.password, info.password, (err, match) => {
                     if(err) {
                         throw err
                     }
@@ -103,12 +103,15 @@ module.exports = {
                     let info = {
                         isVerified: true
                     };
-                    let update = await updateUserById(user.id,info);
-                    if(update) {
-                        return cb(null,true);
-                    } else {
-                        return cb(null,false);
-                    }
+                    updateUserById(user.id,info, function(err, update) {
+                        if(err)
+                            return cb(err);
+                        if(update) {
+                            return cb(null,true);
+                        } else {
+                            return cb(null,false);
+                        }
+                    });
                 }
                 return cb(null,true)
             } else {

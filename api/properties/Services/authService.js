@@ -3,7 +3,7 @@ const env = process.env.NODE_ENV || 'development';
 const config = require('../../../config/config_env')[env];
 const LocalStrategy = require('passport-local').Strategy;
 const dbmain = require('../../../config/DB/DBmain');
-const validateController = require('../../Helpers/validations');
+const { validateHash } = require('../../Helpers/validations');
 const passportJWT = require('passport-jwt');
 const ExtractJWT = passportJWT.ExtractJwt;
 const uuidv4 = require('uuid/v4');
@@ -57,7 +57,7 @@ module.exports = {
                     return cb(null, false, {message: 'Invalid username or password'})
                 }
                 //validate password
-                validateController.validatePassword(user, info.password, async (err, match) => {
+                validateHash(user.password, info.password, async (err, match) => {
                     if(err) {
                         throw err
                     }
@@ -91,7 +91,7 @@ module.exports = {
                     return cb(null, false, {message: 'Invalid username or password'})
                 }
                 //validate password
-                validateController.validatePassword(user, info.password, (err, match) => {
+                validateHash(user.password, info.password, (err, match) => {
                     if(err) {
                         throw err
                     }

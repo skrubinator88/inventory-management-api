@@ -6,6 +6,7 @@ const authMiddleware = require('../../Helpers/authMiddleware');
 router.get('/', authMiddleware, require('./getAllPropertyUnits'));
 router.get('/:propertyUnitId', authMiddleware, require('./getPropertyUnit'));
 router.patch('/:propertyUnitId', authMiddleware, require('./updatePropertyUnit'));
+router.delete('/:propertyUnitId', authMiddleware, require('./deleteUnit'));
 
 router.get('/:propertyUnitId/appointments', authMiddleware, require('./getAppointments'));
 router.get('/:propertyUnitId/tenants', authMiddleware, require('./getTenants'));

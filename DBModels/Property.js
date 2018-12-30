@@ -18,7 +18,8 @@ module.exports = {
         propertyWebsite: Sequelize.STRING,
         applicationFee: Sequelize.DOUBLE,
         rentMin: Sequelize.INTEGER,
-        rentMax: Sequelize.INTEGER
+        rentMax: Sequelize.INTEGER,
+        status: Sequelize.STRING
     },
     options: {
         freezeTableName: true,

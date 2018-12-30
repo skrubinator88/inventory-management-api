@@ -54,6 +54,59 @@ module.exports = {
             return cb(err)
         }
     },
+    async addProperty (opts, cb) {
+        let Property = dbmain.model('Property');
+        try {
+
+            let infoObject = {
+                id: uuidv4(),
+                propertyName: opts.name,
+                propertyWebsite: opts.website,
+                propertyPhoneNumber: opts.phoneNumber,
+                propertyEmail: opts.propertyEmail,
+                status: "BASIC"
+            };
+            let locationInfoObject = {
+                id: uuidv4(),
+                city: opts.city,
+                state: opts.state,
+                streetAddress: opts.streetAddress,
+                zipCode: opts.zipCode,
+                country: "US"
+            };
+            console.log(infoObject);
+            let property = await Property.create(infoObject);
+            locationInfoObject.PropertyId = property.id;
+            let location = await Location.create(locationInfoObject);
+            let response = {
+                name: property.propertyName,
+                location: location,
+                website: property.propertyWebsite,
+                number: property.propertyPhoneNumber,
+                email: property.propertyEmail
+            };
+            cb(null, response);
+        } catch (err) {
+            console.error(err);
+            cb(err);
+        }
+    },
+    async addPropertyUnit (id, opts, cb) {
+        let PropertyUnit = dbmain.model('PropertyUnit');
+        try {
+            let infoObject = {
+                id: uuidv4(),
+                PropertyId: id
+            };
+            infoObject = Object.assign(infoObject,opts);
+            console.log(infoObject);
+            let propertyUnit = await PropertyUnit.create(infoObject);
+            cb(null, propertyUnit);
+        } catch (err) {
+            console.error(err);
+            cb(err);
+        }
+    },
     async sendSupportEmail(userId, cb) {
 
     }

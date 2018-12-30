@@ -1,7 +1,6 @@
-const { PROPERTY_CONNECTED, MESSAGE_SENT, MESSAGE_PROPERTY, PROPERTY_LOGOUT, PROPERTY_DISCONNECTED, CHAT_REQUEST, NEW_CHAT } = require('./chatEvents');
-const { createProperty, createMessage, createChat } = require('./Factories');
-const { removeConnection, sendMessageToChat } = require('./Helpers');
-const { setPropertiesConnected, setUsersConnected, getUsersConnected, getPropertiesConnected, getChats, setChats } = require('../config/repository');
+const { MESSAGE_PROPERTY, DELETE_CHAT, CHAT_DELETED } = require('./chatEvents');
+const { createChat } = require('./Factories');
+const { deleteChat } = require('./Helpers');
 
 module.exports = (io, client) => {
     io.on('connection', (socket)=>{
@@ -35,10 +34,12 @@ module.exports = (io, client) => {
                             connectedUsers[sender] = user;
                             connectedProperties[receiver] = property;
                             client.setKeyValue('chats', chats).then(function() {
-                                const propertySocket = property.socketId;
-                                console.log(chats);
-                                if(propertySocket) {
-                                    socket.to(propertySocket).emit(MESSAGE_PROPERTY, newChat);
+                                if(property.sockets.length > 0) {
+                                    const propertySockets = property.sockets;
+                                    for(let i = 0; i < propertySockets.length; i++) {
+                                        console.log(chats);
+                                        socket.to(propertySockets[i]).emit(MESSAGE_PROPERTY, newChat);
+                                    }
                                 }
                                 socket.emit(MESSAGE_PROPERTY, newChat)
                             }, function (err) {
@@ -55,6 +56,11 @@ module.exports = (io, client) => {
                 console.log(err)
             });
         });
+
+        socket.on(DELETE_CHAT, (chatId) => {
+            deleteChat(chatId);
+            io.emit(CHAT_DELETED, chatId);
+        })
     });
 };
 

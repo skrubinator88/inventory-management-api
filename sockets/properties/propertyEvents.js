@@ -1,8 +1,6 @@
 'use strict';
-const { PROPERTY_CONNECTED, PROPERTY_LOGOUT,
-    PROPERTY_DISCONNECTED, CHAT_REQUEST,
-    PROPERTY_CHAT_CONNECTED, PROPERTY_MESSAGE_SENT} = require('../chatEvents');
-const { createMessage } = require('../Factories');
+const { PROPERTY_CONNECTED, PROPERTY_LOGOUT, ALREADY_CONNECTED,
+    PROPERTY_DISCONNECTED, PROPERTY_CHAT_CONNECTED, PROPERTY_MESSAGE_SENT } = require('../chatEvents');
 const { addConnection, removeConnection, sendMessageToChat } = require('../Helpers');
 // const { setPropertiesConnected, getPropertiesConnected, getChats } = require('../../config/repository');
 
@@ -12,8 +10,14 @@ module.exports = (socket, io, client) => {
 
     socket.on(PROPERTY_CONNECTED, (property)=>{
         client.getKeyValue('properties').then(connectedProperties => {
-            property.socketId = socket.id;
+            property.sockets = [];
+            property.sockets.push(socket.id);
             let chats = [];
+            // if(connectedProperties.hasOwnProperty(property.id)) {
+            //     if(!!connectedProperties[property.id].socketId) {
+            //         return socket.emit(ALREADY_CONNECTED);
+            //     }
+            // }
             let newConnectedProperties = addConnection(socket, connectedProperties, property, chats);
             client.setKeyValue('properties',newConnectedProperties).then(()=>{
                 socket.property = property;
@@ -58,7 +62,7 @@ module.exports = (socket, io, client) => {
     socket.on(PROPERTY_LOGOUT, ()=>{
         if("property" in socket) {
             client.getKeyValue('properties').then(connectedProperties => {
-                let newConnectedProperties = removeConnection(connectedProperties, socket.property.id);
+                let newConnectedProperties = removeConnection(connectedProperties, socket.property.id, socket.id);
                 socket.disconnect();
                 client.setKeyValue('properties',newConnectedProperties).then(()=>{
                     io.emit(PROPERTY_DISCONNECTED, newConnectedProperties);
@@ -74,7 +78,7 @@ module.exports = (socket, io, client) => {
     socket.on('disconnect', ()=>{
         if("property" in socket ) {
             client.getKeyValue('properties').then(connectedProperties => {
-                let newConnectedProperties = removeConnection(connectedProperties, socket.property.id);
+                let newConnectedProperties = removeConnection(connectedProperties, socket.property.id, socket.id);
                 client.setKeyValue('properties',newConnectedProperties).then(()=> {
                     io.emit(PROPERTY_DISCONNECTED, newConnectedProperties);
                 }, function (err) {

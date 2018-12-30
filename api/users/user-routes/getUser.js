@@ -1,7 +1,7 @@
 "use strict";
-const queryController = require('../Controllers/queries');
+const { getUserById } = require('../Controllers/queries');
 //route used for retrieving a specific user
-module.exports = async function (req, res) {
+module.exports = async function (req, res, next) {
     let userId = parseInt(req.params.userId);
     if (Number.isNaN(userId)) {
         res.status(400).send({
@@ -9,14 +9,12 @@ module.exports = async function (req, res) {
         });
         return;
     }
-    try{
-        let user = await queryController.getUserById(userId);
-        if (user.emailAddress) {
-            res.status(200).send(user)
+    getUserById(userId, function(err, user) {
+        if(err)
+            return next(err);
+        if(!!user) {
+            return res.status(200).send(user);
         }
-    } catch(err) {
-        res.status(500).send({
-            error: 'An error occurred trying to retrieve user'
-        })
-    }
+        return res.status.end();
+    });
 };
