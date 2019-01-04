@@ -38,13 +38,23 @@ module.exports = async function (req, res, next) {
                 propertyName: {
                     ["$iLike"]: `%${search}%`
                 },
-                rentMax: {
-                    ["$lte"]: parseInt(req.query.rentMax)
+                ["$or"]: {
+                    rentMax: {
+                        ["$lte"]: parseInt(req.query.rentMax)
+                    },
+                    rentMin: {
+                        ["$lte"]: parseInt(req.query.rentMax)
+                    }
                 }
             };
         } else if (req.query.rentMax){
-            query.rentMax = {
-                ["$lte"]: parseInt(req.query.rentMax)
+            query["$or"] = {
+                rentMax: {
+                    ["$lte"]: parseInt(req.query.rentMax)
+                },
+                rentMin: {
+                    ["$lte"]: parseInt(req.query.rentMax)
+                }
             }
         } else if(req.query.search) {
             let search = req.query.search.trim();

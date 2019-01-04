@@ -22,16 +22,6 @@ module.exports = async function (req, res, next) {
     };
     let query = { PropertyId: propertyId };
     let include = [];
-    if(parseInt(req.query.rentMin) > 6000) {
-        if(parseInt(req.query.rentMin) !== 0) {
-            query.rentMin = {
-                ["$or"]: {
-                    ["$gte"]: parseInt(req.query.rentMin),
-                    ["$eq"]: 0
-                }
-            }
-        }
-    }
     if(req.query.includeAppointments) {
         if(req.query.includeAppointments === "true") {
            include = true
@@ -42,8 +32,13 @@ module.exports = async function (req, res, next) {
     console.log(include);
     if(req.query.rentMax) {
         if(parseInt(req.query.rentMax) !== 0) {
-            query.rentMax = {
-                ["$lte"]: parseInt(req.query.rentMax)
+            query["$or"] = {
+                rentMax: {
+                    ["$lte"]: parseInt(req.query.rentMax)
+                },
+                rentMin: {
+                    ["$lte"]: parseInt(req.query.rentMax)
+                }
             }
         }
     }
