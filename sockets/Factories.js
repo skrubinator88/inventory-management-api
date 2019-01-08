@@ -1,6 +1,6 @@
 const uuidv4 = require('uuid/v4');
 
-const createEntity = ({ name = '', id = null, sockets = [], email = '', chats = [] } = {}) => ({
+const createEntity = ({ name = '', id = null, sockets = [], email = '', chats = [] } = { }) => ({
     id: id,
     name,
     email,
@@ -33,4 +33,4 @@ module.exports = {
     createMessage,
     createChat,
     createEntity
-}
+};

@@ -15,36 +15,26 @@ module.exports = (io, client) => {
         require('./properties/propertyEvents')(socket, io, client);
 
         socket.on(MESSAGE_PROPERTY, ({receiver, sender})=>{
-            console.log(receiver);
-            client.getKeyValue('properties').then(function(connectedProperties) {
-                client.getKeyValue('users').then(function(connectedUsers) {
-                    console.log(connectedProperties);
-                    if(receiver in connectedProperties) {
-                        console.log(receiver);
-                        let property = connectedProperties[receiver];
-                        let user = connectedUsers[sender];
-                        const newChat = createChat({ name: `${property.name}: ${user.name} - ${user.email}`, users: [user.name, property.name]});
-                        console.log(newChat);
-                        client.getKeyValue('chats').then(function(chats) {
-                            console.log(chats);
-                            console.log("We made it here");
-                            chats[newChat.id] = newChat;
-                            property.chats.push(newChat.id);
-                            user.chats.push(newChat.id);
-                            connectedUsers[sender] = user;
-                            connectedProperties[receiver] = property;
-                            client.setKeyValue('chats', chats).then(function() {
-                                if(property.sockets.length > 0) {
-                                    const propertySockets = property.sockets;
-                                    for(let i = 0; i < propertySockets.length; i++) {
-                                        console.log(chats);
-                                        socket.to(propertySockets[i]).emit(MESSAGE_PROPERTY, newChat);
-                                    }
+            client.getKeyValue('properties', receiver).then(function(property) {
+                client.getKeyValue('users', sender).then(function(user) {
+                    if(property) {
+                        const newChat = createChat({ name: `${property.name}: ${user.name} - ${user.email}`, users: [user.name, property.name, user.id, property.id]});
+                        property.chats.push(newChat.id);
+                        user.chats.push(newChat.id);
+                        client.setKeyValue('chats', newChat.id, newChat).then(async function() {
+                            if(property.sockets.length > 0) {
+                                const propertySockets = property.sockets;
+                                for(let i = 0; i < propertySockets.length; i++) {
+                                    socket.to(propertySockets[i]).emit(MESSAGE_PROPERTY, newChat);
                                 }
-                                socket.emit(MESSAGE_PROPERTY, newChat)
-                            }, function (err) {
-                                console.log(err);
-                            });
+                            }
+                            socket.emit(MESSAGE_PROPERTY, newChat);
+                            try {
+                                await client.setKeyValue('properties', property.id, property);
+                                await client.setKeyValue('users', user.id, user);
+                            } catch (err) {
+                                throw err
+                            }
                         },function (err) {
                             console.log(err);
                         });
@@ -56,11 +46,6 @@ module.exports = (io, client) => {
                 console.log(err)
             });
         });
-
-        socket.on(DELETE_CHAT, (chatId) => {
-            deleteChat(chatId);
-            io.emit(CHAT_DELETED, chatId);
-        })
     });
 };
 

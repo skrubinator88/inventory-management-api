@@ -15,7 +15,7 @@ module.exports = {
         let Image = dbmain.model("Image");
         let Amenity = dbmain.model("Amenity");
         let AmenityFeature = dbmain.model("AmenityFeature");
-        let propertiesConnected = {};
+        let propertiesConnected = [];
         try {
             // let obj = require(__dirname + `/apartments.com_page_${page}_12.29.18.json`);
             let resultArr;
@@ -121,10 +121,11 @@ module.exports = {
                                     }
                                 }
                                 let propertyId = uuidv4();
-                                propertiesConnected = addConnection(null, propertiesConnected, {
+                                propertiesConnected.push(addConnection(null, {
                                     name: properties[i][j].propertyName,
-                                    id: propertyId
-                                });
+                                    id: propertyId,
+                                    chats: []
+                                }));
                                 propertyPromises.push(await owners[i].createProperty({
                                     'id': propertyId,
                                     'propertyName': properties[i][j].propertyName,
@@ -236,18 +237,16 @@ module.exports = {
                             return Promise.all(unitPromises)
                         })
                     })
-                }).then(() => {
+                }).then(async () => {
                     console.log("Database successfully seeded");
-                    client.getKeyValue('properties').then(properties => {
-                        let propertiesConnect = Object.assign(properties,propertiesConnected);
-                        client.setKeyValue('properties', propertiesConnect).then(()=>{
-                            console.log("Properties added to redis connection");
-                        }, function (err) {
-                            console.log(err);
-                        });
-                    }, function(err) {
+                    try {
+                        await Promise.all( await propertiesConnected.map(async property => {
+                            await client.setKeyValue('properties', property.id, property)
+                        }));
+                    } catch(err) {
                         console.log(err);
-                    });
+                        return cb(err, false)
+                    }
                     return cb(null, true)
                 }).catch(err => {
                     console.log("An error occurred trying to seed the database" + err);

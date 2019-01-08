@@ -1,8 +1,8 @@
 'use strict';
-const { USER_CONNECTED, USER_LOGOUT,
+const { USER_CONNECTED, USER_LOGOUT, DELETE_CHAT, CHAT_DELETED,
     USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED, CONNECT } = require('../chatEvents');
-const { addConnection, removeConnection, sendMessageToChat } = require('../Helpers');
-const { USER } = require('../chatEntities')
+const { addConnection, removeConnection, sendMessageToChat, deleteChat } = require('../Helpers');
+const { USER } = require('../chatEntities');
 // const { setUsersConnected, getUsersConnected, getChats } = require('../../config/repository');
 
 module.exports = (socket, io, client) => {
@@ -11,29 +11,31 @@ module.exports = (socket, io, client) => {
 
     socket.on(USER_CONNECTED, (user)=>{
         user.sockets = [];
-        client.getKeyValue('users').then(connectedUsers => {
-            let chats = [];
-            let newConnectedUsers = addConnection(socket, connectedUsers, user, chats);
-            client.setKeyValue('users',newConnectedUsers).then(()=> {
-                socket.user = user;
+        user.chats = [];
+        client.getKeyValue('users', user.id).then(retrievedUser => {
+            if(retrievedUser) {
+                user = retrievedUser
+            }
+            let newUser = addConnection(socket, user);
+            client.setKeyValue('users', user.id, newUser).then(()=> {
+                socket.user = newUser;
                 sendMessageToChatFromUser = sendMessageToChat(user.id, io);
-                io.emit(USER_CONNECTED, newConnectedUsers);
-                console.log(newConnectedUsers);
-            }, function (err) {
+                io.emit(USER_CONNECTED, newUser);
+            }, function(err) {
                 console.log(err);
             });
-        }, function (err) {
+        }, function(err) {
             console.log(err);
         });
     });
+
     socket.on(USER_LOGOUT, ()=>{
         if("user" in socket) {
-            client.getKeyValue('users').then(connectedUsers => {
-                console.log(connectedUsers);
-                let newConnectedUsers = removeConnection(connectedUsers, socket.user.id, socket.id);
-                client.setKeyValue('users', newConnectedUsers).then(()=>{
-                    io.emit(USER_DISCONNECTED, newConnectedUsers);
-                    console.log("Disconnect User", newConnectedUsers);
+            client.getKeyValue('users', socket.user.id).then(user => {
+                let newUser = removeConnection(user, socket.id);
+                client.setKeyValue('users', user.id, newUser).then(()=>{
+                    io.emit(USER_DISCONNECTED, newUser);
+                    console.log("Disconnect User", newUser);
                 }, function (err) {
                     console.log(err);
                 });
@@ -51,36 +53,34 @@ module.exports = (socket, io, client) => {
     });
 
     socket.on(USER_CHAT_CONNECTED, () => {
-        console.log("User chat has connected");
         if("user" in socket) {
-            client.getKeyValue('chats').then(chats => {
-                let response = [];
-                client.getKeyValue('users').then(users => {
-                    let user = users[socket.user.id];
-                    if(user) {
-                        for(let chat in chats) {
-                            if(chats[chat].users.includes(user.name)){
-                                response.push(chats[chat])
-                            }
-                        }
-                    }
+            client.getKeyValue('users',socket.user.id).then(async user => {
+                if(user) {
+                    let response = await Promise.all(await user.chats.map(async chatId => {
+                        return await client.getKeyValue('chats', chatId);
+                    }));
                     socket.emit('CHATS_DELIVERED',response);
-                }, function (err) {
-                    console.log(err);
-                });
+                }
             }, function (err) {
                 console.log(err);
             });
         }
     });
-
+    socket.on(DELETE_CHAT, async (chatId) => {
+        if("user" in socket) {
+            try {
+                deleteChat(chatId, socket);
+            } catch (err) {
+                console.log(err)
+            }
+        }
+    })
     socket.on('disconnect', ()=>{
         if("user" in socket ) {
-            client.getKeyValue('users').then(connectedUsers => {
-                console.log("User disconnected");
-                let newConnectedUsers = removeConnection(connectedUsers, socket.user.id, socket.id);
-                client.setKeyValue('users', newConnectedUsers).then(()=> {
-                    io.emit(USER_DISCONNECTED, newConnectedUsers);
+            client.getKeyValue('users', socket.user.id).then(user => {
+                let newUser = removeConnection(user, socket.id);
+                client.setKeyValue('users', user.id, newUser).then(()=> {
+                    io.emit(USER_DISCONNECTED, newUser);
                 }, function (err) {
                     console.log(err);
                 });

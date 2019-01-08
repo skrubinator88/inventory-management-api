@@ -17,24 +17,33 @@ module.exports = {
             console.debug('subs connected to redis');
         });
     },
-    getKeyValue(key) {
-        return new Promise((resolve, reject) => {
-            client.getAsync(key)
-                .then((res, err) => {
-                    if(err)
-                        reject("An error occurred "+err);
-                    if(res){
-                        resolve(JSON.parse(res));
-                    }
-                    resolve({})
-                })
+    getKeyValue(key, subKey) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                let object = await client.hgetAsync(key,subKey);
+                if(object)
+                    object = JSON.parse(object);
+                resolve(object);
+            } catch (err) {
+                reject(err)
+            }
         })
     },
-    setKeyValue(key, value) {
+    setKeyValue(key, subKey, value) {
+        return new Promise(async (resolve, reject) => {
+            try {
+                value = JSON.stringify(value);
+                let response = await client.hsetAsync(key, subKey, value);
+                resolve(response);
+            } catch (err) {
+                reject(err);
+            }
+        })
+    },
+    deleteKeyValue(key, subKey) {
         return new Promise((resolve, reject) => {
-            value = JSON.stringify(value);
-            client.setAsync(key, value)
-                .then((res, err) => err ? reject(`set${key} : `+err) : resolve(res))
+            client.hdelAsync(key, subKey)
+                .then((res, err) => err ? reject(`set${key} : `+err) : resolve({}))
         })
     }
 };
