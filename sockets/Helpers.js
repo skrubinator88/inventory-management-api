@@ -49,12 +49,12 @@ async function deleteChat(chatId, socket) {
         let chat = await client.getKeyValue('chats', chatId);
         let user = await client.getKeyValue('users', chat.users[2]);
         let property = await client.getKeyValue('properties', chat.users[3]);
-        for( let i = 0; i < user.chats.length; i++){
+        for( let i = 0; i < user.chats.length - 1; i++){
             if ( user.chats[i] === chatId) {
                 user.chats.splice(i, 1);
             }
         }
-        for( let i = 0; i < property.chats.length; i++){
+        for( let i = 0; i < property.chats.length - 1; i++){
             if ( property.chats[i] === chatId) {
                 property.chats.splice(i, 1);
             }
@@ -74,14 +74,22 @@ async function deleteChat(chatId, socket) {
     }
 }
 
-function sendMessageToChat(sender, io) {
+function sendMessageToChat(sender, socket) {
     return async (chatId, message, opened, id)=>{
         client.getKeyValue('chats', chatId).then(chat => {
             let newMessage = createMessage({message, sender, opened, id, chatId});
             newMessage.propertyName = chat.users[1];
             chat.messages.push(newMessage);
-            client.setKeyValue('chats', chatId, chat).then(()=> {
-                io.emit(MESSAGE_DELIVERED, newMessage);
+            client.setKeyValue('chats', chatId, chat).then(async ()=> {
+                let user = await client.getKeyValue('users', chat.users[2]);
+                let property = await client.getKeyValue('properties', chat.users[3]);
+                await user.sockets.map(socketId => {
+                    socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
+                });
+                await property.sockets.map(socketId => {
+                    socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
+                });
+                socket.emit(MESSAGE_DELIVERED, newMessage);
             }, function (err) {
                 console.log(err);
             });

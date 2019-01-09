@@ -19,7 +19,7 @@ module.exports = (socket, io, client) => {
             let newUser = addConnection(socket, user);
             client.setKeyValue('users', user.id, newUser).then(()=> {
                 socket.user = newUser;
-                sendMessageToChatFromUser = sendMessageToChat(user.id, io);
+                sendMessageToChatFromUser = sendMessageToChat(user.id, socket);
                 io.emit(USER_CONNECTED, newUser);
             }, function(err) {
                 console.log(err);
