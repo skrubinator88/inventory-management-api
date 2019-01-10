@@ -35,10 +35,11 @@ module.exports = (socket, io, client) => {
         if("property" in socket) {
             client.getKeyValue('properties',socket.property.id).then(async property => {
                 if(property) {
-                    let response = await Promise.all(await property.chats.map(async chatId => {
+                    let response = [];
+                    await Promise.all(await property.chats.map(async chatId => {
                         let chat = await client.getKeyValue('chats', chatId);
-                        if(!!chat)
-                            return chat
+                        if(chat)
+                            response.push(chat);
                     }));
                     console.log(response);
                     socket.emit('CHATS_DELIVERED',response);

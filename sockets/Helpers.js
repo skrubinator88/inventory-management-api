@@ -49,25 +49,27 @@ async function deleteChat(chatId, socket) {
         let chat = await client.getKeyValue('chats', chatId);
         let user = await client.getKeyValue('users', chat.users[2]);
         let property = await client.getKeyValue('properties', chat.users[3]);
-        for( let i = 0; i < user.chats.length - 1; i++){
+        console.log(property.chats);
+        console.log(user.chats,"\n");
+        for( let i = 0; i < user.chats.length; i++){
             if ( user.chats[i] === chatId) {
                 user.chats.splice(i, 1);
             }
         }
-        for( let i = 0; i < property.chats.length - 1; i++){
+        for( let i = 0; i < property.chats.length; i++){
             if ( property.chats[i] === chatId) {
                 property.chats.splice(i, 1);
             }
         }
-        await property.sockets.map(socketId => {
-            socket.to(socketId).emit(CHAT_DELETED, chatId);
+        await property.sockets.map(async socketId => {
+            await socket.to(socketId).emit(CHAT_DELETED, chatId);
         });
-        await user.sockets.map(socketId => {
-            socket.to(socketId).emit(CHAT_DELETED, chatId);
+        await user.sockets.map(async socketId => {
+            await socket.to(socketId).emit(CHAT_DELETED, chatId);
         });
-        socket.emit(CHAT_DELETED, chatId);
-        await client.setKeyValue('properties', property.id, property);
-        await client.setKeyValue('users', user.id, user);
+        await socket.emit(CHAT_DELETED, chatId);
+        await client.setKeyValue('properties', chat.users[3], property);
+        await client.setKeyValue('users', chat.users[2], user);
         await client.deleteKeyValue('chats', chatId);
     } catch (err) {
         throw err

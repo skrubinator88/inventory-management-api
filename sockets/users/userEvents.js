@@ -56,8 +56,12 @@ module.exports = (socket, io, client) => {
         if("user" in socket) {
             client.getKeyValue('users',socket.user.id).then(async user => {
                 if(user) {
-                    let response = await Promise.all(await user.chats.map(async chatId => {
-                        return await client.getKeyValue('chats', chatId);
+                    let response = [];
+                    await Promise.all(await user.chats.map(async chatId => {
+                        let chat = await client.getKeyValue('chats', chatId);
+                        if(chat) {
+                            response.push(chat);
+                        }
                     }));
                     socket.emit('CHATS_DELIVERED',response);
                 }
