@@ -102,7 +102,7 @@ function sendMessageToChat(sender, socket) {
                         apnProvider.sendNotification(user.deviceToken, notification, function(err, info) {
                             if(err)
                                 throw err;
-                            console.log(info, "response: ", info.response);
+                            console.log(info.failed, "response: ", info.failed[0].response);
                         });
                         await client.setKeyValue('users', user.id, user);
                     }
