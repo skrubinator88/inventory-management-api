@@ -12,11 +12,14 @@ module.exports = (socket, io, client) => {
     socket.on(USER_CONNECTED, (user)=>{
         user.sockets = [];
         user.chats = [];
+        console.log("This here is a device token ",user.deviceToken);
         client.getKeyValue('users', user.id).then(retrievedUser => {
             if(retrievedUser) {
+                retrievedUser.deviceToken = user.deviceToken;
                 user = retrievedUser
             }
             let newUser = addConnection(socket, user);
+
             client.setKeyValue('users', user.id, newUser).then(()=> {
                 socket.user = newUser;
                 sendMessageToChatFromUser = sendMessageToChat(user.id, socket);

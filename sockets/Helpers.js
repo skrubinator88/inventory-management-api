@@ -24,8 +24,8 @@ function addConnection(socket, entity) {
         return entity
     } else {
         let newEntity = createEntity({name: entity.name, id: entity.id, sockets: [], email: entity.email, chats: []});
-        console.log(newEntity);
         if(socket) {
+            console.log(newEntity);
             newEntity.sockets.push(socket.id);
         }
         return newEntity
