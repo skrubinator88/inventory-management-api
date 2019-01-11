@@ -15,8 +15,8 @@ module.exports = {
         notification.alert = opts.alert;
         try {
             let info = await apnProvider.send(notification,deviceToken);
-            cb(null,info)
             apnProvider.shutdown()
+            cb(null,info)
         } catch (err) {
             cb(err)
         }

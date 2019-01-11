@@ -98,7 +98,11 @@ function sendMessageToChat(sender, socket) {
                     if(sender === property.id) {
                         user.badge++;
                         let notification = createNotification({alert: `${property.name} has sent you a message`, badge: user.badge, sound: 'ping.aiff'});
-                        apnProvider.sendNotification(user.deviceToken, notification);
+                        apnProvider.sendNotification(user.deviceToken, notification, function(err, info) {
+                            if(err)
+                                throw err;
+                            console.log(info);
+                        });
                         await client.setKeyValue('users', user.id, user);
                     }
                 } catch (err) {
