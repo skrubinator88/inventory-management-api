@@ -1,6 +1,8 @@
-const { createMessage, createEntity } = require('./Factories');
+const { createMessage, createEntity } = require('../Factories/SocketFactories');
+const { createNotification } = require('../Factories/ApnFactories');
 const { MESSAGE_DELIVERED, CHAT_DELETED } = require('./chatEvents');
 const client = require('../config/Redis');
+const apnProvider = require('../config/apnManager');
 const { PROPERTY, USER } = require('./chatEntities');
 
 function isUser(token) {
@@ -92,6 +94,12 @@ function sendMessageToChat(sender, socket) {
                     socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
                 });
                 socket.emit(MESSAGE_DELIVERED, newMessage);
+                if(sender === property.id) {
+                    user.badge++;
+                    let notification = createNotification({alert: `${property.name} has sent you a message`, badge: user.badge, sound: 'ping.aiff'});
+                    apnProvider.sendNotification(user.deviceToken, notification);
+                    await client.setKeyValue('users', user.id, user);
+                }
             }, function (err) {
                 console.log(err);
             });

@@ -10,9 +10,9 @@ module.exports = {
         apnProvider = apn.Provider(config.apn_options);
         let notification = new apn.Notification();
         notification.topic = config.ios_settings.bundleId;
-        notification.badge = opts.badge || 3;
-        notification.sound = 'ping.aiff';
-        notification.alert = opts.message;
+        notification.badge = opts.badge;
+        notification.sound = opts.sound;
+        notification.alert = opts.alert;
         try {
             let info = await apnProvider.send(notification,deviceToken);
             cb(null,info)

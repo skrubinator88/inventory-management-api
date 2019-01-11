@@ -1,5 +1,5 @@
 const { MESSAGE_PROPERTY, DELETE_CHAT, CHAT_DELETED } = require('./chatEvents');
-const { createChat } = require('./Factories');
+const { createChat } = require('./SocketFactories');
 const { deleteChat } = require('./Helpers');
 
 module.exports = (io, client) => {

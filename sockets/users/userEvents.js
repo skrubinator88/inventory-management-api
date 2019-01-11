@@ -12,10 +12,10 @@ module.exports = (socket, io, client) => {
     socket.on(USER_CONNECTED, (user)=>{
         user.sockets = [];
         user.chats = [];
-        console.log("This here is a device token ",user.deviceToken);
         client.getKeyValue('users', user.id).then(retrievedUser => {
             if(retrievedUser) {
                 retrievedUser.deviceToken = user.deviceToken;
+                retrievedUser.badge = 0;
                 user = retrievedUser
             }
             let newUser = addConnection(socket, user);
