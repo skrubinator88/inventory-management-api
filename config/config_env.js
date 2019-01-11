@@ -24,7 +24,7 @@ let config = {
         },
         apn_options: {
             token: {
-                key: "certificate.p8",
+                key: __dirname + "certificate.p8",
                 keyId: "RND29M346W",
                 teamId: "8L2DXL23X9"
             },
@@ -84,7 +84,7 @@ let config = {
         },
         apn_options: {
             token: {
-                key: "certificate.p8",
+                key: __dirname + "certificate.p8",
                 keyId: "RND29M346W",
                 teamId: "8L2DXL23X9"
             },

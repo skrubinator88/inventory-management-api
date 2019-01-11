@@ -85,20 +85,24 @@ function sendMessageToChat(sender, socket) {
             newMessage.propertyName = chat.users[1];
             chat.messages.push(newMessage);
             client.setKeyValue('chats', chatId, chat).then(async ()=> {
-                let user = await client.getKeyValue('users', chat.users[2]);
-                let property = await client.getKeyValue('properties', chat.users[3]);
-                await user.sockets.map(socketId => {
-                    socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
-                });
-                await property.sockets.map(socketId => {
-                    socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
-                });
-                socket.emit(MESSAGE_DELIVERED, newMessage);
-                if(sender === property.id) {
-                    user.badge++;
-                    let notification = createNotification({alert: `${property.name} has sent you a message`, badge: user.badge, sound: 'ping.aiff'});
-                    apnProvider.sendNotification(user.deviceToken, notification);
-                    await client.setKeyValue('users', user.id, user);
+                try {
+                    let user = await client.getKeyValue('users', chat.users[2]);
+                    let property = await client.getKeyValue('properties', chat.users[3]);
+                    await user.sockets.map(socketId => {
+                        socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
+                    });
+                    await property.sockets.map(socketId => {
+                        socket.to(socketId).emit(MESSAGE_DELIVERED, newMessage);
+                    });
+                    socket.emit(MESSAGE_DELIVERED, newMessage);
+                    if(sender === property.id) {
+                        user.badge++;
+                        let notification = createNotification({alert: `${property.name} has sent you a message`, badge: user.badge, sound: 'ping.aiff'});
+                        apnProvider.sendNotification(user.deviceToken, notification);
+                        await client.setKeyValue('users', user.id, user);
+                    }
+                } catch (err) {
+                    throw err
                 }
             }, function (err) {
                 console.log(err);
