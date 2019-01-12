@@ -41,6 +41,13 @@ module.exports = {
                         propertyId: property.id,
                         type: "appointment"
                     };
+                    user.badge++;
+                    apnProvider.sendNotification(user.deviceToken, notification, function(err, info) {
+                        if(err)
+                            throw err;
+                        console.log(info);
+                    });
+                    await client.setKeyValue('users', user.id, user);
                 } catch (err) {
                     throw err
                 }
