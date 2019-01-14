@@ -20,7 +20,7 @@ module.exports = (socket, io, client) => {
             let newProperty = addConnection(socket, property);
             client.setKeyValue('properties', property.id, newProperty).then(()=> {
                 socket.property = property;
-                sendMessageToChatFromProperty = sendMessageToChat(property.id, socket);
+                sendMessageToChatFromProperty = sendMessageToChat(property.id, io);
                 io.emit(PROPERTY_CONNECTED, newProperty);
                 console.log(newProperty);
             }, function(err) {

@@ -29,16 +29,16 @@ module.exports = {
         try {
             Appointment.update(
                opts, { returning: true, where: { id: id } }
-            ).then(async function([rowsUpdated, [accountUpdated]]) {
-                if(!accountUpdated)
+            ).then(async function([rowsUpdated, [appointmentUpdated]]) {
+                if(!appointmentUpdated)
                     return cb(null, false);
                 try {
-                    let user = await client.getKeyValue('users', accountUpdated.UserId);
-                    let propertyUnit = await PropertyUnit.findById(accountUpdated.PropertyUnitId);
+                    let user = await client.getKeyValue('users', appointmentUpdated.UserId);
+                    let propertyUnit = await PropertyUnit.findById(appointmentUpdated.PropertyUnitId);
                     let property = await Property.findById(propertyUnit.PropertyId);
                     let notification = createNotification({alert: `${property.propertyName} has updated your appointment request`, badge: user.badge, sound: 'ping.aiff'});
                     notification.payload = {
-                        propertyId: property.id,
+                        id: appointmentUpdated.id,
                         type: "appointment"
                     };
                     user.badge++;

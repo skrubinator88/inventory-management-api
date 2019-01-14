@@ -25,7 +25,7 @@ module.exports = (io, client) => {
                             if(property.sockets.length > 0) {
                                 const propertySockets = property.sockets;
                                 for(let i = 0; i < propertySockets.length; i++) {
-                                    socket.to(propertySockets[i]).emit(MESSAGE_PROPERTY, newChat);
+                                    io.to(`${propertySockets[i]}`).emit(MESSAGE_PROPERTY, newChat);
                                 }
                             }
                             socket.emit(MESSAGE_PROPERTY, newChat);

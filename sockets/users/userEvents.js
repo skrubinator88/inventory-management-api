@@ -1,6 +1,6 @@
 'use strict';
 const { USER_CONNECTED, USER_LOGOUT, DELETE_CHAT, CHAT_DELETED,
-    USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED, CONNECT } = require('../chatEvents');
+    USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED, NOTIFICATIONS_SENT } = require('../chatEvents');
 const { addConnection, removeConnection, sendMessageToChat, deleteChat } = require('../Helpers');
 const { USER } = require('../chatEntities');
 // const { setUsersConnected, getUsersConnected, getChats } = require('../../config/repository');
@@ -12,18 +12,25 @@ module.exports = (socket, io, client) => {
     socket.on(USER_CONNECTED, (user)=>{
         user.sockets = [];
         user.chats = [];
+        user.notifications = [];
         client.getKeyValue('users', user.id).then(retrievedUser => {
             if(retrievedUser) {
                 retrievedUser.deviceToken = user.deviceToken;
-                retrievedUser.badge = 0;
                 user = retrievedUser
             }
             let newUser = addConnection(socket, user);
 
-            client.setKeyValue('users', user.id, newUser).then(()=> {
+            client.setKeyValue('users', user.id, newUser).then(async ()=> {
                 socket.user = newUser;
-                sendMessageToChatFromUser = sendMessageToChat(user.id, socket);
-                io.emit(USER_CONNECTED, newUser);
+                sendMessageToChatFromUser = sendMessageToChat(user.id, io);
+                let notifications = [];
+                for(let i = 0; i < newUser.notifications.length; i++) {
+                    let notification = await client.getKeyValue('notifications', newUser.notifications[i]);
+                    notifications.push(notification)
+                }
+                for(let i = 0; i < newUser.sockets.length; i++) {
+                    io.to(`${newUser.sockets[i]}`).emit(NOTIFICATIONS_SENT, notifications);
+                }
             }, function(err) {
                 console.log(err);
             });
@@ -76,7 +83,7 @@ module.exports = (socket, io, client) => {
     socket.on(DELETE_CHAT, async (chatId) => {
         if("user" in socket) {
             try {
-                deleteChat(chatId, socket);
+                deleteChat(chatId, io);
             } catch (err) {
                 console.log(err)
             }
