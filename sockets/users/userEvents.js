@@ -30,11 +30,12 @@ module.exports = (socket, io, client) => {
                         notifications.push(notification)
                     }
                 }
-                if(newUser.sockets) {
-                    for(let i = 0; i < newUser.sockets.length; i++) {
-                        io.to(`${newUser.sockets[i]}`).emit(NOTIFICATIONS_SENT, notifications);
-                    }
-                }
+                io.in(`${newUser.id}`).emit(NOTIFICATIONS_SENT, notifications);
+                // if(newUser.sockets) {
+                //     for(let i = 0; i < newUser.sockets.length; i++) {
+                //         io.to(`${newUser.sockets[i]}`).emit(NOTIFICATIONS_SENT, notifications);
+                //     }
+                // }
             }, function(err) {
                 console.log(err);
             });
