@@ -20,28 +20,30 @@ function isUser(token) {
 
 function addConnection(socket, entity) {
     if(entity && socket) {
-        if(!entity.sockets.includes(socket.id)) {
-            entity.sockets.push(socket.id);
-        }
+        // if(!entity.sockets.includes(socket.id)) {
+        //     entity.sockets.push(socket.id);
+        // }
+        socket.join(`${entity.id}`);
         return entity
     } else {
         let newEntity = createEntity({name: entity.name, id: entity.id, sockets: [], email: entity.email, chats: [], notifications: []});
         if(socket) {
             console.log(newEntity);
-            newEntity.sockets.push(socket.id);
+            // newEntity.sockets.push(socket.id);
+            socket.join(`${newEntity.id}`);
         }
         return newEntity
     }
 }
 
 function removeConnection(user, socketId) {
-    if(user.sockets.includes(socketId)) {
-        for( let i = 0; i < user.sockets.length; i++){
-            if ( user.sockets[i] === socketId) {
-                user.sockets.splice(i, 1);
-            }
-        }
-    }
+    // if(user.sockets.includes(socketId)) {
+    //     for( let i = 0; i < user.sockets.length; i++){
+    //         if ( user.sockets[i] === socketId) {
+    //             user.sockets.splice(i, 1);
+    //         }
+    //     }
+    // }
     // newList[id].socketId = null;
     return user;
 }
@@ -61,12 +63,14 @@ async function deleteChat(chatId, io) {
                 property.chats.splice(i, 1);
             }
         }
-        await property.sockets.map(async socketId => {
-            await io.to(`${socketId}`).emit(CHAT_DELETED, chatId);
-        });
-        await user.sockets.map(async socketId => {
-            await io.to(`${socketId}`).emit(CHAT_DELETED, chatId);
-        });
+        io.in(`${property.id}`).emit(CHAT_DELETED, chatId);
+        io.in(`${user.id}`).emit(CHAT_DELETED, chatId);
+        // await property.sockets.map(async socketId => {
+        //     await io.to(`${socketId}`).emit(CHAT_DELETED, chatId);
+        // });
+        // await user.sockets.map(async socketId => {
+        //     await io.to(`${socketId}`).emit(CHAT_DELETED, chatId);
+        // });
         await client.setKeyValue('properties', chat.users[3], property);
         await client.setKeyValue('users', chat.users[2], user);
         await client.deleteKeyValue('chats', chatId);
@@ -85,12 +89,14 @@ function sendMessageToChat(sender, io) {
                 try {
                     let user = await client.getKeyValue('users', chat.users[2]);
                     let property = await client.getKeyValue('properties', chat.users[3]);
-                    await user.sockets.map(socketId => {
-                        io.to(`${socketId}`).emit(MESSAGE_DELIVERED, newMessage);
-                    });
-                    await property.sockets.map(socketId => {
-                        io.to(`${socketId}`).emit(MESSAGE_DELIVERED, newMessage);
-                    });
+                    io.in(`${property.id}`).emit(MESSAGE_DELIVERED, newMessage);
+                    io.in(`${user.id}`).emit(MESSAGE_DELIVERED, newMessage);
+                    // await user.sockets.map(socketId => {
+                    //     io.to(`${socketId}`).emit(MESSAGE_DELIVERED, newMessage);
+                    // });
+                    // await property.sockets.map(socketId => {
+                    //     io.to(`${socketId}`).emit(MESSAGE_DELIVERED, newMessage);
+                    // });
                     if(sender === property.id) {
                         user.badge++;
                         let notification = createNotification({alert: `${property.name} has sent you a message`, badge: user.badge, sound: 'ping.aiff'});
