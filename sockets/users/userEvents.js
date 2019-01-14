@@ -24,12 +24,16 @@ module.exports = (socket, io, client) => {
                 socket.user = newUser;
                 sendMessageToChatFromUser = sendMessageToChat(user.id, io);
                 let notifications = [];
-                for(let i = 0; i < newUser.notifications.length; i++) {
-                    let notification = await client.getKeyValue('notifications', newUser.notifications[i]);
-                    notifications.push(notification)
+                if(newUser.notifications) {
+                    for(let i = 0; i < newUser.notifications.length; i++) {
+                        let notification = await client.getKeyValue('notifications', newUser.notifications[i]);
+                        notifications.push(notification)
+                    }
                 }
-                for(let i = 0; i < newUser.sockets.length; i++) {
-                    io.to(`${newUser.sockets[i]}`).emit(NOTIFICATIONS_SENT, notifications);
+                if(newUser.sockets) {
+                    for(let i = 0; i < newUser.sockets.length; i++) {
+                        io.to(`${newUser.sockets[i]}`).emit(NOTIFICATIONS_SENT, notifications);
+                    }
                 }
             }, function(err) {
                 console.log(err);
