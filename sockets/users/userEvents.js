@@ -1,7 +1,7 @@
 'use strict';
 const { USER_CONNECTED, USER_LOGOUT, DELETE_CHAT, CHAT_DELETED,
     USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED, NOTIFICATIONS_SENT } = require('../chatEvents');
-const { addConnection, removeConnection, sendMessageToChat, deleteChat } = require('../Helpers');
+const { addConnection, removeConnection, sendMessageToChat, deleteChat, deleteItem } = require('../Helpers');
 const { USER } = require('../chatEntities');
 // const { setUsersConnected, getUsersConnected, getChats } = require('../../config/repository');
 
@@ -26,9 +26,13 @@ module.exports = (socket, io, client) => {
                 if(newUser.notifications) {
                     for(let i = 0; i < newUser.notifications.length; i++) {
                         let notification = await client.getKeyValue('notifications', newUser.notifications[i]);
-                        notifications.push(notification)
+
+                        await client.deleteKeyValue('notifications', newUser.notifications[i]);
+                        notifications.push(notification);
+                        newUser.deleteItem(newUser.notifications[i], newUser.notifications);
                     }
                 }
+                client.setKeyValue('users', newUser.id, newUser);
                 io.in(`${newUser.id}`).emit(NOTIFICATIONS_SENT, notifications);
                 // if(newUser.sockets) {
                 //     for(let i = 0; i < newUser.sockets.length; i++) {

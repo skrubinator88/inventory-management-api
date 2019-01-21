@@ -39,22 +39,20 @@ function addConnection(socket, entity) {
 function removeConnection(user, socketId) {
     return user;
 }
-
+function deleteItem(item, array) {
+    for( let i = 0; i < array.length; i++){
+        if ( array[i] === item) {
+            array.splice(i, 1);
+        }
+    }
+}
 async function deleteChat(chatId, io) {
     try {
         let chat = await client.getKeyValue('chats', chatId);
         let user = await client.getKeyValue('users', chat.users[2]);
         let property = await client.getKeyValue('properties', chat.users[3]);
-        for( let i = 0; i < user.chats.length; i++){
-            if ( user.chats[i] === chatId) {
-                user.chats.splice(i, 1);
-            }
-        }
-        for( let i = 0; i < property.chats.length; i++){
-            if ( property.chats[i] === chatId) {
-                property.chats.splice(i, 1);
-            }
-        }
+        deleteItem(chatId, user.chats);
+        deleteItem(chatId, property.chats);
         io.in(`${property.id}`).emit(CHAT_DELETED, chatId);
         io.in(`${user.id}`).emit(CHAT_DELETED, chatId);
         // await property.sockets.map(async socketId => {
