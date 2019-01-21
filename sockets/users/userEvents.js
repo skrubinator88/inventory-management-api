@@ -29,7 +29,7 @@ module.exports = (socket, io, client) => {
 
                         await client.deleteKeyValue('notifications', newUser.notifications[i]);
                         notifications.push(notification);
-                        newUser.deleteItem(newUser.notifications[i], newUser.notifications);
+                        deleteItem(newUser.notifications[i], newUser.notifications);
                     }
                 }
                 client.setKeyValue('users', newUser.id, newUser);

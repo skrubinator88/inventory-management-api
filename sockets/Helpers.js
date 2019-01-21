@@ -123,5 +123,6 @@ module.exports = {
     addConnection,
     removeConnection,
     sendMessageToChat,
-    deleteChat
+    deleteChat,
+    deleteItem
 };
