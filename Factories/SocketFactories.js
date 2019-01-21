@@ -4,7 +4,7 @@ const createEntity = ({ name = '', id = null, sockets = [], email = '', chats = 
     id: id,
     name,
     email,
-    sockets,
+    notifications,
     chats
 });
 

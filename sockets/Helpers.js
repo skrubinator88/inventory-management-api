@@ -37,14 +37,6 @@ function addConnection(socket, entity) {
 }
 
 function removeConnection(user, socketId) {
-    // if(user.sockets.includes(socketId)) {
-    //     for( let i = 0; i < user.sockets.length; i++){
-    //         if ( user.sockets[i] === socketId) {
-    //             user.sockets.splice(i, 1);
-    //         }
-    //     }
-    // }
-    // newList[id].socketId = null;
     return user;
 }
 

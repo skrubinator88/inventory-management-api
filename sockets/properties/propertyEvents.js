@@ -8,8 +8,8 @@ module.exports = (socket, io, client) => {
 
     let sendMessageToChatFromProperty;
     socket.on(PROPERTY_CONNECTED, (property)=>{
-        property.sockets = [];
         property.chats = [];
+        property.notifications = [];
         console.log(property);
         client.getKeyValue('properties', property.id).then(retrievedProperty => {
             if(retrievedProperty) {

@@ -10,7 +10,6 @@ module.exports = (socket, io, client) => {
     let sendMessageToChatFromUser;
 
     socket.on(USER_CONNECTED, (user)=>{
-        user.sockets = [];
         user.chats = [];
         user.notifications = [];
         client.getKeyValue('users', user.id).then(retrievedUser => {
