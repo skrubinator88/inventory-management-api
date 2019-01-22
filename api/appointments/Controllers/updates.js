@@ -3,7 +3,7 @@
 const dbmain = require('../../../config/DB/DBmain');
 const client = require('../../../config/Redis');
 const apnProvider = require('../../../config/apnManager');
-const { createNotification } = require('../../../Factories/ApnFactories');
+const { createNotification, createNotificationObject } = require('../../../Factories/ApnFactories');
 
 module.exports = {
     async deletePropertyUnitAppointment (opts, cb) {
@@ -42,11 +42,16 @@ module.exports = {
                         type: "appointment"
                     };
                     user.badge++;
+                    let notifObject = createNotificationObject({type: "appointment", id: appointmentUpdated.id});
+                    console.log(notifObject);
+                    user.notifications.push(notifObject.objectId);
+                    console.log("Notification: ", notification);
                     apnProvider.sendNotification(user.deviceToken, notification, function(err, info) {
                         if(err)
                             throw err;
                         console.log(info);
                     });
+                    await client.setKeyValue('notifications', notifObject.objectId, notifObject);
                     await client.setKeyValue('users', user.id, user);
                 } catch (err) {
                     throw err

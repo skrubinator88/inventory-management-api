@@ -2,7 +2,6 @@
 const { USER_CONNECTED, USER_LOGOUT, DELETE_CHAT, CHAT_DELETED,
     USER_DISCONNECTED, MESSAGE_SENT, USER_CHAT_CONNECTED, NOTIFICATIONS_SENT } = require('../chatEvents');
 const { addConnection, removeConnection, sendMessageToChat, deleteChat, deleteItem } = require('../Helpers');
-const { USER } = require('../chatEntities');
 // const { setUsersConnected, getUsersConnected, getChats } = require('../../config/repository');
 
 module.exports = (socket, io, client) => {
@@ -34,11 +33,6 @@ module.exports = (socket, io, client) => {
                 }
                 client.setKeyValue('users', newUser.id, newUser);
                 io.in(`${newUser.id}`).emit(NOTIFICATIONS_SENT, notifications);
-                // if(newUser.sockets) {
-                //     for(let i = 0; i < newUser.sockets.length; i++) {
-                //         io.to(`${newUser.sockets[i]}`).emit(NOTIFICATIONS_SENT, notifications);
-                //     }
-                // }
             }, function(err) {
                 console.log(err);
             });

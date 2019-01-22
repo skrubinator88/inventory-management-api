@@ -23,12 +23,6 @@ module.exports = (io, client) => {
                         user.chats.push(newChat.id);
                         client.setKeyValue('chats', newChat.id, newChat).then(async function() {
                             io.in(`${property.id}`).emit(MESSAGE_PROPERTY, newChat);
-                            // if(property.sockets.length > 0) {
-                            //     const propertySockets = property.sockets;
-                            //     for(let i = 0; i < propertySockets.length; i++) {
-                            //         io.to(`${propertySockets[i]}`).emit(MESSAGE_PROPERTY, newChat);
-                            //     }
-                            // }
                             io.in(`${user.id}`).emit(MESSAGE_PROPERTY, newChat);
                             try {
                                 await client.setKeyValue('properties', property.id, property);
