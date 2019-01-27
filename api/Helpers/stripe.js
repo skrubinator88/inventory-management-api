@@ -21,10 +21,9 @@ module.exports = {
               amount: chargeAmount,
               currency: 'usd',
               source: tokenId,
-              destination: {
-                  amount: chargeAmount * .30,
-                  account: propertyAccountId
-              }
+              application_fee: chargeAmount * .30
+          }, {
+              stripe_account: propertyAccountId
           });
       } catch (err) {
           throw err
