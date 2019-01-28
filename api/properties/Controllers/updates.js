@@ -59,7 +59,13 @@ module.exports = {
                         .then(function ([rowsUpdated, [propertyUpdated]]) {
                             if (!propertyUpdated)
                                 return cb(null, false);
-                            return cb(null, true);
+                            return cb(null, {
+                                id: propertyUpdated.id,
+                                propertyId: propertyUpdated.PropertyId,
+                                userId: propertyUpdated.UserId,
+                                status: propertyUpdated.status,
+                                propertyName: propertyUpdated.propertyName
+                            });
                         }).catch(err => { return cb(err) })
                 }
                 else {

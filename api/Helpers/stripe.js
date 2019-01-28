@@ -21,7 +21,7 @@ module.exports = {
               amount: chargeAmount,
               currency: 'usd',
               source: tokenId,
-              application_fee: chargeAmount * .30
+              application_fee: chargeAmount * .030
           }, {
               stripe_account: propertyAccountId
           });

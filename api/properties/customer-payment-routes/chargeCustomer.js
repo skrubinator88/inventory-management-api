@@ -19,6 +19,6 @@ module.exports = async function (req, res, next) {
                 error: 'An error occurred while trying to charge customer'
             })
         }
-        return res.status(200).end()
+        return res.status(200).send(charged)
     })
 };
