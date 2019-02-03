@@ -42,7 +42,8 @@ module.exports = {
             console.log(err);
             return cb(err);
         }
-    }, async createUserCharge (opts, cb) {
+    },
+    async createUserCharge (opts, cb) {
         let Property = dbmain.model('Property');
         let User = dbmain.model('User');
         let PaymentAccount = dbmain.model('PaymentAccount');
@@ -64,7 +65,8 @@ module.exports = {
                                 propertyId: propertyUpdated.PropertyId,
                                 userId: propertyUpdated.UserId,
                                 status: propertyUpdated.status,
-                                propertyName: propertyUpdated.propertyName
+                                propertyName: propertyUpdated.propertyName,
+                                date: propertyUpdated.createdAt
                             });
                         }).catch(err => { return cb(err) })
                 }

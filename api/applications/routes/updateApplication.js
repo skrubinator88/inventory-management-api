@@ -1,5 +1,5 @@
 'use strict';
-const { updateAppointment: updateApplication } = require('../Controllers/updates');
+const { updateApplication } = require('../Controllers/updates');
 
 module.exports = async function (req, res, next) {
     let applicationId = req.params.applicationId;

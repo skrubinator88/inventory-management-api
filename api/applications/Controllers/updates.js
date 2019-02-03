@@ -5,7 +5,7 @@ const dbmain = require('../../../config/DB/DBmain');
 
 module.exports = {
     async deleteApplication (applicationId, cb) {
-        let Application = dbmain.model('Application');
+        let Application = dbmain.model('ApplicationRequest');
         try {
             await Application.destroy({
                 where: {
@@ -19,7 +19,7 @@ module.exports = {
         }
     },
     async updateApplication (opts, id, cb) {
-        let Application = dbmain.model('Application');
+        let Application = dbmain.model('ApplicationRequest');
         try {
             Application.update(
                opts, { returning: true, where: { id: id } }
