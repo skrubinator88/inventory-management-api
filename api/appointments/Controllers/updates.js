@@ -36,7 +36,7 @@ module.exports = {
                     let user = await client.getKeyValue('users', appointmentUpdated.UserId);
                     let propertyUnit = await PropertyUnit.findById(appointmentUpdated.PropertyUnitId);
                     let property = await Property.findById(propertyUnit.PropertyId);
-                    let notification = createNotification({alert: `${property.propertyName} has updated your appointment request`, badge: user.badge, sound: 'ping.aiff'});
+                    let notification = createNotification({alert: `${property.propertyName} has updated your appointment request`, badge: user.notifications.count, sound: 'ping.aiff'});
                     notification.payload = {
                         id: appointmentUpdated.id,
                         type: "appointment"

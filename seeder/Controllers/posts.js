@@ -128,6 +128,7 @@ module.exports = {
                                 }));
                                 propertyPromises.push(await owners[i].createProperty({
                                     'id': propertyId,
+                                    'propertyType': 'COMMERCIAL',
                                     'propertyName': properties[i][j].propertyName,
                                     'propertyPhoneNumber': properties[i][j].propertyPhoneNumber,
                                     'propertyWebsite': properties[i][j].propertyWebsite_url,

@@ -60,10 +60,11 @@ module.exports = {
 
             let infoObject = {
                 id: uuidv4(),
-                propertyName: opts.name,
-                propertyWebsite: opts.website,
-                propertyPhoneNumber: opts.phoneNumber,
+                propertyName: opts.propertyName,
+                propertyWebsite: opts.propertyWebsite,
+                propertyPhoneNumber: opts.propertyPhoneNumber,
                 propertyEmail: opts.propertyEmail,
+                propertyType: opts.propertyType,
                 status: "BASIC"
             };
             let locationInfoObject = {

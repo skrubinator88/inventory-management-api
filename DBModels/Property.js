@@ -12,6 +12,7 @@ module.exports = {
             primaryKey: true,
             default: uuidv4()
         },
+        propertyType: Sequelize.STRING,
         propertyName: Sequelize.STRING,
         propertyPhoneNumber: Sequelize.STRING,
         propertyEmail: Sequelize.STRING,

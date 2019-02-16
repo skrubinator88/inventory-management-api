@@ -74,6 +74,7 @@ let config = {
                 pass:'Sartup1!'
             }
         },
+        super_user_access_key:'$2a$10$odpNZ6rf5t3wlKiADf8RAuPngWase8iJ1zGm9eMS1IE6afnvoe1J6',
         database: {
             host: "127.0.0.1",
             port: 5432,
