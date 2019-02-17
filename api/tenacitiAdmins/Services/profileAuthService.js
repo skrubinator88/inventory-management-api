@@ -29,6 +29,7 @@ module.exports = {
                     let token = jwt.sign(info,config.jwt_confirm_email);
                     let tokenUrl = `type=user&token=${token}`;
                     mailer.sendConfirmationEmail(mailOptions, tokenUrl);
+                    return cb(null, user, null)
                 } else{   //if user is not created respond with error message
                     console.log('Account has already been created');
                     return cb(null, created, { message: 'email is already in use' })
