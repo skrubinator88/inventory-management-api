@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "NODE_ENV=development nodemon ./bin/www"
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/www"
   },
   "dependencies": {
     "apn": "^2.2.0",
@@ -48,6 +48,7 @@
     "volleyball": "^1.5.0"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1"
   }

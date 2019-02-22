@@ -3,8 +3,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
-const passport = require('passport');
-const apn = require('apn');
 const helmet = require('helmet');
 
 const propertyOwners = require('./api/propertyOwners/routes/index');
@@ -54,7 +52,6 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-app.use(passport.initialize());
 
 app.use('/propertyOwners', propertyOwners);
 app.use('/admins', admins);
