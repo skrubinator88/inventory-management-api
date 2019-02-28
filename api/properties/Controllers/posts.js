@@ -56,6 +56,7 @@ module.exports = {
     },
     async addProperty (opts, cb) {
         let Property = dbmain.model('Property');
+        let Location = dbmain.model('Location');
         try {
 
             let infoObject = {

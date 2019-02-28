@@ -55,7 +55,7 @@ module.exports = {
                     })
                     .catch(err => {
                         console.error(err);
-                        cb(err)
+                        throw err;
                     });
                 for ( let i = 0; i < propertyImages.length; i++) {
                     images.push(propertyImages[i].ImgUrl);
@@ -69,7 +69,7 @@ module.exports = {
                         })
                     }).catch(err => {
                         console.error(err);
-                        cb(err)
+                        throw err;
                     });
                 if(!query.location) {
                     await Location.findAll({ where: { PropertyId: property.id } })
@@ -84,7 +84,7 @@ module.exports = {
                         })
                         .catch(err => {
                             console.error(err);
-                            cb(err)
+                            throw err;
                         });
                 }
                 obj.id = property.id;
