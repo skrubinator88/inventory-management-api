@@ -32,12 +32,17 @@ module.exports = {
                         name: user.firstName,
                         email: user.email
                     };
+                    //Created info object that will be used for creating jwt token
                     let info = {};
                     info.user = user;
                     info.expiry = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
                     let token = jwt.sign(info,config.jwt_confirm_email);
+                    //append jwt token to email token
                     let tokenUrl = `type=user&token=${token}`;
-                    mailer.sendConfirmationEmail(mailOptions, tokenUrl);
+                    //send confirmation email and handle error
+                    mailer.sendConfirmationEmail(mailOptions, tokenUrl, function(err, sent) {
+                        if(err) console.log(err);
+                    });
                     stripe.customers.create({
                         email: user.email,
                     }, async function(err, customer) {

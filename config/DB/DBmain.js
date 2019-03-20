@@ -47,13 +47,16 @@ const singleton = function Singleton(){
         let ApplicationRequest = sequelize.model("ApplicationRequest");
         let TenacitiAdmin = sequelize.model("TenacitiAdmin");
 
+        //Property Owner Table
         PropertyOwner.hasMany(PropertyOwnerAdmin);
         PropertyOwner.hasMany(Property);
         PropertyOwner.hasMany(Invoice);
         PropertyOwner.hasOne(Image);
 
+        //PropertyOwnerAdmin 1:1 relationship with PropertyOwner
         PropertyOwnerAdmin.belongsTo(PropertyOwner);
 
+        //Property Table
         Property.hasMany(PropertyUnit);
         Property.hasOne(PropertyAdmin);
         Property.hasOne(PaymentAccount);
